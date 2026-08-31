@@ -1,0 +1,105 @@
+# Benchmark dataset-selection tunables (read by scripts/select_genomes.py)
+# Date: 2026-08-30
+
+selection:
+  n_target: 65
+  max_genome_size_mb: 75
+  seed: 42
+  # Diversity tilt exponent w. Within a phylum, per-class sampling weight is
+  # proportional to (class_pool_size ** w).  w < 1 gives rare classes a boost
+  # over a straight population-proportional draw (w=1.0 => proportional,
+  # w=0.5 => sqrt weighting).
+  class_weight_exponent: 0.5
+
+  # Reference preference: 'refseq_only' draws only GCF_ accessions when a
+  # quota can be met, falling back to GenBank (GCA_) only when a quota group
+  # has no RefSeq candidate left. 'refseq_preferred' allows GCA_ anytime.
+  reference_preference: refseq_only
+
+  # Minimum floors that MUST be met (per DESIGN.md).
+  quota_floors:
+    Ascomycota:
+      phylum: Ascomycota
+      total: 10
+      subphylum:
+        Pezizomycotina: 5      # >=5 of the Ascomycota must be Pezizomycotina
+    Basidiomycota:
+      phylum: Basidiomycota
+      total: 5
+      subphylum:
+        Agaricomycotina: 2
+        Pucciniomycotina: 1
+        Ustilaginomycotina: 1
+    Mucoromycota:
+      phylum: Mucoromycota
+      total: 3
+    Chytridiomycota:
+      phylum: Chytridiomycota
+      total: 1
+    Blastocladiomycota:
+      phylum: Blastocladiomycota
+      total: 1
+
+  # How the remaining (N - floors met) slots are distributed across phyla.
+  fill_weights:
+    Ascomycota: 0.55
+    Basidiomycota: 0.30
+    Mucoromycota: 0.08
+    Chytridiomycota: 0.04
+    Blastocladiomycota: 0.03
+
+  # Within-phylum subphylum weights for the proportional fill
+  # (normalized per phylum; any subphylum omitted gets 0).
+  subphylum_weights:
+    Ascomycota:
+      Pezizomycotina: 0.70
+      Saccharomycotina: 0.25
+      Taphrinomycotina: 0.05
+    Basidiomycota:
+      Agaricomycotina: 0.50
+      Pucciniomycotina: 0.25
+      Ustilaginomycotina: 0.25
+    Mucoromycota:
+      Mucoromycotina: 1.0
+    Chytridiomycota:
+      Chytridiomycotina: 1.0
+    Blastocladiomycota:
+      Blastocladiomycotina: 1.0
+
+  # Genus/species caps (per DESIGN.md)
+  max_per_genus: 2
+  max_per_species: 1
+
+# ── Candidate pool (local Fungi_BFD accession + taxonomy + rnaseq tables) ──
+pool:
+  accessions: /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/ncbi_accessions.csv
+  taxonomy:   /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/ncbi_accessions_taxonomy.csv
+  rnaseq:     /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/samples.rnaseq_sra.csv
+  masked_genome_dir: /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/input_clean_genomes
+
+# ── Input provisioning (scripts/fetch_genomes.py) ──────────────────────────
+fetch:
+  masked_out_dir: input_clean_genomes
+  # Local mirror of NCBI assembly dirs (GFF/protein/cds/seq-report) already
+  # downloaded by the 1KFG project. References are hardlinked from here when
+  # present; otherwise fetched from NCBI FTP.
+  reference_mirror_dir: /bigdata/stajichlab/shared/projects/1KFG/2026/NCBI_fungi/source/NCBI_ASM
+  reference_dir: results/reference_annotations
+  ncbi_email: jason.stajich@ucr.edu
+  # Symlink pre-masked genomes from the pool when present; otherwise download
+  # from NCBI and repeat-mask with the same method Fungi_BFD uses (AAFTF
+  # tantan/repeatmasker, run through nf_funannotate1 GENOME_CLEAN/MASKREPEAT).
+  mask_via_nf_funannotate1: true
+
+# ── Pipeline (scripts/build_run_samples.py + launchers) ────────────────────
+pipeline:
+  # Vendored pinned copy of nf_funannotate1 (created by scripts/pin_nextflow.py).
+  # Until it is pinned, point at the dev checkout.
+  nf_funannotate1: /rhome/jstajich/projects/nf/nf_funannotate1
+  conda_envs_root: /bigdata/stajichlab/shared/condaenv
+  funannotate_db: /bigdata/stajichlab/shared/lib/funannotate_db
+  slurm_partition: stajichlab
+  # Fixed resource class held across the 6 cells for a given genome.
+  cpus: 8
+  mem_gb: 32
+  time: '72h'

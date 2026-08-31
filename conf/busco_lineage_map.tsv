@@ -1,0 +1,43 @@
+# BUSCO lineage to use per taxon, recorded in samples.csv (busco_lineage_used)
+# and passed to nf_funannotate1 (BUSCO_LINEAGE column) for both the standalone
+# genome-completeness BUSCO and funannotate predict's internal BUSCO.
+#
+# IMPORTANT (funannotate constraint): funannotate predict/train run a vendored
+# BUSCO script that requires legacy v10-format lineage files (lengths_cutoff),
+# so every lineage below is deliberately an *odb10 file that exists in the
+# shared funannotate DB* (/bigdata/stajichlab/shared/lib/funannotate_db).
+# Do not switch to odb12-only lineages without confirming funannotate's
+# internal BUSCO step still runs.
+#
+# Priority: class > subphylum > phylum > fungi_odb10.
+# Match key is the class name (columns CLASS in pool taxonomy); empty class
+# falls back to subphylum.
+# class	lineage
+class	lineage
+# ── Ascomycota / Pezizomycotina ──
+Sordariomycetes	sordariomycetes_odb10
+Dothideomycetes	dothideomycetes_odb10
+Eurotiomycetes	eurotiomycetes_odb10
+Leotiomycetes	leotiomycetes_odb10
+# remaining Pezizomycotina classes -> ascomycota_odb10 (fallback below)
+# ── Ascomycota / Saccharomycotina ──
+Saccharomycetes	saccharomycetes_odb10
+# ── Basidiomycota / Agaricomycotina ──
+Agaricomycetes	agaricomycetes_odb10
+Tremellomycetes	tremellomycetes_odb10
+# ── subphylum / phylum fallbacks ──
+Pezizomycotina	ascomycota_odb10
+Saccharomycotina	saccharomycetes_odb10
+Taphrinomycotina	ascomycota_odb10
+Agaricomycotina	basidiomycota_odb10
+Pucciniomycotina	basidiomycota_odb10
+Ustilaginomycotina	basidiomycota_odb10
+Mucoromycotina	mucorales_odb10
+Chytridiomycotina	fungi_odb10
+Blastocladiomycotina	fungi_odb10
+Ascomycota	ascomycota_odb10
+Basidiomycota	basidiomycota_odb10
+Mucoromycota	mucorales_odb10
+Chytridiomycota	fungi_odb10
+Blastocladiomycota	fungi_odb10
+DEFAULT	fungi_odb10

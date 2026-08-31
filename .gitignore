@@ -1,0 +1,37 @@
+# ── Nextflow / run artifacts (never commit) ────────────────────────────────
+.nextflow/
+.nextflow.log*
+work/
+logs/
+*.nextflow.log*
+trace*.txt
+report*.html
+timeline*.html
+
+# ── Large derived data (regenerate via scripts/fetch_genomes.py) ───────────
+input_clean_genomes/
+data/
+runs/*/input_clean_genomes/
+runs/*/rnaseq_reads/
+runs/*/work/
+results/metadata_cache/
+results/reference_annotations/
+*.fa.gz
+*.fasta.gz
+*.fna.gz
+*.faa.gz
+*.gff.gz
+*.gz.tbi
+
+# ── GeneMark license / sidecar outputs (large, reproducible) ───────────────
+runs/genemark_sidecar/output/
+.gm_key
+
+# ── Python / tooling cruft ─────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# ── OS noise ───────────────────────────────────────────────────────────────
+.DS_Store
