@@ -45,6 +45,15 @@ CELL_DIR="runs/${CELL}"
 NF_FUNANNOTATE1="${NF_FUNANNOTATE1:-/rhome/jstajich/projects/nf/nf_funannotate1}"
 export CONDA_ENVS_ROOT="${CONDA_ENVS_ROOT:-/bigdata/stajichlab/shared/condaenv}"
 
+# GeneMark is held constant across all 6 cells via the shared sidecar
+# (launch/run_genemark_sidecar.sbatch) rather than retrained independently per
+# cell -- see DESIGN.md "GeneMark sidecar". Must be an ABSOLUTE path: this
+# script cd's into $CELL_DIR (runs/<cell>/) below before invoking nextflow.
+GENEMARK_SIDECAR_DIR="${GENEMARK_SIDECAR_DIR:-${BENCH_ROOT}/runs/genemark_sidecar/output}"
+if [ ! -d "$GENEMARK_SIDECAR_DIR" ] || [ -z "$(ls -A "$GENEMARK_SIDECAR_DIR" 2>/dev/null)" ]; then
+    echo "[WARN] $GENEMARK_SIDECAR_DIR is empty/missing -- run launch/run_genemark_sidecar.sbatch first, or every genome in this cell will fall back to --auto-skip-genemark" >&2
+fi
+
 module load nextflow
 
 EXECUTOR="${EXECUTOR:-slurm}"
@@ -53,7 +62,7 @@ EXECUTOR="${EXECUTOR:-slurm}"
 # run_annotate.sh), independent of conda/container choice.
 PROFILES="annotate,${EXECUTOR},ucr_hpcc,${PROVISIONING}"
 
-EXTRA_ARGS=()
+EXTRA_ARGS=(--genemark_sidecar_dir "$GENEMARK_SIDECAR_DIR")
 case "$PROVISIONING" in
     conda)
         [ -n "$CONDA_ENV" ] || { echo "[ERROR] cell '$CELL' has no conda_env set in $CELLS_TSV" >&2; exit 1; }

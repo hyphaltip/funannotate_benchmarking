@@ -26,6 +26,7 @@ Funannotate_benchmarking/
     subphylum_map.tsv        fungal class → subphylum (quota bookkeeping)
     busco_lineage_map.tsv    taxon → BUSCO lineage used for predict/compare
   launch/
+    run_genemark_sidecar.sbatch  run GeneMark once per genome (shared by all 6 cells)
     run_cell.sbatch           launch/relaunch ONE cell (reads conf/cells.tsv)
     run_all_cells.sbatch      submit run_cell.sbatch for every cell in conf/cells.tsv
     validate_harness.sbatch   sbatch wrapper for scripts/validate_harness.py
@@ -42,7 +43,7 @@ Funannotate_benchmarking/
     v1.8.17_conda/  v1.8.17_container/
     v1.9.0-beta10_conda/  v1.9.0-beta10_conda_rust/
     v1.9.0-beta10_container/  v1.9.0-beta10_container_rust/
-    genemark_sidecar/        (unused — sidecar sharing not implemented; see "The 6 cells")
+    genemark_sidecar/output/  one <out>.genemark.gtf/.mod per genome, shared by all 6 cells
   results/                   (generated) metrics.tsv, gene_content_comparison.tsv, report.*
 ```
 
@@ -64,28 +65,40 @@ python3 scripts/fetch_genomes.py --samples samples.csv
 # 3. Build per-cell nf_funannotate1 samplesheets (GENOME → masked path)
 python3 scripts/build_run_samples.py --samples samples.csv
 
-# 4. Launch the 6 cells (per genome, fixed SLURM resource class; image/env
+# 4. GeneMark sidecar — run once per genome, shared by all 6 cells (see
+#    "The 6 cells" below). Do this before/alongside step 5; run_cell.sbatch
+#    warns (doesn't fail) if a cell launches before this has produced results.
+sbatch launch/run_genemark_sidecar.sbatch
+
+# 5. Launch the 6 cells (per genome, fixed SLURM resource class; image/env
 #    per cell comes from conf/cells.tsv — see "The 6 cells" below)
 sbatch launch/run_all_cells.sbatch            # all 6, one sbatch job per cell
 sbatch launch/run_cell.sbatch v1.8.17_conda   # relaunch/retry a single cell (-resume)
 
-# 5. Validation gate — once a cell has predict output for a few genomes,
+# 6. Validation gate — once a cell has predict output for a few genomes,
 #    diff it against Fungi_BFD's known-good results for the same genome tag
 sbatch launch/validate_harness.sbatch v1.8.17_conda
 
-# 6. Collect + compare + report (can run incrementally as cells finish)
+# 7. Collect + compare + report (can run incrementally as cells finish)
 python3 scripts/collect_metrics.py     --cells-dir runs
 python3 scripts/compare_predictions.py --cells-dir runs
 python3 scripts/summarize_report.py    --cells-dir runs   # not yet written
 ```
 
 Steps 1-3 have already run once (dataset selected; `runs/<cell>/` samplesheets
-built). All 6 cells in step 4 have already been launched at least once
-(`runs/<cell>/launch_*.log`). **Current status (2026-09-03):** `v1.8.17_conda`
-is progressing cleanly; the other 5 have each hit one of two recurring
-failures — see "Known issues" below. Re-launching a cell with
-`launch/run_cell.sbatch <cell>` is safe (`-resume`) once the underlying fix
-for its failure lands.
+built). All 6 cells have already been launched at least once
+(`runs/<cell>/launch_*.log`), **before** the GeneMark sidecar (step 4) existed
+— those launches used each cell's own independent `GENEMARK_RUN`, not the
+sidecar. **Current status (2026-09-03):** `v1.8.17_conda` is progressing
+cleanly; the other 5 have each hit one of two recurring failures — see "Known
+issues" below. Re-launching a cell with `launch/run_cell.sbatch <cell>` is
+safe (`-resume`) once the underlying fix for its failure lands; a relaunch
+after step 4 has run will pick up the shared sidecar GTF instead of
+retraining GeneMark in-cell (a resumed genome whose predict already completed
+under the old per-cell GeneMark keeps its old result until something
+invalidates that cache — full apples-to-apples parity means running the
+sidecar before any cell's first launch, not applicable retroactively without
+a fresh run).
 
 ### Known issues (as of 2026-09-03)
 
@@ -103,9 +116,6 @@ for its failure lands.
   (a login shell was re-sourcing `/etc/profile` inside `.command.run` and
   wiping the squashfuse-bearing PATH before the container command ran) — **not
   yet re-verified with a relaunch.**
-- **GeneMark sidecar not implemented** (see "The 6 cells" below): each cell
-  currently runs its own `GENEMARK_RUN` independently rather than sharing one
-  cached-per-genome result.
 
 ## Design constraints honored by `select_genomes.py`
 
@@ -137,25 +147,27 @@ fixed across cells for a genome (`conf/benchmark.yaml` pipeline: block).
 | v1.9.0-beta10_container | 1.9.0-beta.10 | perl | local `.sif`, custom no-rust rebuild (`-norust`) |
 | v1.9.0-beta10_container_rust | 1.9.0-beta.10 | rust | local `.sif` pulled from `ghcr.io/nextgenusfs/funannotate:1.9.0-beta.10` (rust-enabled by default) |
 
-**GeneMark sidecar sharing (DESIGN.md's `runs/genemark_sidecar/`) is not
-implemented** — each cell runs its own `GENEMARK_RUN` independently. This
-matters differently for the two axes:
-- **conda cells** (`v1.8.17_conda`, `v1.9.0-beta10_conda`,
-  `v1.9.0-beta10_conda_rust`): all three already resolve `genemark_path` to
-  the *same* host-licensed `/opt/linux/.../genemarkESET/4.72_lic` module —
-  same binary every time — so results are already consistent across conda
-  cells without a sidecar. The only cost is **redundant compute** (GeneMark
-  reruns per cell instead of once per genome), not a correctness gap.
-- **container cells**: `genemark_container_mode=true` routes them through the
-  bundled GeneMark 4.72 in the public `teambraker/braker3:v3.1.1` image
-  instead of the host module — a **different GeneMark source than the conda
-  cells**. For question 3 (conda vs. container cost/accuracy) this is a real
-  confound, not just a compute-efficiency gap: any conda-vs-container
-  gene-content delta could partly reflect this GeneMark source difference
-  rather than the funannotate wrapper/environment itself. Resolving it means
-  either building the sidecar (one shared result fed to all 6 cells, as
-  DESIGN.md specifies) or explicitly documenting/controlling for the
-  GeneMark-source difference in `compare_predictions.py`'s analysis.
+**GeneMark sidecar sharing is implemented** (`launch/run_genemark_sidecar.sbatch`
+→ `nf_funannotate1`'s `genemark_sidecar.nf`, `-profile genemark_sidecar,slurm,singularity`):
+GeneMark runs exactly once per genome — always container-mode, always the
+public `teambraker/braker3:v3.1.1` image, always fresh ES self-training with
+no RNA-seq hints (so the result cannot depend on any cell's own training) —
+and publishes `<out>.genemark.gtf`/`.mod` to `runs/genemark_sidecar/output/`.
+Every cell's `launch/run_cell.sbatch` invocation passes
+`--genemark_sidecar_dir` pointing at that directory, so **no cell runs its own
+`GENEMARK_RUN` any more** — GeneMark is deliberately held out of the
+comparison (not a variable under test) and computed 1x per genome instead of
+6x. A genome missing from the sidecar output degrades that genome to
+`--auto-skip-genemark` in every cell (a nextflow warning, not a hard
+failure), rather than silently reverting to the old per-cell behavior.
+
+This also fixes a real confound the previous (unimplemented) state had:
+conda cells were resolving GeneMark to the host-licensed
+`genemarkESET/4.72_lic` module while container cells used braker3's bundled
+GeneMark instead — a different GeneMark *source* between the two axes being
+compared for question 3 (conda vs. container). All 6 cells now use the exact
+same GeneMark result per genome, so any conda-vs-container delta observed
+going forward reflects the funannotate wrapper/environment only.
 
 ## Running the pipeline
 
@@ -184,9 +196,9 @@ Outputs land in `runs/<cell>/genome_annotation/<species>_<strain>/predict_result
 - [x] container images (all 3 `.sif`) — done
 - [x] nf_funannotate1 standalone testing — confirmed runnable via both conda and singularity axes
 - [x] All 6 cells launched at least once — 1 progressing cleanly, 5 blocked on the two "Known issues" above
+- [x] GeneMark sidecar sharing (`launch/run_genemark_sidecar.sbatch` + `--genemark_sidecar_dir`) — implemented, not yet run against the full N=65 set
 - [ ] validate `launch/run_cell.sbatch` relaunches clear the container disk-full failures
 - [ ] root-cause + fix the `SRA_FETCH` race
-- [ ] resolve GeneMark sidecar sharing (or explicitly control for its absence)
 - [ ] validation gate pass
 - [ ] N=65 × 6 cells run to completion
 - [ ] metrics + accuracy comparison + report (`scripts/summarize_report.py` not yet written)
