@@ -1,0 +1,146 @@
+cell	genome	status	n_tasks	n_completed	n_failed	n_aborted	task_time_hours_sum	cpu_hours_sum	peak_rss_gb_max	accession	phylum	genome_size_mb	cpu_hours_per_mb	task_time_hours_per_mb
+v1.8.17_conda	-	success	1	1	0	0	0.0003	0.0002	0.003					
+v1.8.17_conda	Allomyces_macrogynus_ATCC_38327	success	2	0	0	0	0.378	2.188	2.2	GCA_000151295.1	Blastocladiomycota	57.1	0.03832	0.00662
+v1.8.17_conda	Aspergillus_clavatus_NRRL_1	success	1	0	0	0	0.2033	0.8936	2.3	GCF_000002715.2	Ascomycota	27.9	0.03203	0.00729
+v1.8.17_conda	Aspergillus_fumigatus_Af293	success	2	0	0	0	0.3377	1.6969	2.5	GCF_000002655.1	Ascomycota	29.4	0.05772	0.01149
+v1.8.17_conda	Batrachochytrium_dendrobatidis_JAM81	success	1	0	0	0	0.0033	0.0126	0.203	GCF_000203795.2	Chytridiomycota	23.8	0.00053	0.00014
+v1.8.17_conda	Chaetomium_globosum_+9_more	success	1	1	0	0	0.0002	0.0	0.003					
+v1.8.17_conda	Cokeromyces_recurvatus_NRRL_2243	success	1	0	0	0	0.0039	0.0159	0.161	GCF_025118155.1	Mucoromycota	28.1	0.00057	0.00014
+v1.8.17_conda	Cryptococcus_deneoformans_JEC21	success	1	0	0	0	0.0024	0.0101	0.2	GCF_000091045.1	Basidiomycota	19.1	0.00053	0.00013
+v1.8.17_conda	Cryptococcus_neoformans_H99	success	1	0	0	0	0.1975	0.8757	1.8	GCF_000149245.1	Basidiomycota	18.9	0.04633	0.01045
+v1.8.17_conda	Cystobasidium_minutum_MCA_4210	success	1	0	0	0	0.2892	1.104	2.4	GCF_039999085.1	Basidiomycota	20.8	0.05308	0.0139
+v1.8.17_conda	Dactylellina_haptotyla_CBS_200.50	failed	2	0	1	0	0.3908	1.5734	0.349	GCF_000441935.1	Ascomycota	39.5	0.03983	0.00989
+v1.8.17_conda	Drepanopeziza_brunnea_MB_m1	success	1	0	0	0	0.0049	0.0259	0.33	GCF_000298775.1	Ascomycota	51.9	0.0005	9e-05
+v1.8.17_conda	Eremothecium_gossypii_ATCC_10895	success	1	1	0	0	0.1586	0.3318	0.026	GCF_000091025.4	Ascomycota	9.1	0.03646	0.01743
+v1.8.17_conda	Fusarium_oxysporum_4287	success	1	0	0	0	0.0079	0.0359	0.382	GCF_000149955.1	Ascomycota	61.4	0.00058	0.00013
+v1.8.17_conda	Kluyveromyces_lactis_NRRL_Y-1140	success	2	1	0	0	0.0741	0.2768	1.4	GCF_000002515.2	Ascomycota	10.7	0.02587	0.00693
+v1.8.17_conda	Laccaria_bicolor_S238N-H82	success	1	0	0	0	0.4972	2.4533	1.4	GCF_000143565.1	Basidiomycota	64.9	0.0378	0.00766
+v1.8.17_conda	Lachancea_thermotolerans_CBS_6340	success	1	0	0	0	0.0017	0.0064	0.137	GCF_000142805.1	Ascomycota	10.4	0.00061	0.00016
+v1.8.17_conda	Leptographium_clavigerum_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_conda	Leptographium_clavigerum_kw1407	success	1	0	0	0	0.4044	1.733	1.7	GCF_000143105.1	Ascomycota	29.8	0.05816	0.01357
+v1.8.17_conda	Letharia_columbiana_WasteWater2	success	1	0	0	0	0.3914	1.9875	1.0	GCF_014066305.1	Ascomycota	52.3	0.038	0.00748
+v1.8.17_conda	Malassezia_globosa	failed	6	0	6	0	0.3	0.0	0.0					
+v1.8.17_conda	Malassezia_sympodialis_ATCC_42132	success	2	1	0	0	0.2164	0.3603	0.119	GCF_000349305.1	Basidiomycota	7.7	0.04679	0.02811
+v1.8.17_conda	Mixia_osmundae_IAM_14324	success	1	0	0	0	0.2672	0.7768	1.0	GCF_000708205.1	Basidiomycota	13.6	0.05712	0.01965
+v1.8.17_conda	Morchella_importuna_M04M26	success	2	1	0	0	0.3522	1.9874	2.1	GCF_003444635.1	Ascomycota	50.9	0.03904	0.00692
+v1.8.17_conda	Mucor_mucedo_NRRL_3635	success	2	0	0	0	0.6818	1.6242	0.297	GCF_025094135.1	Mucoromycota	46.1	0.03523	0.01479
+v1.8.17_conda	Nakaseomyces_glabratus_CBS_138	success	1	0	0	0	0.0023	0.007	0.166	GCF_000002545.3	Ascomycota	12.3	0.00057	0.00019
+v1.8.17_conda	Orbilia_oligospora_ATCC_24927	success	2	0	0	0	0.2821	1.3098	2.5	GCF_000225545.1	Ascomycota	40.1	0.03266	0.00703
+v1.8.17_conda	Parastagonospora_nodorum_SN15	success	2	1	0	0	0.3461	1.6648	0.405	GCF_000146915.1	Ascomycota	37.2	0.04475	0.0093
+v1.8.17_conda	Phycomyces_blakesleeanus_NRRL_1555_-	success	2	0	0	0	0.3253	1.7214	2.1	GCF_001638985.1	Mucoromycota	53.9	0.03194	0.00603
+v1.8.17_conda	Pneumocystis_murina_B123	success	1	0	0	0	0.0997	0.2258	0.51	GCF_000349005.2	Ascomycota	7.5	0.0301	0.0133
+v1.8.17_conda	Protomyces_lactucae-debilis_12-1054	success	2	0	0	0	0.126	0.7363	1.008	GCF_002105105.1	Ascomycota	12.9	0.05708	0.00977
+v1.8.17_conda	Pyrenophora_teres_0-1	success	1	0	0	0	0.0053	0.016	0.245	GCF_000166005.1	Ascomycota	33.6	0.00048	0.00016
+v1.8.17_conda	Pyrenophora_tritici-repentis_Pt-1C-BFP	success	2	1	0	0	0.3407	1.5999	0.739	GCF_000149985.1	Ascomycota	37.8	0.04233	0.00901
+v1.8.17_conda	Pyricularia_oryzae_70-15	success	1	0	0	0	0.0046	0.0254	0.287	GCF_000002495.2	Ascomycota	41.0	0.00062	0.00011
+v1.8.17_conda	Rhizopus_delemar_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_conda	Rhizopus_delemar_RA_99-880	success	1	0	0	0	0.005	0.0263	0.292	GCF_000149305.1	Mucoromycota	46.1	0.00057	0.00011
+v1.8.17_conda	Rhizopus_microsporus_ATCC_52813	success	1	0	0	0	0.003	0.0142	0.218	GCF_002708625.1	Mucoromycota	26.0	0.00054	0.00012
+v1.8.17_conda	Rhodotorula_graminis_WP1	success	1	0	0	0	0.2136	1.1385	1.9	GCF_001329695.1	Basidiomycota	21.0	0.05422	0.01017
+v1.8.17_conda	Rhodotorula_toruloides_NP11	success	1	0	0	0	0.0029	0.0116	0.194	GCF_000320785.1	Basidiomycota	20.2	0.00058	0.00014
+v1.8.17_conda	Saccharomyces_cerevisiae_S288C	success	1	0	0	0	0.002	0.0073	0.176	GCF_000146045.2	Ascomycota	12.1	0.00061	0.00017
+v1.8.17_conda	Schizophyllum_commune_H4-8	success	2	0	0	0	0.3419	1.7775	2.3	GCF_000143185.2	Basidiomycota	38.7	0.04593	0.00883
+v1.8.17_conda	Sclerotinia_sclerotiorum_1980	success	1	0	0	0	0.0037	0.0192	0.27	GCF_000146945.2	Ascomycota	38.3	0.0005	0.0001
+v1.8.17_conda	Spizellomyces_punctatus_DAOM_BR117	success	1	0	0	0	0.001	0.0011	0.048	GCF_000182565.1	Chytridiomycota	24.1	5e-05	4e-05
+v1.8.17_conda	Sporobolomyces_koalae_JCM15063	success	1	0	0	0	0.2344	0.8789	1.1	GCF_050403365.1	Basidiomycota	18.3	0.04803	0.01281
+v1.8.17_conda	Sporobolomyces_salmoneus_JCM6883	success	1	1	0	0	0.2536	0.8663	0.523	GCF_050403485.1	Basidiomycota	20.3	0.04268	0.01249
+v1.8.17_conda	Sugiyamaella_lignohabitans_CBS_10342	success	1	0	0	0	0.1522	0.4316	2.2	GCF_001640025.1	Ascomycota	15.9	0.02714	0.00957
+v1.8.17_conda	Talaromyces_marneffei_ATCC_18224	success	2	0	0	0	0.2857	1.2489	1.4	GCF_000001985.1	Ascomycota	28.6	0.04367	0.00999
+v1.8.17_conda	Talaromyces_stipitatus_ATCC_10500	failed	2	0	1	0	0.2789	1.3439	3.8	GCF_000003125.1	Ascomycota	35.7	0.03764	0.00781
+v1.8.17_conda	Tilletiaria_anomala_UBC_951	success	1	0	0	0	0.0026	0.0107	0.19	GCF_000711695.1	Basidiomycota	18.7	0.00057	0.00014
+v1.8.17_conda	Tilletiopsis_washingtonensis_+9_more	success	1	1	0	0	0.0004	0.0002	0.003					
+v1.8.17_conda	Tilletiopsis_washingtonensis_MCA_4186	success	2	0	0	0	0.2475	1.1806	0.424	GCF_003144115.1	Basidiomycota	18.8	0.0628	0.01316
+v1.8.17_conda	Tremella_mesenterica_Fries	success	1	0	0	0	0.1872	0.9337	0.854	GCF_000271645.1	Basidiomycota	28.6	0.03265	0.00655
+v1.8.17_conda	Tricharina_praecox_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_conda	Tricharina_praecox_CBS_144465	success	2	0	0	0	0.4684	2.2773	1.1	GCF_024521635.1	Ascomycota	38.4	0.05931	0.0122
+v1.8.17_conda	Trichosporon_asahii_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_conda	Trichosporon_asahii_CBS_2479	success	1	0	0	0	0.0029	0.0132	0.217	GCF_000293215.1	Basidiomycota	24.5	0.00054	0.00012
+v1.8.17_conda	Umbelopsis_ramanniana_AG	success	1	0	0	0	0.0034	0.0118	0.237	GCF_025399195.1	Mucoromycota	23.1	0.00051	0.00015
+v1.8.17_conda	Uncinocarpus_reesii_1704	success	1	1	0	0	0.3122	0.6619	3.0	GCF_000003515.1	Ascomycota	22.3	0.02968	0.014
+v1.8.17_conda	Wallemia_mellicola_CBS_633.66	success	1	1	0	0	0.2881	0.4036	0.079	GCF_000263375.1	Basidiomycota	9.8	0.04118	0.02939
+v1.8.17_conda	Zymoseptoria_tritici_+4_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_conda	Zymoseptoria_tritici_IPO323	success	1	0	0	0	0.0043	0.0216	0.265	GCF_000219625.1	Ascomycota	39.7	0.00055	0.00011
+v1.8.17_container	-	success	1	1	0	0	0.0	0.0	0.003					
+v1.8.17_container	Allomyces_macrogynus	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Aspergillus_clavatus_NRRL_1	failed	3	0	3	0	0.0	0.0	0.0	GCF_000002715.2	Ascomycota	27.9	0.0	0.0
+v1.8.17_container	Aspergillus_fumigatus	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Batrachochytrium_dendrobatidis_JAM81	failed	3	0	3	0	0.0	0.0	0.0	GCF_000203795.2	Chytridiomycota	23.8	0.0	0.0
+v1.8.17_container	Blastomyces_dermatitidis	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Blastomyces_dermatitidis_ER-3	failed	2	0	2	0	0.0166	0.0	0.0	GCF_000003525.1	Ascomycota	66.6	0.0	0.00025
+v1.8.17_container	Botrytis_cinerea	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Chaetomium_globosum_CBS_148.51	failed	3	0	3	0	0.0	0.0	0.0	GCF_000143365.1	Ascomycota	34.3	0.0	0.0
+v1.8.17_container	Cokeromyces_recurvatus	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Colletotrichum_graminicola_M1.001	failed	3	0	3	0	0.0	0.0	0.0	GCF_000149035.1	Ascomycota	51.6	0.0	0.0
+v1.8.17_container	Cryptococcus_deneoformans	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Cryptococcus_neoformans	failed	6	0	6	0	0.0498	0.0	0.0					
+v1.8.17_container	Cystobasidium_minutum_MCA_4210	failed	3	0	3	0	0.0	0.0	0.0	GCF_039999085.1	Basidiomycota	20.8	0.0	0.0
+v1.8.17_container	Dactylellina_haptotyla_CBS_200.50	failed	3	0	3	0	0.0166	0.0	0.0	GCF_000441935.1	Ascomycota	39.5	0.0	0.00042
+v1.8.17_container	Drepanopeziza_brunnea	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Eremothecium_gossypii_ATCC_10895	failed	3	0	3	0	0.0	0.0	0.0	GCF_000091025.4	Ascomycota	9.1	0.0	0.0
+v1.8.17_container	Fusarium_oxysporum	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Fusarium_verticillioides	failed	6	0	6	0	0.0167	0.0	0.0					
+v1.8.17_container	Gaeumannomyces_tritici	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Kluyveromyces_lactis	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Laccaria_bicolor	success	1	1	0	0	0.0	0.0	0.003					
+v1.8.17_container	Laccaria_bicolor_S238N-H82	failed	2	0	2	0	0.0166	0.0	0.0	GCF_000143565.1	Basidiomycota	64.9	0.0	0.00026
+v1.8.17_container	Lachancea_thermotolerans	success	1	1	0	0	0.0	0.0	0.003					
+v1.8.17_container	Lachancea_thermotolerans_CBS_6340	failed	3	0	3	0	0.0166	0.0	0.0	GCF_000142805.1	Ascomycota	10.4	0.0	0.00159
+v1.8.17_container	Leptographium_clavigerum_kw1407	failed	3	0	3	0	0.0	0.0	0.0	GCF_000143105.1	Ascomycota	29.8	0.0	0.0
+v1.8.17_container	Letharia_columbiana	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Letharia_columbiana_WasteWater2	failed	2	0	2	0	0.0166	0.0	0.0	GCF_014066305.1	Ascomycota	52.3	0.0	0.00032
+v1.8.17_container	Lipomyces_tetrasporus	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Malassezia_globosa	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Malassezia_sympodialis_ATCC_42132	failed	3	0	3	0	0.0166	0.0	0.0	GCF_000349305.1	Basidiomycota	7.7	0.0	0.00215
+v1.8.17_container	Mixia_osmundae_IAM_14324	failed	3	0	3	0	0.0	0.0	0.0	GCF_000708205.1	Basidiomycota	13.6	0.0	0.0
+v1.8.17_container	Morchella_importuna	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Morchella_sextelata	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Morchella_sextelata_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_container	Mucor_mucedo	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Nakaseomyces_glabratus	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Orbilia_oligospora	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Parastagonospora_nodorum_SN15	failed	3	0	3	0	0.0	0.0	0.0	GCF_000146915.1	Ascomycota	37.2	0.0	0.0
+v1.8.17_container	Phycomyces_blakesleeanus	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Phycomyces_blakesleeanus_NRRL_1555_-	failed	2	0	2	0	0.0166	0.0	0.0	GCF_001638985.1	Mucoromycota	53.9	0.0	0.00031
+v1.8.17_container	Pneumocystis_murina_B123	failed	3	0	3	0	0.0	0.0	0.0	GCF_000349005.2	Ascomycota	7.5	0.0	0.0
+v1.8.17_container	Protomyces_lactucae-debilis	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Pseudogymnoascus_destructans_20631-21	failed	3	0	3	0	0.0	0.0	0.0	GCF_000184105.1	Ascomycota	30.7	0.0	0.0
+v1.8.17_container	Pyrenophora_teres_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_container	Pyrenophora_teres_0-1	failed	3	0	3	0	0.0	0.0	0.0	GCF_000166005.1	Ascomycota	33.6	0.0	0.0
+v1.8.17_container	Pyrenophora_tritici-repentis_Pt-1C-BFP	failed	3	0	3	0	0.0	0.0	0.0	GCF_000149985.1	Ascomycota	37.8	0.0	0.0
+v1.8.17_container	Pyricularia_oryzae	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Pyricularia_oryzae_+9_more	success	1	1	0	0	0.0001	0.0	0.003					
+v1.8.17_container	Rhizopus_delemar	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Rhizopus_delemar_+9_more	success	1	1	0	0	0.0239	0.0067	0.034					
+v1.8.17_container	Rhizopus_microsporus	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Rhodotorula_graminis	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Rhodotorula_graminis_WP1	failed	2	0	2	0	0.0	0.0	0.0	GCF_001329695.1	Basidiomycota	21.0	0.0	0.0
+v1.8.17_container	Rhodotorula_toruloides	failed	6	0	6	0	0.0166	0.0	0.0					
+v1.8.17_container	Saccharomyces_cerevisiae	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Schizophyllum_commune_H4-8	failed	3	0	3	0	0.0	0.0	0.0	GCF_000143185.2	Basidiomycota	38.7	0.0	0.0
+v1.8.17_container	Sclerotinia_sclerotiorum	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Spizellomyces_punctatus	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Sporobolomyces_koalae_JCM15063	failed	3	0	3	0	0.0	0.0	0.0	GCF_050403365.1	Basidiomycota	18.3	0.0	0.0
+v1.8.17_container	Sporobolomyces_salmoneus_JCM6883	failed	3	0	3	0	0.0	0.0	0.0	GCF_050403485.1	Basidiomycota	20.3	0.0	0.0
+v1.8.17_container	Sugiyamaella_lignohabitans	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Sugiyamaella_lignohabitans_CBS_10342	failed	2	0	2	0	0.0166	0.0	0.0	GCF_001640025.1	Ascomycota	15.9	0.0	0.00104
+v1.8.17_container	Synchytrium_microbalum	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Synchytrium_microbalum_JEL517	failed	2	0	2	0	0.0166	0.0	0.0	GCF_006535985.1	Chytridiomycota	26.2	0.0	0.00063
+v1.8.17_container	Talaromyces_marneffei	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Talaromyces_stipitatus_ATCC_10500	failed	3	0	3	0	0.0166	0.0	0.0	GCF_000003125.1	Ascomycota	35.7	0.0	0.00046
+v1.8.17_container	Tilletiaria_anomala	failed	6	0	6	0	0.0167	0.0	0.0					
+v1.8.17_container	Tilletiopsis_washingtonensis	failed	6	0	6	0	0.0167	0.0	0.0					
+v1.8.17_container	Tremella_mesenterica_Fries	failed	3	0	3	0	0.0	0.0	0.0	GCF_000271645.1	Basidiomycota	28.6	0.0	0.0
+v1.8.17_container	Tricharina_praecox	failed	6	0	6	0	0.0167	0.0	0.0					
+v1.8.17_container	Tricharina_praecox_+9_more	success	1	1	0	0	0.0004	0.0002	0.007					
+v1.8.17_container	Trichosporon_asahii	failed	6	0	6	0	0.0165	0.0	0.0					
+v1.8.17_container	Umbelopsis_ramanniana	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Umbelopsis_ramanniana_+9_more	success	1	1	0	0	0.0076	0.0019	0.024					
+v1.8.17_container	Umbelopsis_ramanniana_AG	failed	2	0	2	0	0.0166	0.0	0.0	GCF_025399195.1	Mucoromycota	23.1	0.0	0.00072
+v1.8.17_container	Uncinocarpus_reesii	success	1	1	0	0	0.0	0.0	0.0					
+v1.8.17_container	Uncinocarpus_reesii_1704	failed	3	0	3	0	0.0166	0.0	0.0	GCF_000003515.1	Ascomycota	22.3	0.0	0.00074
+v1.8.17_container	Wallemia_mellicola	success	1	1	0	0	0.0	0.0	0.003					
+v1.8.17_container	Wallemia_mellicola_+4_more	success	1	1	0	0	0.002	0.0005	0.021					
+v1.8.17_container	Wallemia_mellicola_CBS_633.66	failed	2	0	2	0	0.0166	0.0	0.0	GCF_000263375.1	Basidiomycota	9.8	0.0	0.0017
+v1.8.17_container	Yarrowia_lipolytica	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Zygosaccharomyces_rouxii	failed	6	0	6	0	0.0	0.0	0.0					
+v1.8.17_container	Zymoseptoria_tritici	failed	6	0	6	0	0.0166	0.0	0.0					
