@@ -60,7 +60,19 @@ EXECUTOR="${EXECUTOR:-slurm}"
 # ucr_hpcc always stays in the profile list ahead of the provisioning axis --
 # it carries the SLURM SCRATCH/TMPDIR safety net (see nf_funannotate1
 # run_annotate.sh), independent of conda/container choice.
-PROFILES="annotate,${EXECUTOR},ucr_hpcc,${PROVISIONING}"
+#
+# conf/cells.tsv's provisioning column uses "container", but nf_funannotate1's
+# actual Nextflow profile for that axis is named "singularity" (see its
+# nextflow.config profiles{} block) -- there is no "container" profile, so
+# passing the column value straight through silently drops apptainer.enabled
+# and conf/provision_singularity.config (Nextflow only warns on an unknown
+# profile name, it doesn't fail).
+case "$PROVISIONING" in
+    conda)     PROFILE_AXIS="conda" ;;
+    container) PROFILE_AXIS="singularity" ;;
+    *)         echo "[ERROR] unknown provisioning '$PROVISIONING' for cell '$CELL'" >&2; exit 1 ;;
+esac
+PROFILES="annotate,${EXECUTOR},ucr_hpcc,${PROFILE_AXIS}"
 
 EXTRA_ARGS=(--genemark_sidecar_dir "$GENEMARK_SIDECAR_DIR")
 case "$PROVISIONING" in
@@ -71,9 +83,6 @@ case "$PROVISIONING" in
     container)
         [ -n "$CONTAINER_FUNANNOTATE" ] || { echo "[ERROR] cell '$CELL' has no container_funannotate set in $CELLS_TSV" >&2; exit 1; }
         EXTRA_ARGS+=(--container_funannotate "$CONTAINER_FUNANNOTATE")
-        ;;
-    *)
-        echo "[ERROR] unknown provisioning '$PROVISIONING' for cell '$CELL'" >&2; exit 1
         ;;
 esac
 
