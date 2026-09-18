@@ -66,8 +66,9 @@ def main():
 
         n_cleared = 0
         for genome in sorted(os.listdir(training_root)):
-            pasa_dirs = sorted(glob.glob(
-                os.path.join(training_root, genome, "training", "pasa*")))
+            pasa_dirs = sorted(
+                p for p in glob.glob(os.path.join(training_root, genome, "training", "pasa*"))
+                if os.path.isdir(p))
             if not pasa_dirs:
                 continue
             n_cleared += 1
