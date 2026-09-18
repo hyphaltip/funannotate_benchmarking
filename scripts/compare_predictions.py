@@ -78,7 +78,14 @@ def compare_one(cell: str, genome: str, gdir: str, srow: dict,
     row["ref_gff3"] = ref_gff
     row["ref_gene_count"] = lib.count_gff3_genes(ref_gff)
 
-    out_prefix = os.path.join(tmp, f"{cell}__{genome}")
+    # gffcompare's own `-o` handling silently drops the ".stats" suffix
+    # whenever the prefix already contains a "." (confirmed: "v1.8.17_conda"
+    # cell names produce a stats file named EXACTLY the given prefix, no
+    # extension, while .loci/.tracking/.annotated.gtf still get suffixed
+    # normally) -- sanitize dots out of the prefix so run_gffcompare's
+    # `f"{out_prefix}.stats"` lookup actually matches what gets written.
+    safe_prefix = f"{cell}__{genome}".replace(".", "_")
+    out_prefix = os.path.join(tmp, safe_prefix)
     gffc = lib.run_gffcompare(query_gff, ref_gff, out_prefix)
     if gffc:
         row.update(gffc)

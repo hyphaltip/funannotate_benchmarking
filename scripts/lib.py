@@ -56,8 +56,22 @@ def read_table(path: str, sep: Optional[str] = None) -> List[Dict[str, str]]:
             return []
         sample = "".join(raw[:8])
         if sep is None:
-            dialect = csv.Sniffer().sniff(sample, delimiters=",\t;")
-            sep = dialect.delimiter
+            try:
+                dialect = csv.Sniffer().sniff(sample, delimiters=",\t;")
+                sep = dialect.delimiter
+            except csv.Error:
+                # Sniffer chokes on TSVs with a ragged trailing column (rows
+                # that omit trailing optional fields); fall back to the
+                # extension, then to whichever delimiter the header uses.
+                header = raw[0]
+                if path.endswith(".tsv"):
+                    sep = "\t"
+                elif "\t" in header:
+                    sep = "\t"
+                elif ";" in header:
+                    sep = ";"
+                else:
+                    sep = ","
         reader = csv.DictReader(raw, delimiter=sep)
         rows = []
         for row in reader:

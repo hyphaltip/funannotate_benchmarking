@@ -21,7 +21,9 @@ BENCH_ROOT="/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking"
 cd "$BENCH_ROOT"
 
 CELLS_TSV="conf/cells.tsv"
-tail -n +2 "$CELLS_TSV" | cut -f1 | while read -r CELL; do
+# Skip comment lines (leading #, e.g. the retired-beta.10 note) and the
+# header row itself, wherever it falls -- not just "line 1".
+awk -F'\t' '$1!="" && $1!~/^#/ && $1!="cell" {print $1}' "$CELLS_TSV" | while read -r CELL; do
     [ -n "$CELL" ] || continue
     echo "[INFO] submitting cell: $CELL"
     sbatch --job-name="fabench_${CELL}" launch/run_cell.sbatch "$CELL"

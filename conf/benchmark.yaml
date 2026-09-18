@@ -90,6 +90,23 @@ fetch:
   # from NCBI and repeat-mask with the same method Fungi_BFD uses (AAFTF
   # tantan/repeatmasker, run through nf_funannotate1 GENOME_CLEAN/MASKREPEAT).
   mask_via_nf_funannotate1: true
+  # Shared pool of already-downloaded, normalized RNA-seq reads (species_tag
+  # keyed: <tag>_norm_R1/_R2/_SE.fastq.gz, including zero-byte placeholders
+  # for species with no RNA-seq at all). scripts/preseed_rnaseq_reads.py
+  # symlinks from here into every cell so SRA_FETCH/SRA_QUERY_BATCH never run
+  # (see conf/benchmark.yaml pool.rnaseq for the matching SRA manifest used
+  # to pre-seed each cell's sra_query cache).
+  rnaseq_reads_dir: /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/rnaseq_reads
+  # nf_funannotate1's params.proteins/params.sbt_template default to
+  # <launchDir>/lib/swissprot_fungi.faa and <launchDir>/lib/template.sbt
+  # (conf/profile_annotate.config) -- unlike lib/augustus/ (auto-seeded by
+  # SETUP_AUGUSTUS_CONFIG), nothing populates these for a new cell. Conda
+  # profile happens to read the real filesystem path so a missing symlink is
+  # silently harmless there; the container/singularity profile bind-mounts
+  # `<launchDir>/lib` into the container and FUNANNOTATE_PREDICT hard-fails
+  # ("... is not a valid file, exiting") when the file inside isn't there.
+  # scripts/preseed_funannotate_lib.py symlinks both into every cell.
+  funannotate_lib_dir: /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD/lib
 
 # ── Pipeline (scripts/build_run_samples.py + launchers) ────────────────────
 pipeline:

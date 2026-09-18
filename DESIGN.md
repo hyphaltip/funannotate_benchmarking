@@ -3,15 +3,21 @@
 Status: approved, pre-implementation
 Supersedes: PLAN.md (kept for historical context; this document is authoritative)
 Date: 2026-08-30
+Update 2026-09-07: 1.9.0-beta.10 retired from the active plan in favor of
+1.9.0-beta.11 (newer beta.11 conda/container builds now exist; beta.10's
+container axis never got past its container-specific failures). All
+"1.9.0-beta.10" cell references below are historical/superseded — read as
+1.9.0-beta.11 for the current plan. Completed beta.10 run data stays in
+`runs/v1.9.0-beta10_*/` as a record; those cells are not being relaunched.
 
 ## Purpose
 
 Build a standalone, reproducible benchmark comparing two funannotate versions
-(1.8.17 and 1.9.0-beta.10) across execution environments, to answer three
+(1.8.17 and 1.9.0-beta.11) across execution environments, to answer three
 questions:
 
 1. Does the 1.9.0 rust reimplementation of Trinity/EVM/PASA improve
-   performance over 1.8.17? 1.9.0-beta.10 exposes a +/- rust build toggle,
+   performance over 1.8.17? 1.9.0-beta.11 exposes a +/- rust build toggle,
    so this is measured directly within 1.9.0 (rust on vs. off), isolated
    from the 1.8.17-vs-1.9.0 code-change comparison below.
 2. What do the 1.8.17 -> 1.9.0 code changes do to runtime, resource use, and
@@ -117,16 +123,30 @@ Funannotate_benchmarking/
   fresh via `fetch_genomes.py` and masked using the same method Fungi_BFD
   uses, to keep masking methodology consistent across the dataset.
 
-## Execution design: 6 cells per genome
+## Execution design: 5 active cells per genome (6th deferred)
 
 1.8.17 gets the conda/container axis only (no rust toggle exists for it).
-1.9.0-beta.10 gets conda/container **and** the +/- rust build toggle:
+1.9.0-beta.11 gets conda/container **and** the +/- rust build toggle, except
+`v1.9.0-beta11_container` (rust off) is **deferred** 2026-09-07 — no norust
+rebuild of the beta.11 container exists, and building one isn't blocking:
+the 5 active cells already give:
+
+- rust vs. no-rust, within 1.9.0-beta.11 conda (`v1.9.0-beta11_conda` vs.
+  `_conda_rust`) — question 1.
+- 1.8.17 vs. 1.9.0 code-change delta, rust off, within conda
+  (`v1.8.17_conda` vs. `v1.9.0-beta11_conda`) — question 2.
+- conda vs. container, within 1.9.0-beta.11 rust-on (`v1.9.0-beta11_conda_rust`
+  vs. `_container_rust`), plus 1.8.17 conda vs. container — question 3.
+
+`v1.9.0-beta11_container` fills in the rust-off container cell (rust vs.
+no-rust *within* container, and a second conda-vs-container data point) when
+a norust rebuild gets made; not needed to start collecting data now.
 
 | | conda | container |
 |---|---|---|
 | **1.8.17** | v1.8.17_conda | v1.8.17_container |
-| **1.9.0-beta.10, rust off** | v1.9.0-beta10_conda | v1.9.0-beta10_container |
-| **1.9.0-beta.10, rust on** | v1.9.0-beta10_conda_rust | v1.9.0-beta10_container_rust |
+| **1.9.0-beta.11, rust off** | v1.9.0-beta11_conda | v1.9.0-beta11_container (deferred) |
+| **1.9.0-beta.11, rust on** | v1.9.0-beta11_conda_rust | v1.9.0-beta11_container_rust |
 
 - All 6 cells driven by the same vendored nf_funannotate1 pipeline, using its
   native conda and container execution profiles — no Fungi_BFD module-load
@@ -192,7 +212,7 @@ end up measuring wrapper immaturity instead of funannotate itself.
   tested); if it cannot, the harness base decision (nf_funannotate1 vs.
   Fungi_BFD nextflow) needs revisiting.
 - Confirm how the +/- rust build toggle is actually selected in
-  nf_funannotate1 for 1.9.0-beta.10 (build flag, container tag, env var).
+  nf_funannotate1 for 1.9.0-beta.11 (build flag, container tag, env var).
 - 6 cells/genome (vs. the 4 originally budgeted for) increases compute
   further; confirm N=65 still holds or needs trimming again.
 - Confirm what GeneMark license/install is available on the cluster for the

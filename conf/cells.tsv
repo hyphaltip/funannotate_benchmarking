@@ -6,10 +6,14 @@
 #   conda_env      nf_funannotate1 environments/conda env name (provisioning=conda)
 #   container_funannotate  image ref for the 'funannotate' label (provisioning=container)
 # blank => not applicable / open item
+# v1.9.0-beta.10 (conda + conda_rust + container + container_rust) retired
+# from the active plan 2026-09-07 in favor of v1.9.0-beta.11 -- see
+# DESIGN.md's 2026-09-07 update note. Completed run data stays under
+# runs/v1.9.0-beta10_*/ as a historical record; those cells are not being
+# relaunched and are intentionally absent from this table.
 cell	version	provisioning	evm_backend	conda_env	container_funannotate	notes
 v1.8.17_conda	1.8.17	conda	perl	funannotate-1.8.17
-v1.8.17_container	1.8.17	container	perl		/bigdata/stajichlab/shared/lib/singularity_cache/funannotate-1.8.17.sif	pulled from docker://nextgenusfs/funannotate:v1.8.17 (Docker Hub; ghcr has no 1.8.17 tag) via scripts/pull_funannotate_image.sh
-v1.9.0-beta10_conda	1.9.0-beta.10	conda	perl	funannotate-1.9.0-beta.10
-v1.9.0-beta10_conda_rust	1.9.0-beta.10	conda	rust	funannotate-1.9.0-beta.10-rust
-v1.9.0-beta10_container	1.9.0-beta.10	container	perl		/bigdata/stajichlab/shared/lib/singularity_cache/funannotate-1.9.0-beta.10-norust.sif	custom no-rust rebuild; matches evm_backend=perl
-v1.9.0-beta10_container_rust	1.9.0-beta.10	container	rust		/bigdata/stajichlab/shared/lib/singularity_cache/funannotate-1.9.0-beta.10.sif	pulled from docker://ghcr.io/nextgenusfs/funannotate:1.9.0-beta.10 (nf_funannotate1's provision_singularity.config default; rust-enabled)
+v1.8.17_container	1.8.17	container	perl		/bigdata/stajichlab/shared/lib/singularity_cache/funannotate-1.8.17.sif	DEFERRED 2026-09-08 -- FUNANNOTATE_TRAIN's PASA/mysql setup shells out to module load/singularity from *inside* the container (host-only commands); fails every genome, not root-caused. Not blocking: 1.9.0-beta.11 conda-vs-container comparison covers question 3 in the meantime. Pulled from docker://nextgenusfs/funannotate:v1.8.17 (Docker Hub; ghcr has no 1.8.17 tag) via scripts/pull_funannotate_image.sh
+v1.9.0-beta11_conda	1.9.0-beta.11	conda	perl	funannotate-1.9.0-beta.11		rebuilt from environments/conda/funannotate-1.9.0-beta.11.yml 2026-09-08 (salmon pinned =1.10.3 -- 2.x breaks Trinity's salmon_runner.pl; r-base pinned =4.3.3 -- avoids a broken r42-tagged bioconductor-genelendatabase post-link script; goatools pinned >=1.4.12 -- avoids an R/bioconductor dep unique to 1.2.3)
+v1.9.0-beta11_conda_rust	1.9.0-beta.11	conda	rust	funannotate-1.9.0-beta.11-rust		rebuilt from source 2026-09-07/08 via environments/conda/build_1.9_rust.sh (salmon left unpinned/flexible -- 2.7.0 confirmed fine against the Rust Trinity fork, unlike the perl/conda Trinity above)
+v1.9.0-beta11_container_rust	1.9.0-beta.11	container	rust		/bigdata/stajichlab/shared/lib/singularity_cache/funannotate-1.9.0-beta.11.sif	pulled from docker://ghcr.io/nextgenusfs/funannotate:1.9.0-beta.11 2026-09-06; rust-enabled default (perl-EVM v1.9.0-beta11_container (norust rebuild) deferred 2026-09-07 -- not blocking, add when convenient)

@@ -1,8 +1,12 @@
 # Funannotate Benchmarking
 
-Reproducible benchmark comparing **funannotate 1.8.17 vs 1.9.0-beta.10** (with and
+Reproducible benchmark comparing **funannotate 1.8.17 vs 1.9.0-beta.11** (with and
 without the Rust-optimized EVM/PASA/Trinity build) across **conda vs container**
 execution, on a structured random sample of 65 fungal genomes.
+
+(1.9.0-beta.10 was retired from the active plan 2026-09-07 in favor of
+beta.11 — see DESIGN.md's 2026-09-07 update note. Its completed run data
+stays under `runs/v1.9.0-beta10_*/` as a historical record.)
 
 Authoritative design: **[DESIGN.md](DESIGN.md)** (supersedes [PLAN.md](PLAN.md)).
 
@@ -70,8 +74,9 @@ python3 scripts/build_run_samples.py --samples samples.csv
 #    warns (doesn't fail) if a cell launches before this has produced results.
 sbatch launch/run_genemark_sidecar.sbatch
 
-# 5. Launch the 6 cells (per genome, fixed SLURM resource class; image/env
-#    per cell comes from conf/cells.tsv — see "The 6 cells" below)
+# 5. Launch the cells (per genome, fixed SLURM resource class; image/env
+#    per cell comes from conf/cells.tsv — see "The 6 cells" below; currently
+#    5 active cells; a 6th (v1.9.0-beta11_container, norust) is deferred)
 sbatch launch/run_all_cells.sbatch            # all 6, one sbatch job per cell
 sbatch launch/run_cell.sbatch v1.8.17_conda   # relaunch/retry a single cell (-resume)
 
@@ -86,36 +91,134 @@ python3 scripts/summarize_report.py    --cells-dir runs   # not yet written
 ```
 
 Steps 1-3 have already run once (dataset selected; `runs/<cell>/` samplesheets
-built). All 6 cells have already been launched at least once
-(`runs/<cell>/launch_*.log`), **before** the GeneMark sidecar (step 4) existed
-— those launches used each cell's own independent `GENEMARK_RUN`, not the
-sidecar. **Current status (2026-09-03):** `v1.8.17_conda` is progressing
-cleanly; the other 5 have each hit one of two recurring failures — see "Known
-issues" below. Re-launching a cell with `launch/run_cell.sbatch <cell>` is
-safe (`-resume`) once the underlying fix for its failure lands; a relaunch
-after step 4 has run will pick up the shared sidecar GTF instead of
+built). All 6 original cells (including the now-retired beta.10 ones) were
+launched at least once (`runs/<cell>/launch_*.log`), **before** the GeneMark
+sidecar (step 4) existed — those launches used each cell's own independent
+`GENEMARK_RUN`, not the sidecar. **Current status (2026-09-07):** all cells
+are currently running against a pared-down 10-genome smoke-test subset
+(`runs/<cell>/samples.csv`, not yet committed) rather than the full N=65, to
+shake out per-cell provisioning bugs cheaply first — see "Known issues"
+below for what's still open (`v1.8.17_container` Augustus scripts,
+possible container disk-full/`swissprot_fungi.faa` recurrence on
+`v1.9.0-beta11_container_rust`). `v1.8.17_conda` is the only cell confirmed
+clean end-to-end (9/10 genomes on the smoke-test subset; the 10th,
+`Malassezia_globosa`, should now be fixed by the RNA-seq pre-seed above).
+Re-launching a cell with `launch/run_cell.sbatch <cell>` is safe (`-resume`)
+once the underlying fix for its failure lands; a relaunch after step 4 has
+run will pick up the shared sidecar GTF instead of
 retraining GeneMark in-cell (a resumed genome whose predict already completed
 under the old per-cell GeneMark keeps its old result until something
 invalidates that cache — full apples-to-apples parity means running the
 sidecar before any cell's first launch, not applicable retroactively without
 a fresh run).
 
-### Known issues (as of 2026-09-03)
+Every cell must always start from an **already-masked genome** (never
+re-run `GENOME_CLEAN`) and **already-downloaded RNA-seq** (never hit
+`SRA_FETCH`/`SRA_QUERY_BATCH`). `launch/run_cell.sbatch` enforces this on
+every launch by running, before invoking nextflow:
 
-- **`SRA_FETCH` chunked-download race** (hit `v1.8.17_container`,
-  `v1.9.0-beta10_conda`, `v1.9.0-beta10_conda_rust`, a different genome each
-  time): the fastq-dump/header-fixup pipeline reports
-  `cannot open '<species>_R1.fastq.gz': No such file or directory` after an
-  otherwise-normal chunked download. Root cause not yet confirmed — needs a
-  dedicated repro/debug pass. **Not fixed.**
-- **Container disk-full** (`v1.9.0-beta10_container`,
+```bash
+python3 scripts/preseed_clean_genomes.py --runs-dir runs   # symlinks masked genomes (pre-existing)
+python3 scripts/preseed_rnaseq_reads.py  --runs-dir runs   # symlinks already-normalized reads + sra_query cache
+```
+
+`preseed_rnaseq_reads.py` symlinks `<species_tag>_norm_R1/_R2/_SE.fastq.gz`
+from the shared, already-downloaded pool
+(`conf/benchmark.yaml` `fetch.rnaseq_reads_dir`, currently
+`Fungi_BFD_runs/rnaseq_reads`) into each cell, and writes a per-species
+`rnaseq_reads/sra_query/<tag>.sra_query.csv` from the master SRA manifest
+(`pool.rnaseq`). `run_cell.sbatch` passes `--skip_sra_query true`, so
+`FETCH_RNASEQ` (subworkflows/local/fetch_rnaseq.nf) reuses both caches and
+never makes an NCBI network call. Both scripts are idempotent/rerunnable —
+safe to run before every launch, on any subset of genomes.
+
+### Known issues (as of 2026-09-03, RNA-seq fetch race fixed 2026-09-07)
+
+- ~~**`SRA_FETCH` chunked-download race**~~ **fixed 2026-09-07**: the race
+  (hit `v1.8.17_container`, `v1.9.0-beta10_conda`, `v1.9.0-beta10_conda_rust`,
+  and recurred against `Malassezia_globosa`/SRR12496022 in every conda cell
+  through 2026-09-06) was never actually a bug in fastq-dump chunking —
+  `Fungi_BFD_runs/rnaseq_reads` already had the correctly-resolved reads for
+  every benchmark species sitting unused; each cell was independently
+  re-fetching from SRA via its own `SRA_FETCH`/`SRA_QUERY_BATCH` instead of
+  reusing them. `scripts/preseed_rnaseq_reads.py` (see above) closes this by
+  pre-seeding every cell from that pool before launch, so `SRA_FETCH` never
+  runs at all for a covered species.
+- ~~**Stale/truncated per-cell RNA-seq reads silently trusted**~~ **fixed
+  2026-09-07** (found live, same day as the fix above): the first version of
+  `preseed_rnaseq_reads.py` only checked whether a dest file *existed*, so a
+  cell that already had a stale/truncated read pair from before this script
+  existed (e.g. `v1.8.17_conda`'s and `v1.8.17_container`'s
+  `Allomyces_macrogynus_norm_R1/_R2.fastq.gz` were 23-byte corrupt leftovers
+  from an aborted fetch, sitting untouched since 2026-09-02) got skipped as
+  "already present" instead of overridden — causing a genuine
+  `funannotate train` failure (`Trinity de novo assembly failed`, BAM had 0
+  reads) on relaunch. Fixed by making the master pool always authoritative:
+  the script now replaces any dest that isn't already the correct symlink to
+  the pool copy (`relinked` in its output), not just gaps (`linked`).
+- **Container `module`/`singularity` not found *inside* the container —
+  hits every genome** (seen on `v1.8.17_container`, 2026-09-07 relaunch,
+  unrelated to the RNA-seq issue above): `FUNANNOTATE_TRAIN`'s PASA/mysql
+  setup first fails to find `/rhome/jstajich/.pasa/pasa_conf/conf.txt`, then
+  `.command.sh` shells out to `module load` / `singularity` from *inside*
+  the apptainer container (host commands, not available in-container).
+  Confirmed failing on every genome in the cell (Aspergillus_fumigatus,
+  Malassezia_globosa, ...), not an isolated genome issue — **blocking**;
+  don't bother relaunching this cell until it's root-caused. Likely the same
+  nested-container assumption as the Augustus-scripts issue below.
+  **Deferred 2026-09-08**: `v1.8.17_container` is not being relaunched —
+  question 3 (conda vs. container) is covered in the meantime by the
+  1.9.0-beta.11 pair (`v1.9.0-beta11_conda_rust` vs.
+  `v1.9.0-beta11_container_rust`); the 1.8.17-generation conda-vs-container
+  comparison specifically is just not available until this is root-caused.
+- **Container disk-full** (seen on the now-retired `v1.9.0-beta10_container`,
   `v1.9.0-beta10_container_rust`, both `[FAILED] failed=41`): apptainer fell
   back to full sandbox extraction of the `.sif` into node-local `/tmp`
   (`squashfuse not found`) and concurrent tasks exhausted disk. Likely fixed
   by nf_funannotate1's singularity-axis `process.shell = ['/bin/bash']` change
   (a login shell was re-sourcing `/etc/profile` inside `.command.run` and
-  wiping the squashfuse-bearing PATH before the container command ran) — **not
-  yet re-verified with a relaunch.**
+  wiping the squashfuse-bearing PATH before the container command ran) — not
+  container-image-specific, so **watch for it on `v1.9.0-beta11_container_rust`
+  too** on its first relaunch.
+- ~~**Container `swissprot_fungi.faa` missing**~~ **fixed 2026-09-07**
+  (seen on the now-retired `v1.9.0-beta10_container`, `_container_rust`,
+  2026-09-06; recurred on `v1.9.0-beta11_container_rust` 2026-09-07):
+  `FUNANNOTATE_PREDICT` aborted with `<cell>/lib/swissprot_fungi.faa is not a
+  valid file, exiting`. Root cause: `params.proteins`/`params.sbt_template`
+  default to `<launchDir>/lib/swissprot_fungi.faa` / `lib/template.sbt`
+  (`conf/profile_annotate.config`), but — unlike `lib/augustus/`, which
+  `SETUP_AUGUSTUS_CONFIG` auto-seeds — nothing populates either file for a
+  new cell. Conda profile reads the real path and mostly got away with it;
+  container profile bind-mounts `<launchDir>/lib` and hard-fails when the
+  file inside is missing. The `_stale_pre_swissprot_fix_2026-09-04` symlink
+  was the same fix landed at the project *root* `lib/` instead of any cell's
+  own `runs/<cell>/lib/` — never a Nextflow launchDir, so it never took
+  effect. `scripts/preseed_funannotate_lib.py` (wired into
+  `launch/run_cell.sbatch`) now symlinks both files into every cell from
+  `conf/benchmark.yaml` `fetch.funannotate_lib_dir`
+  (`Fungi_BFD/lib/`) on every launch.
+- **`v1.8.17_container` missing Augustus helper scripts** (seen 2026-09-06,
+  still an active cell): `FUNANNOTATE_PREDICT` fails with
+  `unable to locate ... join_mult_hints.pl`, `gff2gbSmallDNA.pl` under
+  `<cell>/lib/augustus/3.5/scripts/`. **Not yet root-caused.**
+- **PASA MySQL checkpoint mismatch** (found 2026-09-14 after a relaunch broke
+  `v1.8.17_conda` end-to-end, which had previously been the one cell confirmed
+  clean): `FUNANNOTATE_TRAIN` spins up a fresh, non-persistent MariaDB sidecar
+  on every task attempt, but PASA's own on-disk checkpoint markers
+  (`training/pasa*/__pasa_<genome>_pasa_mysql_chkpts/*.ok`) persist across
+  relaunches/`-resume`. Once a genome's PASA run got past `create_db.ok` once,
+  any later re-attempt sees that stale checkpoint, skips re-creating the
+  database against the new (empty) MariaDB instance, and dies at
+  `update_fli_status.dbi` with `Unknown database '<genome>_pasa'` — hit every
+  re-attempted genome in `v1.8.17_conda` (Malassezia_globosa,
+  Saccharomyces_cerevisiae, Umbelopsis_ramanniana, Aspergillus_fumigatus,
+  ...), including ones whose `predict_results/*.gff3` already existed from an
+  earlier success (an upstream input change still invalidated nextflow's task
+  cache and forced a re-run). **Fixed 2026-09-17**:
+  `scripts/preseed_pasa_checkpoints.py` (wired into `launch/run_cell.sbatch`)
+  unconditionally clears every genome's `pasa*` checkpoint dir(s) before each
+  launch — harmless for a genome nextflow skips via `-resume`, since a cached
+  task never looks at that directory again.
 
 ## Design constraints honored by `select_genomes.py`
 
@@ -142,10 +245,9 @@ fixed across cells for a genome (`conf/benchmark.yaml` pipeline: block).
 |---|---|---|---|
 | v1.8.17_conda | 1.8.17 | perl | conda env `funannotate-1.8.17` |
 | v1.8.17_container | 1.8.17 | perl | local `.sif` (Docker Hub `nextgenusfs/funannotate:v1.8.17` — ghcr has no 1.8.17 tag) |
-| v1.9.0-beta10_conda | 1.9.0-beta.10 | perl | conda env `funannotate-1.9.0-beta.10` |
-| v1.9.0-beta10_conda_rust | 1.9.0-beta.10 | rust | conda env `funannotate-1.9.0-beta.10-rust` |
-| v1.9.0-beta10_container | 1.9.0-beta.10 | perl | local `.sif`, custom no-rust rebuild (`-norust`) |
-| v1.9.0-beta10_container_rust | 1.9.0-beta.10 | rust | local `.sif` pulled from `ghcr.io/nextgenusfs/funannotate:1.9.0-beta.10` (rust-enabled by default) |
+| v1.9.0-beta11_conda | 1.9.0-beta.11 | perl | conda env `funannotate-1.9.0-beta.11` (built by `scripts/build_conda_env_beta11.sbatch`) |
+| v1.9.0-beta11_conda_rust | 1.9.0-beta.11 | rust | conda env `funannotate-1.9.0-beta.11-rust` (built by `scripts/build_conda_env_beta11.sbatch`) |
+| v1.9.0-beta11_container_rust | 1.9.0-beta.11 | rust | local `.sif` pulled from `ghcr.io/nextgenusfs/funannotate:1.9.0-beta.11` (rust-enabled by default; perl-EVM `v1.9.0-beta11_container` (norust rebuild) deferred — see DESIGN.md "Execution design") |
 
 **GeneMark sidecar sharing is implemented** (`launch/run_genemark_sidecar.sbatch`
 → `nf_funannotate1`'s `genemark_sidecar.nf`, `-profile genemark_sidecar,slurm,singularity`):
@@ -179,11 +281,13 @@ same repo as `/bigdata/stajichlab/jstajich/projects/nf/nf_funannotate1`), and
 `launch/run_cell.sbatch` reads that same path — **this is the current
 strategy**, not a temporary stand-in. It means fixes landed in that checkout
 (even uncommitted ones) take effect on the next `-resume` relaunch with no
-re-pin step. All three conda envs (`funannotate-1.8.17`,
-`funannotate-1.9.0-beta.10`, `funannotate-1.9.0-beta.10-rust` +
-`nf_funannotate1-aux`) and all three container `.sif` images referenced in
+re-pin step. All conda envs (`funannotate-1.8.17`,
+`funannotate-1.9.0-beta.11`, `funannotate-1.9.0-beta.11-rust` +
+`nf_funannotate1-aux`) and container `.sif` images referenced in
 `conf/cells.tsv` are already built under `/bigdata/stajichlab/shared/condaenv`
-and `/bigdata/stajichlab/shared/lib/singularity_cache` respectively.
+and `/bigdata/stajichlab/shared/lib/singularity_cache` respectively (the
+retired beta.10 envs/images are left in place, just no longer referenced by
+`conf/cells.tsv`).
 
 Outputs land in `runs/<cell>/genome_annotation/<species>_<strain>/predict_results/`
 (`*.gbk`, `*.gff3`) and trace/report files under `runs/<cell>/logs/nextflow/`.

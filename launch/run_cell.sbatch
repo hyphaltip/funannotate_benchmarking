@@ -13,8 +13,8 @@
 #   CELL=v1.8.17_conda sbatch launch/run_cell.sbatch
 #
 # <cell> must match a row in conf/cells.tsv, e.g.:
-#   v1.8.17_conda  v1.8.17_container  v1.9.0-beta10_conda  v1.9.0-beta10_conda_rust
-#   v1.9.0-beta10_container  v1.9.0-beta10_container_rust
+#   v1.8.17_conda  v1.8.17_container  v1.9.0-beta11_conda  v1.9.0-beta11_conda_rust
+#   v1.9.0-beta11_container_rust
 #
 # Extra args after <cell> are passed straight through to nextflow, e.g.:
 #   sbatch launch/run_cell.sbatch v1.8.17_conda --n_test 2
@@ -54,6 +54,24 @@ if [ ! -d "$GENEMARK_SIDECAR_DIR" ] || [ -z "$(ls -A "$GENEMARK_SIDECAR_DIR" 2>/
     echo "[WARN] $GENEMARK_SIDECAR_DIR is empty/missing -- run launch/run_genemark_sidecar.sbatch first, or every genome in this cell will fall back to --auto-skip-genemark" >&2
 fi
 
+# Every cell must start from an already-masked genome (never re-run
+# GENOME_CLEAN) and already-downloaded RNA-seq (never hit SRA_FETCH /
+# SRA_QUERY_BATCH) -- this is what keeps the SRA chunked-download race
+# (README "Known issues") from ever firing again. Both are idempotent/rerunnable.
+python3 scripts/preseed_clean_genomes.py --runs-dir runs
+python3 scripts/preseed_rnaseq_reads.py --runs-dir runs
+# lib/swissprot_fungi.faa + lib/template.sbt -- required by the
+# container/singularity profile's bind-mount (see README "Known issues":
+# swissprot_fungi.faa missing), harmless no-op for conda cells.
+python3 scripts/preseed_funannotate_lib.py --runs-dir runs
+# FUNANNOTATE_TRAIN's PASA step gets a fresh, non-persistent MySQL sidecar on
+# every task attempt, but PASA's own on-disk checkpoint markers persist across
+# relaunches/-resume -- a stale checkpoint from an earlier attempt makes PASA
+# skip re-creating the database and die with "Unknown database" (see README
+# "Known issues": PASA MySQL checkpoint mismatch). Clearing them before every
+# launch is a no-op for genomes nextflow ends up skipping via -resume.
+python3 scripts/preseed_pasa_checkpoints.py --runs-dir runs
+
 module load nextflow
 
 EXECUTOR="${EXECUTOR:-slurm}"
@@ -74,7 +92,23 @@ case "$PROVISIONING" in
 esac
 PROFILES="annotate,${EXECUTOR},ucr_hpcc,${PROFILE_AXIS}"
 
-EXTRA_ARGS=(--genemark_sidecar_dir "$GENEMARK_SIDECAR_DIR")
+# conf/site_ucr_hpcc_singularity.config's own header says as much: it's NOT
+# pulled in by any -profile combination (it exists specifically to be passed
+# via -c, alongside conf/site_ucr_hpcc.config, for singularity/container
+# runs) -- without it, SETUP_MARIADB_DATADIR's container=false override and
+# the MASKREPEAT_TANTAN_RUN SCRATCH/TMPDIR clusterOptions guard never apply,
+# and SETUP_MARIADB_DATADIR fails outright (runs containerized with gnu-wget,
+# which has no apptainer binary to nest its own `apptainer exec
+# mariadb-install-db` inside -- confirmed 2026-09-04/05 on v1.9.0-beta10_container).
+NF_CONFIG_ARGS=()
+if [ "$PROFILE_AXIS" = "singularity" ]; then
+    NF_CONFIG_ARGS=(-c "${NF_FUNANNOTATE1}/conf/site_ucr_hpcc.config" -c "${NF_FUNANNOTATE1}/conf/site_ucr_hpcc_singularity.config")
+fi
+
+# scripts/preseed_rnaseq_reads.py pre-seeds rnaseq_reads/sra_query/*.sra_query.csv
+# for every species in this cell's samples.csv -- skip_sra_query makes
+# FETCH_RNASEQ reuse those instead of querying NCBI (subworkflows/local/fetch_rnaseq.nf).
+EXTRA_ARGS=(--genemark_sidecar_dir "$GENEMARK_SIDECAR_DIR" --skip_sra_query true)
 case "$PROVISIONING" in
     conda)
         [ -n "$CONDA_ENV" ] || { echo "[ERROR] cell '$CELL' has no conda_env set in $CELLS_TSV" >&2; exit 1; }
@@ -98,6 +132,7 @@ mkdir -p logs/nextflow
 NXF_OPTS="-Xms512m -Xmx4g" \
 nextflow run "${NF_FUNANNOTATE1}" \
     -profile "${PROFILES}" \
+    "${NF_CONFIG_ARGS[@]}" \
     "${EXTRA_ARGS[@]}" \
     -resume \
     "$@"

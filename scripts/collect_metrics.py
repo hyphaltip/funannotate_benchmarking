@@ -5,10 +5,29 @@ DESIGN.md "Metrics collection": wall-clock time, CPU-hours, peak memory per
 process and pipeline-total, normalized by genome size (Mb).
 
 Each benchmark cell (runs/<cell>/) writes its own trace at
-logs/nextflow/annotate_trace.txt with a fixed field list (see
+logs/nextflow/annotate_trace.<timestamp>.txt with a fixed field list (see
 nf_funannotate1's conf/profile_annotate.config `trace.fields`):
     task_id,hash,name,status,exit,realtime,%cpu,rss,tag
 `tag` is the genome id (matches runs/<cell>/genome_annotation/<tag>/).
+
+The filename carries a per-invocation timestamp rather than being fixed:
+every `-resume` relaunch is a fresh `nextflow run`, and Nextflow's trace file
+is written with overwrite=true, so a FIXED filename would silently lose every
+previous invocation's rows -- including for genomes already cache-hit/
+completed in the new run (confirmed: a cell resumed many times had a trace
+with 5 rows despite 57/65 genomes having real published output). This script
+globs every annotate_trace.*.txt snapshot per cell and merges them; a
+genuinely re-executed task (retry, or a fresh attempt after a fix) just adds
+another row, which is what rollup() already sums over.
+
+runs/genemark_sidecar/ (launch/run_genemark_sidecar.sbatch) is discovered the
+same way, from its own logs/nextflow/genemark_sidecar_trace.<timestamp>.txt
+(same field list — conf/profile_genemark_sidecar.config). It is a ONE-TIME cost shared by
+all 6 cells (GeneMark runs once per genome, not once per cell — see
+DESIGN.md "GeneMark sidecar"), so it shows up as its own "cell" named
+genemark_sidecar in every output table here rather than being folded into
+each real cell's numbers; sum it in exactly once, not once per cell, when
+computing a benchmark-wide total cost.
 
 Outputs:
   results/metrics_by_process.tsv   cell x genome x process rollup
@@ -28,6 +47,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import glob
 import os
 import sys
 from collections import defaultdict
@@ -36,11 +56,25 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lib  # noqa: E402
 
 
+# cell dir name -> trace filename GLOB it writes (see nf_funannotate1's
+# conf/profile_annotate.config vs. conf/profile_genemark_sidecar.config).
+# Each invocation's trace carries its own timestamp, so a cell accumulates
+# one snapshot per `nextflow run`/`-resume` -- all of them are merged below.
+TRACE_GLOBS = {
+    "genemark_sidecar": "genemark_sidecar_trace*.txt",
+}
+DEFAULT_TRACE_GLOB = "annotate_trace*.txt"
+
+
+def cell_trace_paths(cell: str, cells_dir: str) -> list:
+    pattern = os.path.join(cells_dir, cell, "logs", "nextflow", TRACE_GLOBS.get(cell, DEFAULT_TRACE_GLOB))
+    return sorted(glob.glob(pattern))
+
+
 def discover_cells(cells_dir: str) -> list:
     cells = []
     for name in sorted(os.listdir(cells_dir)):
-        trace = os.path.join(cells_dir, name, "logs", "nextflow", "annotate_trace.txt")
-        if os.path.isfile(trace):
+        if cell_trace_paths(name, cells_dir):
             cells.append(name)
     return cells
 
@@ -51,27 +85,27 @@ def process_name(full_name: str) -> str:
 
 
 def load_cell_tasks(cell: str, cells_dir: str) -> list:
-    trace_path = os.path.join(cells_dir, cell, "logs", "nextflow", "annotate_trace.txt")
     rows = []
-    for r in lib.read_trace(trace_path):
-        realtime_s = lib.parse_nf_duration(r.get("realtime", ""))
-        cpu_pct = lib.parse_pct(r.get("%cpu", ""))
-        rss_gb = lib.parse_mem_to_gb(r.get("rss", ""))
-        cpu_hours = None
-        if cpu_pct is not None and realtime_s is not None:
-            cpu_hours = (cpu_pct / 100.0) * (realtime_s / 3600.0)
-        rows.append({
-            "cell": cell,
-            "genome": r.get("tag", "") or "",
-            "process": process_name(r.get("name", "")),
-            "task_name": r.get("name", ""),
-            "status": r.get("status", ""),
-            "exit": r.get("exit", ""),
-            "realtime_s": realtime_s,
-            "cpu_pct": cpu_pct,
-            "peak_rss_gb": rss_gb,
-            "cpu_hours": cpu_hours,
-        })
+    for trace_path in cell_trace_paths(cell, cells_dir):
+        for r in lib.read_trace(trace_path):
+            realtime_s = lib.parse_nf_duration(r.get("realtime", ""))
+            cpu_pct = lib.parse_pct(r.get("%cpu", ""))
+            rss_gb = lib.parse_mem_to_gb(r.get("rss", ""))
+            cpu_hours = None
+            if cpu_pct is not None and realtime_s is not None:
+                cpu_hours = (cpu_pct / 100.0) * (realtime_s / 3600.0)
+            rows.append({
+                "cell": cell,
+                "genome": r.get("tag", "") or "",
+                "process": process_name(r.get("name", "")),
+                "task_name": r.get("name", ""),
+                "status": r.get("status", ""),
+                "exit": r.get("exit", ""),
+                "realtime_s": realtime_s,
+                "cpu_pct": cpu_pct,
+                "peak_rss_gb": rss_gb,
+                "cpu_hours": cpu_hours,
+            })
     return rows
 
 
@@ -185,6 +219,25 @@ def main():
     n_non_success = sum(1 for r in genome_rows if r["status"] != "success")
     print(f"cells={len(cells)} genome_rows={len(genome_rows)} non_success={n_non_success}",
           file=sys.stderr)
+
+    # ── Total benchmark cost: per-cell cost + the ONE-TIME sidecar cost ──────
+    # (not per-cell x 6 -- see module docstring). genemark_sidecar is just
+    # another row in genome_rows above if its trace was found, so this is a
+    # plain sum split by whether the row IS that shared cost.
+    sidecar_cpu_hours = sum(r["cpu_hours_sum"] for r in genome_rows if r["cell"] == "genemark_sidecar")
+    percell_cpu_hours = sum(r["cpu_hours_sum"] for r in genome_rows if r["cell"] != "genemark_sidecar")
+    total_cpu_hours = sidecar_cpu_hours + percell_cpu_hours
+    print(
+        f"total_cpu_hours={round(total_cpu_hours, 2)} "
+        f"(per-cell={round(percell_cpu_hours, 2)}, genemark_sidecar one-time={round(sidecar_cpu_hours, 2)})",
+        file=sys.stderr,
+    )
+    if sidecar_cpu_hours == 0.0 and "genemark_sidecar" not in cells:
+        lib.LOG.warning(
+            "genemark_sidecar not found under %s -- its cost is NOT included above "
+            "(run launch/run_genemark_sidecar.sbatch, or pass --cells including it)",
+            args.cells_dir,
+        )
 
 
 if __name__ == "__main__":
