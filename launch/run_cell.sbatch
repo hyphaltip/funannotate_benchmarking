@@ -70,7 +70,13 @@ python3 scripts/preseed_funannotate_lib.py --runs-dir runs
 # skip re-creating the database and die with "Unknown database" (see README
 # "Known issues": PASA MySQL checkpoint mismatch). Clearing them before every
 # launch is a no-op for genomes nextflow ends up skipping via -resume.
-python3 scripts/preseed_pasa_checkpoints.py --runs-dir runs
+# --cell "$CELL": clear ONLY this cell's PASA checkpoints. Clearing every
+# cell here (the old behaviour) meant a second launch would delete
+# training/pasa/ out from under another cell's already-running
+# FUNANNOTATE_TRAIN -- and run_all_cells.sbatch fans out six of these at
+# once. Confirmed 2026-09-19: two simultaneous launches, one died in
+# shutil.rmtree with FileNotFoundError before nextflow even started.
+python3 scripts/preseed_pasa_checkpoints.py --runs-dir runs --cell "$CELL"
 
 module load nextflow
 

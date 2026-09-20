@@ -8,4 +8,3 @@ Aspergillus fumigatus,Af293,GCF_000002655.1,ASPFUM,eurotiomycetes_odb10,1,330879
 Chaetomium globosum,CBS 148.51,GCF_000143365.1,CHAGLO,sordariomycetes_odb10,1,306901,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000143365.1_ASM14336v1.masked.fasta.gz
 Cryptococcus neoformans,H99,GCF_000149245.1,CRYNEO,tremellomycetes_odb10,1,235443,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000149245.1_CNA3.masked.fasta.gz
 Rhodotorula toruloides,NP11,GCF_000320785.1,RHOTOR,basidiomycota_odb10,1,1130832,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000320785.1_RHOziaDV1.0.masked.fasta.gz
-Malassezia globosa,CBS 7966,GCF_000181695.2,MALGLO,basidiomycota_odb10,1,425265,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000181695.2_ASM18169v2.masked.fasta.gz

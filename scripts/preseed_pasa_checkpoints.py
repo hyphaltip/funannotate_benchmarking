@@ -45,6 +45,20 @@ import lib  # noqa: E402
 def parse_args():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--runs-dir", default="runs")
+    ap.add_argument(
+        "--cell",
+        action="append",
+        default=None,
+        help="Limit clearing to this cell (repeatable). STRONGLY PREFERRED over "
+             "the all-cells default whenever more than one cell may be running: "
+             "every launcher used to clear EVERY cell, so a second launch would "
+             "delete training/pasa/ out from under another cell's already-running "
+             "FUNANNOTATE_TRAIN task. launch/run_all_cells.sbatch fans out six "
+             "concurrent run_cell.sbatch jobs, so that race was live on every "
+             "multi-cell launch (confirmed 2026-09-19, when two simultaneous "
+             "launches made one of them die in shutil.rmtree with "
+             "FileNotFoundError on a half-deleted pasa dir).",
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--verbose", "-v", action="count", default=0)
     return ap.parse_args()
@@ -55,7 +69,10 @@ def main():
     lib.setup_logging(args.verbose)
 
     total_cells = total_cleared = 0
+    wanted = set(args.cell) if args.cell else None
     for cell in sorted(os.listdir(args.runs_dir)):
+        if wanted is not None and cell not in wanted:
+            continue
         cell_dir = os.path.join(args.runs_dir, cell)
         samples_csv = os.path.join(cell_dir, "samples.csv")
         training_root = os.path.join(cell_dir, "genome_annotation_training")
@@ -75,7 +92,11 @@ def main():
             for d in pasa_dirs:
                 lib.LOG.info("%s/%s: removing PASA checkpoint dir %s", cell, genome, d)
                 if not args.dry_run:
-                    shutil.rmtree(d)
+                    # ignore_errors: another launcher's preseed may be removing
+                    # the same tree concurrently. Without this, whichever process
+                    # loses the race dies mid-rmtree with FileNotFoundError and
+                    # takes the whole cell launch down before nextflow starts.
+                    shutil.rmtree(d, ignore_errors=True)
 
         total_cells += 1
         total_cleared += n_cleared

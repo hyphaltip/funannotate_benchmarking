@@ -1,11 +1,17 @@
 SPECIES,STRAIN,ASMID,LOCUSTAG,BUSCO_LINEAGE,TRANSL_TABLE,NCBI_TAXONID,GENOME
 Allomyces macrogynus,ATCC 38327,GCA_000151295.1,ALLMAC,fungi_odb10,1,578462,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCA_000151295.1_A_macrogynus_V3.masked.fasta.gz
-Batrachochytrium dendrobatidis,JAM81,GCF_000203795.2,BATDEN,fungi_odb10,1,684364,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000203795.2_v1.1.masked.fasta.gz
-Umbelopsis ramanniana,AG,GCF_025399195.1,UMBRAM,mucorales_odb10,1,1314678,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_025399195.1_Umbra1.masked.fasta.gz
-Pneumocystis murina,B123,GCF_000349005.2,PNEMUR,ascomycota_odb10,1,1069680,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000349005.2_Pneumo_murina_B123_V4.masked.fasta.gz
-Saccharomyces cerevisiae,S288C,GCF_000146045.2,SACCER,saccharomycetes_odb10,1,559292,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000146045.2_R64.masked.fasta.gz
-Aspergillus fumigatus,Af293,GCF_000002655.1,ASPFUM,eurotiomycetes_odb10,1,330879,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000002655.1_ASM265v1.masked.fasta.gz
-Chaetomium globosum,CBS 148.51,GCF_000143365.1,CHAGLO,sordariomycetes_odb10,1,306901,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000143365.1_ASM14336v1.masked.fasta.gz
 Cryptococcus neoformans,H99,GCF_000149245.1,CRYNEO,tremellomycetes_odb10,1,235443,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000149245.1_CNA3.masked.fasta.gz
 Rhodotorula toruloides,NP11,GCF_000320785.1,RHOTOR,basidiomycota_odb10,1,1130832,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000320785.1_RHOziaDV1.0.masked.fasta.gz
 Malassezia globosa,CBS 7966,GCF_000181695.2,MALGLO,basidiomycota_odb10,1,425265,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000181695.2_ASM18169v2.masked.fasta.gz
+Yarrowia lipolytica,CLIB122,GCF_000002525.2,YARLIP,saccharomycetes_odb10,1,284591,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000002525.2_ASM252v1.masked.fasta.gz
+Tilletiopsis washingtonensis,MCA 4186,GCF_003144115.1,TILWAS,basidiomycota_odb10,1,58919,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_003144115.1_Tilwa1.masked.fasta.gz
+Schizophyllum commune,H4-8,GCF_000143185.2,SCHCOM,agaricomycetes_odb10,1,578458,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000143185.2_Schco3.masked.fasta.gz
+Aspergillus fumigatus,Af293,GCF_000002655.1,ASPFUM,eurotiomycetes_odb10,1,330879,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000002655.1_ASM265v1.masked.fasta.gz
+Botrytis cinerea,B05.10,GCF_000143535.2,BOTCIN,leotiomycetes_odb10,1,332648,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000143535.2_ASM14353v4.masked.fasta.gz
+Zygosaccharomyces rouxii,CBS 732,GCF_000026365.1,ZYGROU,saccharomycetes_odb10,1,4956,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000026365.1_ASM2636v1.masked.fasta.gz
+Chaetomium globosum,CBS 148.51,GCF_000143365.1,CHAGLO,sordariomycetes_odb10,1,306901,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000143365.1_ASM14336v1.masked.fasta.gz
+Pneumocystis murina,B123,GCF_000349005.2,PNEMUR,ascomycota_odb10,1,1069680,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000349005.2_Pneumo_murina_B123_V4.masked.fasta.gz
+Batrachochytrium dendrobatidis,JAM81,GCF_000203795.2,BATDEN,fungi_odb10,1,684364,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000203795.2_v1.1.masked.fasta.gz
+Umbelopsis ramanniana,AG,GCF_025399195.1,UMBRAM,mucorales_odb10,1,1314678,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_025399195.1_Umbra1.masked.fasta.gz
+Fusarium verticillioides,7600,GCF_000149555.1,FUSVER,sordariomycetes_odb10,1,334819,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000149555.1_ASM14955v1.masked.fasta.gz
+Saccharomyces cerevisiae,S288C,GCF_000146045.2,SACCER,saccharomycetes_odb10,1,559292,/bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/input_clean_genomes/GCF_000146045.2_R64.masked.fasta.gz
