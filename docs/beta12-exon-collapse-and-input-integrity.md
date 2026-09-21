@@ -1,183 +1,198 @@
 ---
 topic: beta12-exon-collapse-and-input-integrity
-description: OPEN. v1.9.0-beta.12 loses roughly one exon per gene on six of fifteen benchmark genomes versus v1.8.17, dropping mean gffcompare locus sensitivity from 55.9 to 48.1. Stage-splitting the training pipeline isolates the cause to the TransDecoder step (5.7.1 -> 6.0.0), not PASA and not the rust reimplementations, which are accuracy-neutral. Separately, the benchmark's SRA_QUERY cache holds transient network failures cached as successful empty results, and Rhodotorula toruloides' RNA-seq was replaced after mapping at 4.5%.
+description: RESOLVED (Thread 1). v1.9.0-beta.12/beta.13's exon-structure collapse was NOT TransDecoder (that attribution was wrong and is corrected below) -- it traced to a real duplicate-print-loop bug in PASA's rust_optimize branch (PASA_transcripts_and_assemblies_to_GFF3.dbi, introduced by commit bce776a), which doubled every validated-alignment GFF3/GTF line and fed a degraded, less-multiexon transcript pool into TransDecoder/getBestModel. Fixed at PASApipeline rust_optimize@4376a22 (tagged v2.6.1-rc.1); verified on a real pipeline run to restore PASA 2.5.3-matching structure. Three compounding Python-side bugs in funannotate-live (getBestModel tie-break, selectTrainingModels 200-gate, HiQ 0/0 conflation) were also found and fixed independently. Thread 2 (RNA-seq input integrity) is unchanged and still open.
 created: 2026-09-20
-last_updated: 2026-09-20
-status: OPEN -- TransDecoder identified as the stage; controlled same-input test not yet run
+last_updated: 2026-09-21
+status: Thread 1 RESOLVED (fix verified); Thread 2 still OPEN
 ---
 
-# v1.9.0-beta.12 exon-structure collapse, and RNA-seq input integrity
+# v1.9.0-beta.12/beta.13 exon-structure collapse, and RNA-seq input integrity
 
 > Opened 2026-09-20 from BFD/Funannotate_benchmarking. Two independent threads,
 > recorded together because they were found in the same pass and both bear on
 > whether the benchmark's accuracy numbers can be published.
 >
-> Thread 1 (**blocking**): beta.12 predicts genes in the right places but with
-> the wrong internal structure on a subset of genomes. Root cause isolated to
-> the TransDecoder step.
+> Thread 1 (**was blocking, now resolved**): beta.12/beta.13 predicted genes in
+> the right places but with the wrong internal structure on a subset of
+> genomes. Root cause found and fixed 2026-09-21.
 >
-> Thread 2 (**input integrity**): the benchmark's RNA-seq provenance is weaker
-> than assumed, and one genome's reads were wrong outright.
+> Thread 2 (**input integrity, still open**): the benchmark's RNA-seq
+> provenance is weaker than assumed, and one genome's reads were wrong
+> outright.
 
 ---
 
-## Thread 1 — beta.12 loses exon structure
+## Thread 1 — exon-structure collapse: root cause and fix (2026-09-21 update)
 
-### What the accuracy run showed
+### Correction: the TransDecoder attribution below was wrong
 
-`scripts/compare_predictions.py` over 45 (cell, genome) pairs, scored against
-RefSeq with gffcompare and bedtools:
+The original version of this doc (2026-09-20) concluded the collapse traced to
+TransDecoder 5.7.1 -> 6.0.0, based on comparing `pasa.step1.gff3` (believed
+pre-TransDecoder) against `funannotate_train.pasa.gff3` (post-TransDecoder).
+That reasoning was wrong on a factual point: **`pasa.step1.gff3` is itself
+POST-TransDecoder output** (`funannotate/train.py` writes it after PASA's own
+`--TRANSDECODER` pass, not before). Re-reading `train.py` caught this.
 
-| cell | mean locus sensitivity | mean locus precision |
+A controlled test settled it: TransDecoder 5.7.1 and 6.0.0 run on byte-identical
+input Trinity transcripts produced **byte-identical output** (job 28958410).
+TransDecoder is exonerated. The "TransDecoder retention ratio" table further
+down in this doc measured something real (a structural drop between two
+already-different stages) but attributed it to the wrong stage boundary.
+
+### The real root cause: a duplicate-print-loop bug in PASA itself
+
+Isolating PASA version as a variable (genome, Trinity assembly, and
+`--aligners` all held identical via md5-verified inputs) showed PASA 2.6.0_rust
+producing a genuinely less-multiexon transcript pool than PASA 2.5.3 at the
+`pasa.step1.gff3` stage — this was real, just mis-attributed to TransDecoder
+rather than PASA itself:
+
+| | PASA 2.5.3 (1.8.17) | PASA 2.6.0_rust (broken beta.13) |
 |---|---|---|
-| v1.8.17_conda | 55.9 | 59.1 |
-| v1.9.0-beta12_container | 48.1 | 54.0 |
-| v1.9.0-beta12_container_rust | 47.9 | 54.0 |
+| `step1.gff3` mean CDS/model | 2.51 | 1.87 |
+| `step1.gff3` % >=3 exon | 39.3% | 21.1% |
 
-The result is bimodal, not a uniform shift. Five genomes drop by roughly half
-(Botrytis 67.3 -> 29.2, Fusarium 65.4 -> 38.4, Aspergillus 52.5 -> 26.7,
-Chaetomium 35.8 -> 21.0, Batrachochytrium 44.6 -> 24.9) while four improve
-(Malassezia, Schizophyllum, Yarrowia, Zygosaccharomyces).
+Tracing PASA's own intermediate files found every validated-alignment record
+in `valid_gmap_alignments.gff3` / `valid_custom_alignments.gff3` printed
+**exactly twice** (55,205 unique lines -> 110,410 total, verified via
+exact-duplicate-line counting). This was not a database, threading, or
+DB-backend effect (all ruled out empirically: forcing `-T 1` on the clustering
+script did not fix it; SQLite backend reproduced the identical 2x duplication;
+no retry/reconnect events fired in any log).
 
-### It is not a scoring or format artifact
+`git log`/`git blame` on the `rust_optimize` branch (hyphaltip/PASApipeline)
+found the actual cause: commit `bce776a` ("parallelize per-asmbl_id scripts,
+fix N+1 query in GFF3 output", 2026-06-29, self-authored) added a new
+batch-query print loop to `scripts/PASA_transcripts_and_assemblies_to_GFF3.dbi`
+to replace an old per-alignment N+1-query loop, but never deleted the old loop.
+Both ran unconditionally for GFF3/GTF output, so every validated alignment
+segment was printed twice. BED output was unaffected (both loops wrote into
+the same `%ALIGNMENTS` hash key, an overwrite not an append), which is why the
+bug was invisible until GFF3 structure was compared directly against PASA
+2.5.3 under matched inputs. **This is not an upstream PASA bug** — the file is
+byte-identical to `master` aside from this branch's own commits; nothing needed
+reporting upstream.
 
-This was the first hypothesis and it is **wrong**. Both GFF3 files are
-well-formed with identical feature types (`gene`/`mRNA`/`exon`/`CDS`/`tRNA`).
-The bedtools coordinate-overlap tally even slightly favours beta.12 on Botrytis:
-9,955/10,353 predicted genes (96.2%) overlap a RefSeq gene, versus
-11,660/12,424 (93.8%) for 1.8.17.
+A second, related defect was found in the same pass: `Launch_PASA_pipeline.pl`
+had a copy-pasted duplicate `@cmds` block queuing 5 of 6 output-writing
+commands a second time, and a checkpoint-filename typo (`chkpt =>
+"...failed_${map_program}_alignments.gff3.ok"` on the failed-alignments `.bed`
+writer, colliding with the `.gff3` writer's checkpoint) that silently skipped
+the `.bed` writer on every run.
 
-The genes are in the right places. Their internal structure is wrong.
+### Fix
 
-### The measurement that shows it: CDS per mRNA
+Both bugs fixed in `PASApipeline` (`rust_optimize` branch), commit `4376a22`,
+tagged `v2.6.1-rc.1`:
 
-| genome | RefSeq | 1.8.17 | beta12 | beta12-rust |
-|---|---|---|---|---|
-| Aspergillus fumigatus | 3.07 | 3.00 | **1.84** | 1.83 |
-| Batrachochytrium dendrobatidis | 4.37 | 4.75 | **2.98** | 2.96 |
-| Botrytis cinerea | 2.98 | 2.87 | **1.92** | 1.92 |
-| Chaetomium globosum | 3.12 | 2.73 | **1.77** | 1.77 |
-| Fusarium verticillioides | 2.75 | 2.74 | **1.97** | 1.97 |
-| Malassezia globosa | 1.49 | 1.97 | **1.24** | 1.25 |
-| Allomyces macrogynus | 3.36 | 3.57 | 3.91 | 3.93 |
-| Cryptococcus neoformans | 6.27 | 6.07 | 6.49 | 6.48 |
-| Pneumocystis murina | 6.00 | 7.17 | 7.18 | 7.18 |
-| Schizophyllum commune | 5.16 | 5.64 | 6.03 | 6.04 |
-| Tilletiopsis washingtonensis | 4.46 | 4.96 | 5.11 | 5.14 |
-| Umbelopsis ramanniana | 4.64 | 5.26 | 5.41 | 5.41 |
-| Saccharomyces cerevisiae | 1.06 | 1.06 | 1.01 | 1.01 |
-| Yarrowia lipolytica | 1.17 | 1.28 | 1.12 | 1.13 |
-| Zygosaccharomyces rouxii | 1.03 | 1.15 | 1.02 | 1.02 |
+1. `PASA_transcripts_and_assemblies_to_GFF3.dbi`: deleted the legacy
+   per-alignment loop, kept only the batch-query loop.
+2. `Launch_PASA_pipeline.pl`: deleted the duplicate `@cmds` block; fixed the
+   checkpoint typo.
 
-The six collapsed genomes are exactly the six with the large gffcompare drops.
-Intron-level sensitivity tracks it (Botrytis 83.5 -> 36.0).
+Independently reviewed end-to-end by a second model pass (control flow, other
+callers of the GFF3 script, checkpoint-name collisions across the whole file)
+— PASS, no regressions.
 
-**The rust and norust arms are identical to two decimal places on every row.**
-This is a 1.9.0 change present in both, not a rust effect.
+A separate, unrelated build issue was found and fixed while rebuilding: the
+`rust_optimize` branch's `pasa_rust/Cargo.toml` had `edition = "2026"` (not a
+real Rust edition), breaking `cargo build --release` outright on current
+toolchains. Fixed to `edition = "2021"`. `v2.6.1-rc.1` was retagged to include
+this fix (`2a4aeae`).
 
-### Isolating the stage
+### Verification: fix restores PASA 2.5.3-matching structure
 
-`pasa.step1.gff3` (PASA's raw alignment assemblies) and
-`funannotate_train.pasa.gff3` (after TransDecoder selects training models) split
-the training pipeline at the version boundary.
+Rebuilt the conda-rust PASA install from the fixed source (Perl scripts
+verified byte-identical to the patched checkout; rust binaries freshly
+compiled from the corrected `Cargo.toml`) and reran the isolation cell with the
+same genome/Trinity/aligner inputs used throughout this investigation:
 
-**Stage 1 -- PASA output, exons per assembly. Essentially unchanged:**
-
-| genome | 1.8.17 | beta12 |
-|---|---|---|
-| Botrytis cinerea | 3.73 | 3.62 |
-| Chaetomium globosum | 3.25 | 3.50 (higher) |
-| Fusarium verticillioides | 3.46 | 3.40 |
-| Aspergillus fumigatus | 4.61 | 3.90 |
-| Cryptococcus neoformans | 7.76 | 7.31 |
-
-**Stage 2 -- after TransDecoder, CDS per training model. Collapses:**
-
-| genome | 1.8.17 | beta12 | change |
+| | PASA 2.5.3<br>(1.8.17) | PASA 2.6.0_rust<br>(broken, beta.13) | PASA 2.6.1-rc.1<br>(fixed) |
 |---|---|---|---|
-| Botrytis cinerea | 2.69 | 1.96 | -27% |
-| Chaetomium globosum | 2.21 | 1.70 | -23% |
-| Fusarium verticillioides | 2.62 | 1.94 | -26% |
-| Aspergillus fumigatus | 2.70 | 1.84 | -32% |
-| Cryptococcus neoformans | 5.72 | 3.27 | -43% |
+| `step1.gff3` mean CDS/model | 2.51 | 1.87 | **2.51** |
+| `step1.gff3` % >=2 exon | 66.0% | 52.1% | **66.0%** |
+| `step1.gff3` % >=3 exon | 39.3% | 21.1% | **39.3%** |
+| final training models | 8,633 | 7,600 | **8,729** |
+| final mean CDS/model | 2.55 | 2.02 | **2.55** |
+| final % >=2 exon | 66.6% | 60.5% | **66.7%** |
+| final % >=3 exon | 41.2% | 25.2% | **41.2%** |
 
-**Fraction of exon structure retained across the TransDecoder step** (stage 2
-divided by stage 1), which normalizes for the differing inputs:
+`valid_gmap_alignments.gff3` confirmed 55,205 total = 55,205 unique lines (no
+duplication) on the fixed build, vs 110,410/55,205 (2x) on the broken build.
 
-| genome | 1.8.17 (TD 5.7.1) | beta12 (TD 6.0.0) |
-|---|---|---|
-| Botrytis cinerea | 72.1% | 54.2% |
-| Chaetomium globosum | 68.0% | 48.6% |
-| Fusarium verticillioides | 75.7% | 57.2% |
-| Aspergillus fumigatus | 58.4% | 47.3% |
-| Cryptococcus neoformans | 73.6% | 44.8% |
-| Schizophyllum commune | 90.0% | 58.1% |
-| **mean** | **73.0%** | **51.7%** |
+Also resolves the "second, separate defect" flagged in the original version of
+this doc (beta.12 producing 30-40% fewer PASA assemblies than 1.8.17 from
+equal/larger Trinity input, e.g. Botrytis 23,402 vs 15,266) — that was very
+likely the same root cause (the corrupted, duplicate-inflated alignment pool
+feeding the assembler), not a separate defect. Not re-verified across all
+genomes yet (see Open items).
 
-Six of six genomes, no exceptions, mean drop of 21 points.
+### Compounding, independently-found bugs in funannotate-live itself
 
-### Conclusion and what is still unproven
+Found and fixed in the same investigation, upstream of/parallel to the PASA
+bug, each real on its own:
 
-**PASA 2.5.3 -> 2.6.0 is exonerated**: its per-assembly exon structure is
-preserved, and for Chaetomium is slightly better. **TransDecoder 5.7.1 -> 6.0.0
-is selecting systematically shorter, fewer-exon ORFs from the same input.**
+- `getBestModel()` in `train.py`: TPM tie-break blind to CDS structure — when
+  TransDecoder emits multiple ORFs per PASA assembly sharing identical exon
+  sets (same TPM), the winner was decided by Python's stable-sort iteration
+  order, not model quality. Fixed to break ties on `(nCDS, cdsLen)`.
+- `selectTrainingModels()` in `library.py`: the `countKeeperCDS >= min_models`
+  gate, when the filtered set was large enough but had too few multi-CDS
+  genes, dropped the multi-CDS requirement entirely rather than falling back
+  to the unfiltered set. Fixed.
+- HiQ Augustus model selection in `predict.py`: an intronless model
+  (`# CDS introns: 0/0`) triggered a `ZeroDivisionError` caught and scored
+  `support=0`, making HiQ structurally impossible for any intronless gene when
+  `--rna_bam` was used. Fixed to fall back to hint-support percentage.
 
-Versions:
+These are real, independent fixes (all committed to `funannotate-live`
+`local/beta.13`, fast-forward-merged into `target_1.9/rust_EVM_trinity_PASA`)
+and should NOT be un-fixed now that the PASA bug is also found — both classes
+of defect were compounding on the same collapsed genomes.
 
-| | 1.8.17 conda | beta12 container |
-|---|---|---|
-| TransDecoder | 5.7.1 (Jul 2023) | 6.0.0 (Mar 2026) |
-| PASA | 2.5.3 | 2.6.0_rust |
+### Ruled out during the investigation (do not re-litigate)
 
-TransDecoder 6.0.0's changelog records a restructure -- *"phase-specific
-executables are now provided under `util/`"* -- which is the same change behind
-the PATH probe fix in `modules/local/funannotate_train.nf`, confirming the
-container runs the new layout.
-
-**Not yet done:** the controlled same-input experiment -- feed one identical
-PASA assembly set through TransDecoder 5.7.1 and 6.0.0 and compare CDS/model.
-The retention ratio above already controls for input differences and the effect
-is uniform across six genomes spanning three phyla, but the direct test is what
-should back a published claim.
-
-### A second, separate defect in the same data
-
-beta.12 produces 30-40% fewer PASA assemblies from equal or slightly larger
-Trinity inputs:
-
-| genome | 1.8.17 assemblies | beta12 assemblies |
-|---|---|---|
-| Botrytis cinerea | 23,402 | 15,266 |
-| Aspergillus fumigatus | 26,978 | 16,306 |
-| Cryptococcus neoformans | 24,709 | 17,717 |
-| Fusarium verticillioides | 28,386 | 20,213 |
-| Chaetomium globosum | 27,190 | 24,049 |
-
-This is a PASA-level loss, independent of the TransDecoder structure collapse.
-**Not investigated.**
-
-### Why only some genomes fail at prediction
-
-Every genome checked is degraded at the *training* stage, including the two
-whose final predictions are fine -- Cryptococcus loses 43% of its training-model
-exon structure yet still predicts at 6.49 CDS/mRNA against a RefSeq 6.27.
-Augustus/EVM recovers from degraded training on some genomes and not others.
-The six visible failures therefore understate how widespread the underlying
-problem is.
+- **Aligner choice** (gmap vs blat vs minimap2): no effect on multi-exon
+  structure once PASA version and Trinity input are held constant
+  (md5-verified controlled test).
+- **PASA clustering-script threading** (`-T` thread count on
+  `assign_clusters_by_stringent_alignment_overlap.dbi`): forcing `-T 1` did
+  not eliminate the duplication; this script runs *after* the file that
+  showed duplication is already written, so it was structurally impossible
+  for it to be the cause anyway.
+- **DB backend** (MySQL vs SQLite): both reproduced the identical 2x
+  duplication before the fix, confirming it is a pure output-loop bug, not a
+  database/connection-retry effect.
+- **`DB_connect.pm`'s SQLite-busy-retry / reconnect logic**: confirmed dead
+  code for MySQL-backend runs (zero retry/reconnect events in any log).
+- **The rust-vs-C++ PASA assembler question**: `PASA_alignment_assembler.pm`
+  defaults to the C++ `pasa` binary (Rust only used if `PASA_ASSEMBLER` is set
+  or no C++ binary exists), confirmed via `PerlLib/CDNA/PASA_alignment_assembler.pm`
+  and `docs/Cpp_PASA_Assembler_Optimization.md` in the PASApipeline repo. Our
+  pipeline never sets `PASA_ASSEMBLER`, so the core assembly algorithm has been
+  C++ in every "_rust" cell all along — irrelevant to this bug (which is a
+  pure Perl output-loop issue) but relevant context for any future "is rust
+  faster/more-accurate" claim about the assembler specifically. `slclust`
+  (clustering) genuinely defaults to Rust; `pasa` (assembly) does not. Both are
+  part of the `rust_EVM_trinity_PASA` effort along with Trinity/EVM Rust work,
+  so the "_rust" cell label is not invalidated by this — see the parent branch
+  name for the intended scope.
 
 ### Bearing on the manuscript
 
-On present evidence the "is 1.9.0 better than 1.8.17" question answers **no** on
-gene structure, but the cause looks like a dependency version bump rather than
-funannotate's own code. If TransDecoder 6.0.0's ORF selection is confirmed as
-the cause and either reverted or configured, the comparison must be re-run
-before any accuracy claim. The rust question is unaffected: **the rust
-reimplementations are accuracy-neutral** (mean locus sensitivity 47.9 vs 48.1,
-and identical CDS/mRNA to two decimals on all 15 genomes).
+Original conclusion ("1.9.0 loses gene structure, cause looks like a dependency
+version bump") is superseded. The cause was a self-inflicted bug in this
+project's own PASA fork, now fixed, now verified to restore PASA
+2.5.3-matching structure on the one genome tested end-to-end (Botrytis). A full
+re-run of the accuracy comparison against the fixed build (`v1.9.0-rc.1`,
+tagged in `cells.tsv` as `v1.9.0-rc1_container` / `v1.9.0-rc1_container_rust`)
+is needed before any "is 1.9.0 as accurate as 1.8.17" claim — see Open items.
 
 ---
 
 ## Thread 2 — RNA-seq input integrity
+
+*(Unchanged from 2026-09-20 — still open. See prior content below.)*
 
 ### SRA_QUERY caches transient network failures as success
 
@@ -261,7 +276,7 @@ A cheap partial check before deciding: for a few genomes, map a sample of each
 cached read file against the candidate accessions' reads to test whether BFD's
 listed accessions match the stored FASTQ. Not run.
 
-### Rhodotorula toruloides: reads replaced
+### Rhodotorula toruloides: reads replaced, then read-length-mismatch fixed
 
 The previous accession set (PRJNA169538: SRR31947201, SRR31947212, SRR8733521,
 SRR31947211, SRR31947205) mapped at **4.5%** against the NP11 reference
@@ -280,7 +295,23 @@ aside across 7 cells as `.stale_rnaseq_20260920`; the query CSV rewritten in all
 11 cells with the two verified accessions so a clean-sweep run does not hit the
 empty-query path.
 
-### bbnorm pairing failure during the rebuild
+**Update 2026-09-21**: the accepted accession (SRR29721378) then failed
+`bbnorm` deterministically on any chunk of the data with
+`AssertionError: List size mismatch`. Root-caused (after ruling out
+multi-member gzip and R1/R2 stream desync) to genuine per-mate read-length
+asymmetry (2.3% of pairs, e.g. R1=150bp/R2=89bp) — the accession was deposited
+already asymmetrically pre-trimmed per mate, not raw uniform-150bp sequencer
+output. Fixed with `fix_fastq_header_trinity` (strip embedded `length=NNN`
+deflines) run *before* `enforce_seqpair_readlen` (truncate longer mate to
+match shorter, drop pairs below `minlen=75`) — order matters, since the
+truncation tool compares full FASTQ headers including the length-dependent
+embedded description text. Verified on a 20,000-pair slice (0 mismatches),
+then run on the full 24,996,630-pair accession: job 28962314, completed,
+2,307,195 final normalized pairs. **Not yet wired back into any benchmark
+cell's `rnaseq_data/` for a re-run of FUNANNOTATE_TRAIN/PREDICT** — see Open
+items.
+
+### bbnorm pairing failure during the rebuild (superseded, see above)
 
 Both accessions downloaded clean and mate-balanced (SRR29721378: 24,996,630
 pairs; SRR29721379: 24,123,142 pairs; mate1 == mate2 within each). bbnorm then
@@ -292,24 +323,22 @@ java.lang.AssertionError: List size mismatch: 6 vs 5
   at jgi.BBMerge.makeInsertHistogram(BBMerge.java:1339)
 ```
 
-`PairStreamer` is BBTools' pairing layer, so R1 and R2 are out of step somewhere
-past the head of the file. `parallel-fastq-dump` splits each accession into 15
-blocks and reassembles them; that reassembly is the known desync source -- the
-same one the pipeline's `rename_headers` blacklist override works around.
-
-`launch/rebuild_rnaseq.sbatch` only counted combined R1, never R2. That gap is
-fixed in `launch/repair_rnaseq_rhodotorula.sbatch`, which counts both mates,
-runs `repair.sh` keeping singletons on the record, drops `ecc=t` (error
-correction is what pulled BBMerge, and therefore PairStreamer, into the run),
-and asserts R1 == R2 at the end.
+This was the SAME symptom, root-caused differently at the time (blamed on
+`parallel-fastq-dump`'s 15-way block reassembly). The read-length-asymmetry
+root cause above (found 2026-09-21) is the correct explanation; the
+`rename_headers`-blacklist / `repair.sh` workaround described in the original
+version of this section did not actually fix it (confirmed: it failed again
+under every prior hypothesis before the header-order fix worked).
 
 ---
 
 ## Open items
 
-- [ ] Controlled TransDecoder 5.7.1 vs 6.0.0 test on one identical assembly set
-- [ ] Investigate the 30-40% PASA assembly-count loss in beta.12
+- [x] ~~Controlled TransDecoder 5.7.1 vs 6.0.0 test on one identical assembly set~~ — done; TransDecoder exonerated, real cause found and fixed (see Thread 1)
+- [ ] Re-verify the "30-40% fewer PASA assemblies" defect is resolved by the same fix, across all affected genomes (only Botrytis confirmed so far)
+- [ ] Re-run the full accuracy comparison (gffcompare Sn/Sp, CDS/mRNA) against `v1.9.0-rc1_container` / `v1.9.0-rc1_container_rust` before any "is 1.9.0 as accurate as 1.8.17" claim
 - [ ] Decide Thread 2 provenance option 1 vs 2
 - [ ] Fix `sra_query.nf` to fail loudly on an empty `runinfo` instead of caching it
-- [ ] Rhodotorula repair job 28958145 -- record retained-pair fraction, then re-run the cell
+- [ ] Wire the fixed Rhodotorula toruloides RNA-seq (2,307,195 pairs, job 28962314) into the actual benchmark cells and re-run FUNANNOTATE_TRAIN/PREDICT
 - [ ] `collect_metrics.py` trace-merge fix before any runtime figure
+- [ ] Fix `scripts/preseed_clean_genomes.py`'s unscoped whole-tree race condition (same `--cell` scoping already applied to `preseed_pasa_checkpoints.py`)
