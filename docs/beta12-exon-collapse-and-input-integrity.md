@@ -340,5 +340,5 @@ under every prior hypothesis before the header-order fix worked).
 - [ ] Decide Thread 2 provenance option 1 vs 2
 - [ ] Fix `sra_query.nf` to fail loudly on an empty `runinfo` instead of caching it
 - [ ] Wire the fixed Rhodotorula toruloides RNA-seq (2,307,195 pairs, job 28962314) into the actual benchmark cells and re-run FUNANNOTATE_TRAIN/PREDICT
-- [ ] `collect_metrics.py` trace-merge fix before any runtime figure
+- [x] ~~`collect_metrics.py` trace-merge fix before any runtime figure~~ — done 2026-09-23, last-completion-wins (see benchmark-design-note.md)
 - [ ] Fix `scripts/preseed_clean_genomes.py`'s unscoped whole-tree race condition (same `--cell` scoping already applied to `preseed_pasa_checkpoints.py`)

@@ -119,6 +119,25 @@ Two fixes, either acceptable: a timestamp cutoff that only merges traces written
 after the fixes landed, or last-attempt-wins keyed on task name. This must be
 resolved before a runtime number appears anywhere.
 
+**Fixed 2026-09-23 (last-completion-wins).** `collect_metrics.py` now keeps
+only the last COMPLETED row per (cell, task name) in the timing columns. It
+drops CACHED rows, which repeat the original run's realtime and were counted
+twice. FAILED/ABORTED rows and superseded completions go into separate
+`overhead_task_time_hours_sum` / `overhead_cpu_hours_sum` columns. Genome
+status is `success` when every task eventually completed. Limit: failed rows
+with no exit code (SLURM-side kill) also have no `%cpu`, so
+`overhead_cpu_hours_sum` undercounts them; `overhead_task_time_hours_sum` does
+not.
+
+The trace also gains `attempt,cpus,memory,queue,hostname,submit,start,
+complete,peak_rss` (nf_funannotate1 `profile_annotate.config`,
+`profile_genemark_sidecar.config`), for launches from 2026-09-23 on only.
+Before this, a TRAIN task that completed on attempt 1 (8 cpus, epyc) and one
+that completed on attempt 3 (24 cpus, highmem) could not be told apart, and
+`peak_rss_gb_max` was read from `rss` (resident memory, not the peak). Older
+rows leave `cpus`/`queues`/`attempts`/`wall_clock_hours` blank and report
+`rss_field=rss`.
+
 ### What to measure once it is fixed
 
 Per genome, per cell: wall-clock and CPU-hours for `train` and `predict`
