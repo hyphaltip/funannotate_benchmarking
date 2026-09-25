@@ -1,0 +1,105 @@
+cell	genome	status	n_tasks	n_failed	n_aborted	n_superseded	n_unresolved	task_time_hours_sum	wall_clock_hours	cpu_hours_sum	peak_rss_gb_max	rss_field	overhead_task_time_hours_sum	overhead_cpu_hours_sum	attempts	cpus	queues	accession	phylum	genome_size_mb	cpu_hours_per_mb	task_time_hours_per_mb
+v1.9.0-rc1_container	Allomyces_macrogynus	success	1	0	0	0	0	1.2228	1.2334	15.5562	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Aspergillus_clavatus_NRRL_1	success	1	0	0	0	0	1.7225	1.7168	11.5563	11.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000002715.2	Ascomycota	27.9	0.4142	0.06174
+v1.9.0-rc1_container	Aspergillus_fumigatus	success	1	0	0	0	0	1.0053	1.0001	12.9691	3.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Blastomyces_dermatitidis_ER-3	success	1	0	0	0	0	1.6811	1.7001	10.7793	23.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000003525.1	Ascomycota	66.6	0.16185	0.02524
+v1.9.0-rc1_container	Botrytis_cinerea	success	1	0	0	0	0	1.4122	1.4168	17.8787	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Chaetomium_globosum	success	1	0	0	0	0	1.5128	1.5168	18.701	2.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Cryptococcus_deneoformans	success	1	0	0	0	0	0.6714	0.6834	8.0533	3.1	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Cryptococcus_neoformans	success	1	0	0	0	0	0.7506	0.7501	9.7092	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Cystobasidium_minutum_MCA_4210	success	1	0	0	0	0	1.4225	1.4167	8.3145	12.3	peak_rss	0.0	0.0	1	8	epyc	GCF_039999085.1	Basidiomycota	20.8	0.39974	0.06839
+v1.9.0-rc1_container	Dactylellina_haptotyla_CBS_200.50	success	1	0	0	0	0	1.0658	1.0668	6.2053	2.6	peak_rss	0.0	0.0	1	8	epyc	GCF_000441935.1	Ascomycota	39.5	0.1571	0.02698
+v1.9.0-rc1_container	Eremothecium_gossypii_ATCC_10895	success	1	0	0	0	0	2.9428	2.9503	8.6694	3.3	peak_rss	0.0	0.0	1	8	epyc	GCF_000091025.4	Ascomycota	9.1	0.95268	0.32338
+v1.9.0-rc1_container	Gaeumannomyces_tritici	success	1	0	0	0	0	1.4056	1.4168	17.0719	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Kluyveromyces_lactis	success	1	0	0	0	0	0.255	0.2667	3.0886	4.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Laccaria_bicolor_S238N-H82	success	1	0	0	0	0	2.4764	2.4836	15.9653	6.9	peak_rss	0.0	0.0	1	8	epyc	GCF_000143565.1	Basidiomycota	64.9	0.246	0.03816
+v1.9.0-rc1_container	Leptographium_clavigerum_kw1407	success	1	0	0	0	0	1.8281	1.8335	11.2901	6.5	peak_rss	0.0	0.0	1	8	epyc	GCF_000143105.1	Ascomycota	29.8	0.37886	0.06134
+v1.9.0-rc1_container	Letharia_columbiana_WasteWater2	success	1	0	0	0	0	1.2486	1.2501	7.7002	4.3	peak_rss	0.0	0.0	1	8	epyc	GCF_014066305.1	Ascomycota	52.3	0.14723	0.02387
+v1.9.0-rc1_container	Lipomyces_tetrasporus	success	1	0	0	0	0	1.1875	1.2001	15.3093	3.0	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Malassezia_globosa	success	1	0	0	0	0	0.31	0.3167	3.8629	1.5	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Malassezia_sympodialis	success	1	0	0	0	0	0.3833	0.3834	4.4398	1.0	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Mixia_osmundae_IAM_14324	success	1	0	0	0	0	1.1864	1.2001	6.1514	4.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000708205.1	Basidiomycota	13.6	0.45231	0.08723
+v1.9.0-rc1_container	Morchella_importuna	success	1	0	0	0	0	1.35	1.3501	14.9418	6.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Mucor_mucedo	success	1	0	0	0	0	1.2833	1.3001	15.0625	2.1	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Nakaseomyces_glabratus_CBS_138	success	1	0	0	0	0	1.0258	1.0334	6.0042	5.7	peak_rss	0.0	0.0	1	8	epyc	GCF_000002545.3	Ascomycota	12.3	0.48815	0.0834
+v1.9.0-rc1_container	Orbilia_oligospora	success	1	0	0	0	0	1.3286	1.3335	16.5	3.5	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Parastagonospora_nodorum	success	1	0	0	0	0	1.0417	1.0501	13.1656	3.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Phycomyces_blakesleeanus	success	1	0	0	0	0	1.7042	1.7001	19.482	2.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Pneumocystis_murina_B123	success	1	0	0	0	0	0.8406	0.8501	5.8326	2.6	peak_rss	0.0	0.0	1	8	epyc	GCF_000349005.2	Ascomycota	7.5	0.77768	0.11207
+v1.9.0-rc1_container	Protomyces_lactucae-debilis	success	1	0	0	0	0	0.3444	0.3501	4.2566	4.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Pseudogymnoascus_destructans	success	1	0	0	0	0	1.0514	1.0668	12.3128	2.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Pyrenophora_teres	success	1	0	0	0	0	0.3686	0.3834	4.6928	4.4	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Pyrenophora_tritici-repentis	success	1	0	0	0	0	1.3294	1.3334	16.0145	3.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Pyricularia_oryzae_70-15	success	1	0	0	0	0	1.5958	1.6001	9.883	12.1	peak_rss	0.0	0.0	1	8	epyc	GCF_000002495.2	Ascomycota	41.0	0.24105	0.03892
+v1.9.0-rc1_container	Rhizopus_delemar	success	1	0	0	0	0	1.9889	2.0001	24.4932	3.3	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Rhizopus_microsporus	success	1	0	0	0	0	0.2928	0.3001	2.6622	6.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Rhodotorula_graminis_WP1	success	1	0	0	0	0	1.3489	1.3501	8.4791	9.0	peak_rss	0.0	0.0	1	8	epyc	GCF_001329695.1	Basidiomycota	21.0	0.40377	0.06423
+v1.9.0-rc1_container	Rhodotorula_toruloides_NP11	success	1	0	0	0	0	1.1964	1.2001	8.017	4.3	peak_rss	0.0	0.0	1	8	epyc	GCF_000320785.1	Basidiomycota	20.2	0.39688	0.05923
+v1.9.0-rc1_container	Schizophyllum_commune	success	1	0	0	0	0	0.8906	0.9	10.9521	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Sclerotinia_sclerotiorum	success	1	0	0	0	0	1.0706	1.0834	13.064	2.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Spizellomyces_punctatus_DAOM_BR117	success	1	0	0	0	0	0.8283	0.8334	5.3179	7.3	peak_rss	0.0	0.0	1	8	epyc	GCF_000182565.1	Chytridiomycota	24.1	0.22066	0.03437
+v1.9.0-rc1_container	Sporobolomyces_koalae_JCM15063	success	1	0	0	0	0	1.0658	1.0668	6.8693	2.8	peak_rss	0.0	0.0	1	8	epyc	GCF_050403365.1	Basidiomycota	18.3	0.37537	0.05824
+v1.9.0-rc1_container	Sporobolomyces_salmoneus_JCM6883	success	1	0	0	0	0	1.0086	1.0168	6.4339	3.5	peak_rss	0.0	0.0	1	8	epyc	GCF_050403485.1	Basidiomycota	20.3	0.31694	0.04969
+v1.9.0-rc1_container	Sugiyamaella_lignohabitans_CBS_10342	success	1	0	0	0	0	1.1667	1.1834	7.6137	12.3	peak_rss	0.0	0.0	1	8	epyc	GCF_001640025.1	Ascomycota	15.9	0.47885	0.07338
+v1.9.0-rc1_container	Synchytrium_microbalum_JEL517	success	1	0	0	0	0	0.8761	0.8834	5.8069	5.2	peak_rss	0.0	0.0	1	8	epyc	GCF_006535985.1	Chytridiomycota	26.2	0.22164	0.03344
+v1.9.0-rc1_container	Talaromyces_marneffei	success	1	0	0	0	0	1.1475	1.1501	14.8177	7.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Talaromyces_stipitatus_ATCC_10500	success	1	0	0	0	0	1.6569	1.6668	10.1223	11.1	peak_rss	0.0	0.0	1	8	epyc	GCF_000003125.1	Ascomycota	35.7	0.28354	0.04641
+v1.9.0-rc1_container	Tilletiaria_anomala	success	1	0	0	0	0	0.59	0.6001	7.1638	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Tilletiopsis_washingtonensis	success	1	0	0	0	0	0.6856	0.7	8.4221	1.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Tremella_mesenterica_Fries	success	1	0	0	0	0	1.9319	1.9335	12.633	8.0	peak_rss	0.0	0.0	1	8	epyc	GCF_000271645.1	Basidiomycota	28.6	0.44171	0.06755
+v1.9.0-rc1_container	Uncinocarpus_reesii_1704	success	1	0	0	0	0	1.4936	1.5001	9.7234	11.6	peak_rss	0.0	0.0	1	8	epyc	GCF_000003515.1	Ascomycota	22.3	0.43603	0.06698
+v1.9.0-rc1_container	Wallemia_mellicola_CBS_633.66	success	1	0	0	0	0	0.9033	0.9	5.7253	2.8	peak_rss	0.0	0.0	1	8	epyc	GCF_000263375.1	Basidiomycota	9.8	0.58422	0.09218
+v1.9.0-rc1_container	Yarrowia_lipolytica	success	1	0	0	0	0	0.7483	0.75	8.8266	1.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container	Zygosaccharomyces_rouxii	success	1	0	0	0	0	0.2817	0.3	3.1434	2.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Allomyces_macrogynus	success	1	0	0	0	0	1.055	1.0668	13.0883	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Aspergillus_clavatus_NRRL_1	success	1	0	0	0	0	1.5158	1.5168	9.4345	4.0	peak_rss	0.0	0.0	1	8	epyc	GCF_000002715.2	Ascomycota	27.9	0.33816	0.05433
+v1.9.0-rc1_container_rust	Aspergillus_fumigatus	success	1	0	0	0	0	1.1356	1.1334	14.0048	3.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Blastomyces_dermatitidis_ER-3	success	1	0	0	0	0	1.7514	1.7668	11.0986	22.3	peak_rss	0.0	0.0	1	8	epyc	GCF_000003525.1	Ascomycota	66.6	0.16664	0.0263
+v1.9.0-rc1_container_rust	Botrytis_cinerea	success	1	0	0	0	0	1.2092	1.2168	14.7881	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Chaetomium_globosum	success	1	0	0	0	0	1.3139	1.3168	16.9728	2.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Cryptococcus_deneoformans	success	1	0	0	0	0	0.8089	0.8334	9.917	3.1	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Cryptococcus_neoformans	success	1	0	0	0	0	0.78	0.7833	9.633	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Cystobasidium_minutum_MCA_4210	success	1	0	0	0	0	0.9928	1.0168	6.3488	4.4	peak_rss	0.0	0.0	1	8	epyc	GCF_039999085.1	Basidiomycota	20.8	0.30523	0.04773
+v1.9.0-rc1_container_rust	Dactylellina_haptotyla_CBS_200.50	success	1	0	0	0	0	0.91	0.9167	5.7567	2.4	peak_rss	0.0	0.0	1	8	epyc	GCF_000441935.1	Ascomycota	39.5	0.14574	0.02304
+v1.9.0-rc1_container_rust	Eremothecium_gossypii_ATCC_10895	success	1	0	0	0	0	0.7469	0.75	4.8066	4.0	peak_rss	0.0	0.0	1	8	epyc	GCF_000091025.4	Ascomycota	9.1	0.5282	0.08208
+v1.9.0-rc1_container_rust	Gaeumannomyces_tritici	success	1	0	0	0	0	1.2756	1.2834	16.0605	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Kluyveromyces_lactis	success	1	0	0	0	0	0.2247	0.2334	2.6614	13.1	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Laccaria_bicolor_S238N-H82	success	1	0	0	0	0	2.2442	2.2502	13.9138	4.9	peak_rss	0.0	0.0	1	8	epyc	GCF_000143565.1	Basidiomycota	64.9	0.21439	0.03458
+v1.9.0-rc1_container_rust	Leptographium_clavigerum_kw1407	success	1	0	0	0	0	1.4267	1.4334	8.851	4.1	peak_rss	0.0	0.0	1	8	epyc	GCF_000143105.1	Ascomycota	29.8	0.29701	0.04787
+v1.9.0-rc1_container_rust	Letharia_columbiana_WasteWater2	success	1	0	0	0	0	1.1347	1.15	6.6393	4.3	peak_rss	0.0	0.0	1	8	epyc	GCF_014066305.1	Ascomycota	52.3	0.12695	0.0217
+v1.9.0-rc1_container_rust	Lipomyces_tetrasporus	success	1	0	0	0	0	0.9678	0.9668	12.1688	2.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Malassezia_globosa	success	1	0	0	0	0	0.3311	0.3334	4.0329	1.5	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Malassezia_sympodialis	success	1	0	0	0	0	0.3747	0.3833	4.4821	1.1	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Mixia_osmundae_IAM_14324	success	1	0	0	0	0	0.6386	0.6334	4.3477	2.3	peak_rss	0.0	0.0	1	8	epyc	GCF_000708205.1	Basidiomycota	13.6	0.31968	0.04696
+v1.9.0-rc1_container_rust	Morchella_importuna	success	1	0	0	0	0	1.1831	1.1834	13.9565	6.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Mucor_mucedo	success	1	0	0	0	0	1.3025	1.3168	16.0207	2.3	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Nakaseomyces_glabratus_CBS_138	success	1	0	0	0	0	0.8236	0.8334	5.2242	2.9	peak_rss	0.0	0.0	1	8	epyc	GCF_000002545.3	Ascomycota	12.3	0.42473	0.06696
+v1.9.0-rc1_container_rust	Orbilia_oligospora	success	1	0	0	0	0	1.3239	1.3334	16.6876	3.0	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Parastagonospora_nodorum	success	1	0	0	0	0	1.3217	1.3334	15.9591	3.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Phycomyces_blakesleeanus	success	1	0	0	0	0	1.8208	1.8335	21.0288	2.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Pneumocystis_murina_B123	success	1	0	0	0	0	0.7725	0.7834	4.9672	3.5	peak_rss	0.0	0.0	1	8	epyc	GCF_000349005.2	Ascomycota	7.5	0.66229	0.103
+v1.9.0-rc1_container_rust	Protomyces_lactucae-debilis	success	1	0	0	0	0	0.35	0.3667	4.1216	1.9	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Pyrenophora_teres	success	1	0	0	0	0	0.4194	0.4333	4.8303	4.4	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Pyrenophora_tritici-repentis	success	1	0	0	0	0	1.3236	1.3334	16.7662	3.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Pyricularia_oryzae_70-15	success	1	0	0	0	0	1.5442	1.5501	9.1754	6.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000002495.2	Ascomycota	41.0	0.22379	0.03766
+v1.9.0-rc1_container_rust	Rhizopus_delemar	success	1	0	0	0	0	1.5806	1.5834	19.3492	3.3	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Rhizopus_microsporus	success	1	0	0	0	0	0.2417	0.25	2.2127	7.0	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Rhizopus_microsporus_ATCC_52813	failed	0	1	0	0	1	0.0		0.0	0.0		0.3	0.0				GCF_002708625.1	Mucoromycota	26.0	0.0	0.0
+v1.9.0-rc1_container_rust	Rhodotorula_graminis_WP1	success	1	0	0	0	0	1.0178	1.0167	6.5789	6.5	peak_rss	0.0	0.0	1	8	epyc	GCF_001329695.1	Basidiomycota	21.0	0.31328	0.04847
+v1.9.0-rc1_container_rust	Rhodotorula_toruloides_NP11	success	1	0	0	0	0	0.9653	0.9667	6.0726	4.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000320785.1	Basidiomycota	20.2	0.30062	0.04779
+v1.9.0-rc1_container_rust	Schizophyllum_commune	success	1	0	0	0	0	1.0319	1.0334	12.6599	2.6	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Sclerotinia_sclerotiorum	success	1	0	0	0	0	1.4011	1.4168	17.0039	2.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Spizellomyces_punctatus_DAOM_BR117	success	1	0	0	0	0	0.6556	0.65	4.1765	4.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000182565.1	Chytridiomycota	24.1	0.1733	0.0272
+v1.9.0-rc1_container_rust	Sporobolomyces_koalae_JCM15063	success	1	0	0	0	0	0.9194	0.9167	5.9819	3.2	peak_rss	0.0	0.0	1	8	epyc	GCF_050403365.1	Basidiomycota	18.3	0.32688	0.05024
+v1.9.0-rc1_container_rust	Sporobolomyces_salmoneus_JCM6883	success	1	0	0	0	0	0.9911	1.0	6.0269	3.5	peak_rss	0.0	0.0	1	8	epyc	GCF_050403485.1	Basidiomycota	20.3	0.29689	0.04882
+v1.9.0-rc1_container_rust	Sugiyamaella_lignohabitans_CBS_10342	success	1	0	0	0	0	0.8689	0.8834	5.6078	4.5	peak_rss	0.0	0.0	1	8	epyc	GCF_001640025.1	Ascomycota	15.9	0.35269	0.05465
+v1.9.0-rc1_container_rust	Synchytrium_microbalum_JEL517	success	1	0	0	0	0	0.6136	0.6334	3.9964	4.1	peak_rss	0.0	0.0	1	8	epyc	GCF_006535985.1	Chytridiomycota	26.2	0.15254	0.02342
+v1.9.0-rc1_container_rust	Talaromyces_marneffei	success	1	0	0	0	0	1.1358	1.1335	14.6363	7.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Talaromyces_stipitatus_ATCC_10500	success	1	0	0	0	0	1.3922	1.4001	8.732	4.6	peak_rss	0.0	0.0	1	8	epyc	GCF_000003125.1	Ascomycota	35.7	0.24459	0.039
+v1.9.0-rc1_container_rust	Tilletiaria_anomala	success	1	0	0	0	0	0.605	0.6167	7.6303	2.2	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Tilletiopsis_washingtonensis	success	1	0	0	0	0	0.6956	0.7	8.3682	1.7	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Tremella_mesenterica_Fries	success	1	0	0	0	0	2.1594	2.1668	14.5655	5.2	peak_rss	0.0	0.0	1	8	epyc	GCF_000271645.1	Basidiomycota	28.6	0.50928	0.07551
+v1.9.0-rc1_container_rust	Uncinocarpus_reesii_1704	success	1	0	0	0	0	1.3922	1.4001	8.7849	3.7	peak_rss	0.0	0.0	1	8	epyc	GCF_000003515.1	Ascomycota	22.3	0.39394	0.06243
+v1.9.0-rc1_container_rust	Wallemia_mellicola_CBS_633.66	success	1	0	0	0	0	0.8911	0.9	6.0738	2.7	peak_rss	0.0	0.0	1	8	epyc	GCF_000263375.1	Basidiomycota	9.8	0.61978	0.09093
+v1.9.0-rc1_container_rust	Yarrowia_lipolytica	success	1	0	0	0	0	0.9525	0.9667	11.6424	1.8	peak_rss	0.0	0.0	1	16	epyc					
+v1.9.0-rc1_container_rust	Zygosaccharomyces_rouxii	success	1	0	0	0	0	0.2106	0.2167	2.538	2.7	peak_rss	0.0	0.0	1	16	epyc					

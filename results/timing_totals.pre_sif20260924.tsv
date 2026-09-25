@@ -1,0 +1,9 @@
+cellA	cellB	n_species	n_with_rnaseq	medA_wall_h	medB_wall_h	med_ratio_wall	p_wall	medA_cpu_h	medB_cpu_h	med_ratio_cpu	p_cpu	sumA_cpu_h	sumB_cpu_h
+v1.8.17_conda	v1.9.0-rc1_conda	15	14	1.80	5.63	1.27	0.11	6.08	19.55	1.29	0.00018	179	338
+v1.8.17_conda	v1.9.0-rc1_conda_rust	15	14	1.80	2.64	0.83	0.85	6.08	14.64	0.74	0.49	179	216
+v1.8.17_conda	v1.9.0-rc1_container	15	14	1.80	1.73	0.59	0.083	6.08	13.47	0.99	0.72	179	196
+v1.8.17_conda	v1.9.0-rc1_container_rust	15	14	1.80	1.44	0.57	0.03	6.08	10.84	0.76	0.64	179	158
+v1.9.0-rc1_conda	v1.9.0-rc1_conda_rust	63	40	2.20	1.95	0.64	0.00037	10.05	9.60	0.67	0.00011	1129	772
+v1.9.0-rc1_container	v1.9.0-rc1_container_rust	64	41	1.46	1.37	0.88	0.002	10.96	9.08	0.91	0.0023	761	683
+v1.9.0-rc1_conda	v1.9.0-rc1_container	63	40	2.20	1.45	0.39	1.4e-07	10.05	10.95	0.70	0.001	1129	740
+v1.9.0-rc1_conda_rust	v1.9.0-rc1_container_rust	64	41	1.97	1.37	0.64	4.3e-07	9.98	9.08	0.93	0.022	795	683

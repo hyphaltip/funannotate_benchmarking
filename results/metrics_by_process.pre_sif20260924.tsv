@@ -1,0 +1,1051 @@
+cell	genome	process	n_tasks	n_failed	n_aborted	n_superseded	n_unresolved	realtime_hours_sum	wall_clock_hours	cpu_hours_sum	peak_rss_gb_max	rss_field	overhead_task_time_hours_sum	overhead_cpu_hours_sum	attempts	cpus	queues
+v1.8.17_conda	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	6	0	0.0001		0.0	0.003	rss	0.0005	0.0003			
+v1.8.17_conda	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	1	0	0.0014		0.0003	0.14	rss	0.0013	0.0003			
+v1.8.17_conda	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0481		6.0483	6.7	rss	0.0	0.0			
+v1.8.17_conda	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	32	0	2	0	0.045		0.0304	0.099	rss	14.8894	2.1823			
+v1.8.17_conda	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6092		3.4844	9.4	rss	0.0	0.0			
+v1.8.17_conda	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	23	0	2	0	1.1936		1.9181	1.5	rss	16.3783	24.384			
+v1.8.17_conda	Batrachochytrium_dendrobatidis_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4289		2.4112	5.0	rss	0.0	0.0			
+v1.8.17_conda	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	29	0	1	0	1.175		2.417	1.5	rss	28.7503	22.5714			
+v1.8.17_conda	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6275		3.5397	11.4	rss	0.0	0.0			
+v1.8.17_conda	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	9.73		30.7468	3.9	rss	0.0	0.0			
+v1.8.17_conda	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6108		3.629	8.7	rss	0.0	0.0			
+v1.8.17_conda	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	24	0	2	0	1.1572		2.0842	2.8	rss	39.9517	73.049			
+v1.8.17_conda	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	9.2519		22.4545	5.8	rss	0.0	0.0			
+v1.8.17_conda	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.525		2.6502	8.0	rss	0.0	0.0			
+v1.8.17_conda	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	29	0	0	0	1.2478		2.1574	1.4	rss	14.367	0.0			
+v1.8.17_conda	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9575		5.0987	13.4	rss	0.0	0.0			
+v1.8.17_conda	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.9833		25.0772	3.5	rss	0.0	0.0			
+v1.8.17_conda	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	2.2006		8.8638	2.8	rss	0.0	0.0			
+v1.8.17_conda	Leptographium_clavigerum_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Malassezia_globosa	FETCH_RNASEQ:SRA_FETCH	0	12	0	0	1	0.0		0.0	0.0		0.6	0.0			
+v1.8.17_conda	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0029		0.0007	0.045	rss	0.0	0.0			
+v1.8.17_conda	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	1	0	0.3208		1.7941	3.0	rss	0.4469	1.6318			
+v1.8.17_conda	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	29	0	2	0	2.9878		7.3798	4.2	rss	11.0581	0.1105			
+v1.8.17_conda	Malassezia_sympodialis_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.9022		10.9777	3.6	rss	0.0	0.0			
+v1.8.17_conda	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.0894		28.0602	5.5	rss	0.0	0.0			
+v1.8.17_conda	Nakaseomyces_glabratus_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Nakaseomyces_glabratus_CBS_138	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	2.7919		14.1942	3.4	rss	0.0	0.0			
+v1.8.17_conda	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.5319		33.3652	8.7	rss	0.0	0.0			
+v1.8.17_conda	Pneumocystis_murina_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0002		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5		2.541	3.5	rss	0.0	0.0			
+v1.8.17_conda	Rhizopus_microsporus_ATCC_52813	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3469		1.5064	3.4	rss	0.0	0.0			
+v1.8.17_conda	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0361		5.6903	4.5	rss	0.0	0.0			
+v1.8.17_conda	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	4.5561		6.7476	0.493	rss	0.0	0.0			
+v1.8.17_conda	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3572		2.0808	2.8	rss	0.0	0.0			
+v1.8.17_conda	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	25	0	1	0	0.2989		0.4337	1.5	rss	25.2867	10.5681			
+v1.8.17_conda	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.645		3.7545	14.0	rss	0.0	0.0			
+v1.8.17_conda	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	8.8153		20.5925	2.6	rss	0.0	0.0			
+v1.8.17_conda	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	5.3533		25.6103	3.5	rss	0.0	0.0			
+v1.8.17_conda	Spizellomyces_punctatus_+1_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Spizellomyces_punctatus_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Spizellomyces_punctatus_DAOM_BR117	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.0098		0.0043	0.103	rss	0.0	0.0			
+v1.8.17_conda	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	5.9625		29.574	10.0	rss	0.0	0.0			
+v1.8.17_conda	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	7.1525		16.6439	2.2	rss	0.0	0.0			
+v1.8.17_conda	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5047		2.5917	4.9	rss	0.0	0.0			
+v1.8.17_conda	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.3192		13.8263	1.7	rss	0.0	0.0			
+v1.8.17_conda	Trichosporon_asahii_+9_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0002		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4003		2.3268	4.1	rss	0.0	0.0			
+v1.8.17_conda	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	29	0	1	0	0.5636		0.9288	1.3	rss	22.0661	22.2936			
+v1.8.17_conda	Wallemia_mellicola_+4_more	FETCH_RNASEQ:SRA_QUERY_BATCH	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0			
+v1.8.17_conda	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5989		3.3915	5.4	rss	0.0	0.0			
+v1.8.17_conda	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	1	0	3.5717		18.6977	1.7	rss	9.5197	24.4562			
+v1.8.17_conda	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4825		2.5862	4.3	rss	0.0	0.0			
+v1.8.17_conda	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.3931		4.937	3.0	rss	0.0	0.0			
+v1.9.0-beta12_container	-	ASM_STATS	1	0	0	0	0	0.0003		0.0003	0.005	rss	0.0	0.0			
+v1.9.0-beta12_container	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	2	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-beta12_container	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0004		0.0001	0.005	rss	0.0	0.0			
+v1.9.0-beta12_container	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.0009		0.0004	0.145	rss	0.0	0.0			
+v1.9.0-beta12_container	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0314		12.0538	2.1	rss	0.0	0.0			
+v1.9.0-beta12_container	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0075		0.0121	0.068	rss	0.0	0.0			
+v1.9.0-beta12_container	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9253		5.5878	9.9	rss	0.0	0.0			
+v1.9.0-beta12_container	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.985		3.0279	1.2	rss	0.0	0.0			
+v1.9.0-beta12_container	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7925		9.0519	3.1	rss	0.0	0.0			
+v1.9.0-beta12_container	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0056		0.0076	0.078	rss	0.0	0.0			
+v1.9.0-beta12_container	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5361		3.2558	19.9	rss	0.0	0.0			
+v1.9.0-beta12_container	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6733		1.5911	1.2	rss	0.0	0.0			
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1469		13.8127	11.0	rss	0.0	0.0			
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0034	0.074	rss	0.0	0.0			
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6789		3.9498	4.8	rss	0.0	0.0			
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6386		1.7607	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9811		12.4788	2.4	rss	0.0	0.0			
+v1.9.0-beta12_container	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0032		0.0057	0.072	rss	0.0	0.0			
+v1.9.0-beta12_container	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7803		4.5888	10.8	rss	0.0	0.0			
+v1.9.0-beta12_container	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7042		1.8653	1.6	rss	0.0	0.0			
+v1.9.0-beta12_container	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0		0.0	0.0		0.0	0.0			
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0059		0.0089	0.086	rss	0.0	0.0			
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	1	0	0.8156		4.9349	16.2	rss	0.8194	5.074			
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	3.2342		16.4263	2.9	rss	0.0	0.0			
+v1.9.0-beta12_container	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6244		7.8549	2.1	rss	0.0	0.0			
+v1.9.0-beta12_container	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0032		0.0046	0.061	rss	0.0	0.0			
+v1.9.0-beta12_container	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4322		2.3656	7.2	rss	0.0	0.0			
+v1.9.0-beta12_container	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.9864		2.0941	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1214		13.8604	3.5	rss	0.0	0.0			
+v1.9.0-beta12_container	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0056	0.083	rss	0.0	0.0			
+v1.9.0-beta12_container	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8431		4.9546	8.8	rss	0.0	0.0			
+v1.9.0-beta12_container	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.1367		3.0576	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2897		3.4958	1.5	rss	0.0	0.0			
+v1.9.0-beta12_container	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0025	0.058	rss	0.0	0.0			
+v1.9.0-beta12_container	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2469		1.4328	2.6	rss	0.0	0.0			
+v1.9.0-beta12_container	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3981		0.7328	0.782	rss	0.0	0.0			
+v1.9.0-beta12_container	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0019	0.053	rss	0.0	0.0			
+v1.9.0-beta12_container	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7264		4.6569	2.9	rss	0.0	0.0			
+v1.9.0-beta12_container	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0049	0.059	rss	0.0	0.0			
+v1.9.0-beta12_container	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1258		6.9914	4.0	rss	0.0	0.0			
+v1.9.0-beta12_container	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2903		3.6537	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0023		0.0033	0.057	rss	0.0	0.0			
+v1.9.0-beta12_container	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2644		1.4058	3.3	rss	0.0	0.0			
+v1.9.0-beta12_container	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2528		0.6183	0.816	rss	0.0	0.0			
+v1.9.0-beta12_container	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7325		9.2808	2.6	rss	0.0	0.0			
+v1.9.0-beta12_container	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0054	0.075	rss	0.0	0.0			
+v1.9.0-beta12_container	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7581		4.3831	6.5	rss	0.0	0.0			
+v1.9.0-beta12_container	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2544		0.5857	0.81	rss	0.0	0.0			
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0028		0.0174	0.176	rss	0.0	0.0			
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0047	0.056	rss	0.0	0.0			
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4875		2.6125	4.3	rss	0.0	0.0			
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.8908		8.8567	1.9	rss	0.0	0.0			
+v1.9.0-beta12_container	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7589		9.6182	2.0	rss	0.0	0.0			
+v1.9.0-beta12_container	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0037		0.0058	0.054	rss	0.0	0.0			
+v1.9.0-beta12_container	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4306		2.3719	3.7	rss	0.0	0.0			
+v1.9.0-beta12_container	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4694		1.2173	1.006	rss	0.0	0.0			
+v1.9.0-beta12_container	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7461		9.3495	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0051	0.073	rss	0.0	0.0			
+v1.9.0-beta12_container	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3078		1.6574	3.8	rss	0.0	0.0			
+v1.9.0-beta12_container	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3964		1.0841	0.758	rss	0.0	0.0			
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2247		2.6789	2.6	rss	0.0	0.0			
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0025	0.058	rss	0.0	0.0			
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2222		1.2071	3.5	rss	0.0	0.0			
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2236		0.4436	0.842	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	-	ASM_STATS	1	0	0	0	0	0.0004		0.0003	0.008	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	2	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0004		0.0001	0.005	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.001		0.0003	0.029	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0161		13.0011	2.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0086		0.0121	0.067	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8556		4.5712	9.4	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.63		2.246	1.2	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.8658		10.9658	3.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0023		0.0042	0.078	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4661		2.8116	3.7	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7597		1.957	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9856		12.2071	11.1	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0032	0.075	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2275		1.3131	4.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5944		1.7245	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1864		13.8452	2.5	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0062		0.0103	0.072	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6097		3.3614	3.9	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.9267		2.4529	1.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0053		0.0083	0.085	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	2	0	0.0		0.0	0.0		1.0564	5.6035			
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	3.27		16.5233	2.9	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6931		8.3971	2.2	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0028	0.064	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2347		1.229	3.9	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6908		1.6801	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0383		11.9118	3.5	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.0056	0.085	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4119		2.4296	9.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7258		2.0846	1.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2544		3.2271	1.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0014	0.054	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.1644		0.8421	2.4	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3108		0.5943	0.763	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0021	0.053	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8383		5.4592	2.8	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0042		0.0056	0.059	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8233		5.1705	4.0	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3594		4.3457	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0019	0.057	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3386		1.5522	3.2	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2017		0.512	0.862	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.75		9.4485	2.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0056		0.0083	0.075	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3961		2.3256	4.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2364		0.555	0.789	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6083		7.1309	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0031		0.0043	0.056	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3892		1.9493	4.2	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5378		1.1686	1.3	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6456		8.0404	2.2	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0059	0.055	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2828		1.5134	3.0	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4706		1.3519	1.1	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9789		11.7114	1.7	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0037		0.0052	0.073	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2392		1.2401	3.7	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2756		0.9016	0.733	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2106		2.6284	2.6	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0027	0.063	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2228		1.066	3.5	rss	0.0	0.0			
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1506		0.3153	0.837	rss	0.0	0.0			
+v1.9.0-rc1_conda	-	ASM_STATS	1	0	0	0	0	0.0167		0.0226	0.014	rss	0.0	0.0			
+v1.9.0-rc1_conda	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	0	0	0.0016		0.0001	0.003	rss	0.0	0.0			
+v1.9.0-rc1_conda	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0063		0.0001	0.008	rss	0.0	0.0			
+v1.9.0-rc1_conda	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.0011		0.0004	0.133	rss	0.0	0.0			
+v1.9.0-rc1_conda	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0194		0.1603	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0059		0.0069	0.067	rss	0.0	0.0			
+v1.9.0-rc1_conda	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1131		5.5586	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	5.9931		29.9952	3.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_clavatus_NRRL_1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.004	0.061	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_clavatus_NRRL_1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5839		10.2113	10.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.02		0.241	2.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0042	0.072	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6908		3.8528	12.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	10.4047		21.4337	8.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.1586		2.0659	6.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0031	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5394		2.9783	4.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	8.8347		27.2286	6.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Blastomyces_dermatitidis_ER-3	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0043		0.0081	0.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Blastomyces_dermatitidis_ER-3	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.6322		11.6055	19.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0233		0.2592	2.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0056	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7644		4.1181	13.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	5.8717		33.6388	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0428		0.5224	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0023		0.0045	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7244		4.2641	13.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	1.0617		3.2561	4.2	rss	0.55	0.0			
+v1.9.0-rc1_conda	Cokeromyces_recurvatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0347		0.3696	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cokeromyces_recurvatus_NRRL_2243	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0038	0.054	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5306		2.6464	6.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	8.6397		28.226	3.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Colletotrichum_graminicola	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0442		0.469	3.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Colletotrichum_graminicola_M1.001	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0067	0.063	rss	0.0	0.0			
+v1.9.0-rc1_conda	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8469		4.9521	5.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	7.7747		36.4246	5.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_deneoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0269		0.3377	3.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_deneoformans_JEC21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0026	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5764		2.645	5.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	9.6328		21.404	5.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0211		0.2512	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0025	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5072		2.1075	5.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	4.5331		17.1939	9.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cystobasidium_minutum_MCA_4210	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0028	0.066	rss	0.0	0.0			
+v1.9.0-rc1_conda	Cystobasidium_minutum_MCA_4210	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.2064		5.7726	15.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Dactylellina_haptotyla_CBS_200.50	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0025		0.0049	0.06	rss	0.0	0.0			
+v1.9.0-rc1_conda	Dactylellina_haptotyla_CBS_200.50	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1383		5.3581	2.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Drepanopeziza_brunnea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0289		0.396	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Drepanopeziza_brunnea_MB_m1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0066	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5981		3.6176	8.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda	Eremothecium_gossypii_ATCC_10895	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0013	0.003	rss	0.0	0.0			
+v1.9.0-rc1_conda	Eremothecium_gossypii_ATCC_10895	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	3.3547		9.8763	3.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_oxysporum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0864		1.0533	5.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_oxysporum_4287	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.004		0.008	0.084	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9672		5.4919	7.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0339		0.414	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0055	0.071	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8219		4.501	14.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.7389		34.1527	4.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Gaeumannomyces_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0208		0.2857	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Gaeumannomyces_tritici_R3-111a-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0033		0.0056	0.085	rss	0.0	0.0			
+v1.9.0-rc1_conda	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0067		5.4652	4.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	6.0567		33.0088	4.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Kluyveromyces_lactis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0114		0.1407	1.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Kluyveromyces_lactis_NRRL_Y-1140	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.061	rss	0.0	0.0			
+v1.9.0-rc1_conda	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.605		2.6644	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.9239		5.2561	7.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Laccaria_bicolor_S238N-H82	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0039		0.0074	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda	Laccaria_bicolor_S238N-H82	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	3.0422		14.4536	4.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lachancea_thermotolerans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0086		0.1015	1.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lachancea_thermotolerans_CBS_6340	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.053	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3497		1.9259	5.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Leptographium_clavigerum_kw1407	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.004		0.0038	0.068	rss	0.0	0.0			
+v1.9.0-rc1_conda	Leptographium_clavigerum_kw1407	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.8314		11.2667	5.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Letharia_columbiana_WasteWater2	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0068	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda	Letharia_columbiana_WasteWater2	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1214		6.0196	2.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lipomyces_tetrasporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0406		0.5005	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lipomyces_tetrasporus_NRRL_Y-64009	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0029	0.06	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4042		2.1013	8.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.8222		2.035	4.0	rss	0.55	0.0			
+v1.9.0-rc1_conda	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0098		0.1179	1.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0013	0.049	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4478		2.0526	1.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	3.3008		8.0705	6.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_sympodialis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0124		0.1081	0.755	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_sympodialis_ATCC_42132	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.002	0.049	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3089		1.5525	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.3225		7.0621	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mixia_osmundae_IAM_14324	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0019	0.041	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mixia_osmundae_IAM_14324	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.4994		4.9902	3.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_importuna	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0653		0.9023	6.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_importuna_M04M26	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0037		0.007	0.072	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	2	0	0	0	3.6458	3.6504	19.662	9.6	peak_rss	0.1364	0.0	1	8	epyc
+v1.9.0-rc1_conda	Morchella_sextelata	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0603		0.7441	4.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_sextelata_SCLS	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.0069	0.066	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9819		5.3938	7.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	8.6189		52.3856	23.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mucor_mucedo	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0211		0.2251	2.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mucor_mucedo_NRRL_3635	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.0059	0.048	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7033		3.4196	4.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	10.5406		28.5754	3.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Nakaseomyces_glabratus_CBS_138	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.047	rss	0.0	0.0			
+v1.9.0-rc1_conda	Nakaseomyces_glabratus_CBS_138	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0175		4.9959	5.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Orbilia_oligospora	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0217		0.2818	2.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Orbilia_oligospora_ATCC_24927	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0052	0.076	rss	0.0	0.0			
+v1.9.0-rc1_conda	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7822		4.3711	9.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	16.7472		31.7695	6.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Parastagonospora_nodorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0297		0.3849	3.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Parastagonospora_nodorum_SN15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0048	0.08	rss	0.0	0.0			
+v1.9.0-rc1_conda	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4681		2.799	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	16.2228		30.8233	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Phycomyces_blakesleeanus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0247		0.2933	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Phycomyces_blakesleeanus_NRRL_1555_-	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0058		0.0072	0.067	rss	0.0	0.0			
+v1.9.0-rc1_conda	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8622		5.1811	12.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	16.5044		45.1232	9.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0006		0.001	0.048	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1686		3.812	1.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Protomyces_lactucae-debilis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0222		0.2568	1.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Protomyces_lactucae-debilis_12-1054	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.049	rss	0.0	0.0			
+v1.9.0-rc1_conda	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3689		2.262	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.7569		8.0187	6.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pseudogymnoascus_destructans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0242		0.3228	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pseudogymnoascus_destructans_20631-21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0035	0.051	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4825		2.7445	3.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	7.7772		24.4905	5.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_teres	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0433		0.5467	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_teres_0-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.004	0.053	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7658		2.7509	1.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.2675		0.9665	1.019	rss	0.55	0.0			
+v1.9.0-rc1_conda	Pyrenophora_tritici-repentis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.025		0.3018	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_tritici-repentis_Pt-1C-BFP	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0052	0.08	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7547		4.431	12.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	13.6872		30.9194	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyricularia_oryzae_70-15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0046		0.0052	0.113	rss	0.0	0.0			
+v1.9.0-rc1_conda	Pyricularia_oryzae_70-15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6853		10.0544	7.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_delemar	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0264		0.3129	3.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_delemar_RA_99-880	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0054		0.0066	0.072	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8239		4.8247	15.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	25.1864		49.6424	4.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_microsporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2406		2.0447	6.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_microsporus_ATCC_52813	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0031		0.0033	0.064	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhizopus_microsporus_ATCC_52813	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	5	0	0	1	0.0		0.0	0.0		0.8	0.0			
+v1.9.0-rc1_conda	Rhodotorula_graminis_WP1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.0026	0.054	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhodotorula_graminis_WP1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1975		6.7264	8.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.0026	0.052	rss	0.0	0.0			
+v1.9.0-rc1_conda	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0564		5.9665	4.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0131		0.166	1.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.05	rss	0.0	0.0			
+v1.9.0-rc1_conda	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4436		2.5911	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0286		0.327	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0051	0.069	rss	0.0	0.0			
+v1.9.0-rc1_conda	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7267		4.0962	16.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	2	0	0	0	4.8728		65.9872	3.7	rss	0.0667	0.0			
+v1.9.0-rc1_conda	Sclerotinia_sclerotiorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0194		0.2579	2.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sclerotinia_sclerotiorum_1980	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.005	0.06	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6136		3.0429	3.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	1.6175		3.4016	3.9	rss	0.5667	0.0			
+v1.9.0-rc1_conda	Spizellomyces_punctatus_DAOM_BR117	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0081		0.0027	0.043	rss	0.0	0.0			
+v1.9.0-rc1_conda	Spizellomyces_punctatus_DAOM_BR117	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7236		3.6998	6.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sporobolomyces_koalae_JCM15063	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0024	0.054	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sporobolomyces_koalae_JCM15063	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1953		7.1059	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sporobolomyces_salmoneus_JCM6883	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0027	0.048	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sporobolomyces_salmoneus_JCM6883	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9869		5.1765	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sugiyamaella_lignohabitans_CBS_10342	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0011		0.0021	0.076	rss	0.0	0.0			
+v1.9.0-rc1_conda	Sugiyamaella_lignohabitans_CBS_10342	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1217		5.9392	6.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Synchytrium_microbalum_JEL517	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0033	0.053	rss	0.0	0.0			
+v1.9.0-rc1_conda	Synchytrium_microbalum_JEL517	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9314		4.7631	5.5	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_marneffei	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0286		0.3527	3.4	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_marneffei_ATCC_18224	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0037	0.068	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6069		3.6459	14.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	12.8875		29.4351	6.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_stipitatus_ATCC_10500	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0024		0.0047	0.07	rss	0.0	0.0			
+v1.9.0-rc1_conda	Talaromyces_stipitatus_ATCC_10500	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6056		8.8017	16.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiaria_anomala	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0225		0.272	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiaria_anomala_UBC_951	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0024	0.047	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4331		1.9721	3.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0159		0.1802	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0022	0.05	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5322		2.8799	3.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	9.7267		15.1736	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tremella_mesenterica_Fries	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0037	0.064	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tremella_mesenterica_Fries	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.1978		11.0922	6.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tricharina_praecox	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0422		0.5013	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tricharina_praecox_CBS_144465	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0051	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6433		3.106	6.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	12.3583		32.0822	3.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Trichosporon_asahii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0286		0.341	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Trichosporon_asahii_CBS_2479	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0033	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5108		2.5475	6.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0325		0.337	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0029	0.05	rss	0.0	0.0			
+v1.9.0-rc1_conda	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.445		2.5574	4.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda	Uncinocarpus_reesii_1704	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.003	0.089	rss	0.0	0.0			
+v1.9.0-rc1_conda	Uncinocarpus_reesii_1704	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.8475		7.5914	6.3	rss	0.0	0.0			
+v1.9.0-rc1_conda	Wallemia_mellicola_CBS_633.66	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0013	0.053	rss	0.0	0.0			
+v1.9.0-rc1_conda	Wallemia_mellicola_CBS_633.66	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0611		6.4409	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0186		0.194	1.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0026	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.715		3.9625	10.9	rss	0.0	0.0			
+v1.9.0-rc1_conda	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	11.3736		19.0053	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0214		0.2732	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0013	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4469		2.5793	4.1	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.9175		5.4457	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zymoseptoria_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0886		1.2133	6.8	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zymoseptoria_tritici_IPO323	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0053	0.087	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9122		4.8877	16.0	rss	0.0	0.0			
+v1.9.0-rc1_conda	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	4.485		20.8463	10.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	-	ASM_STATS	1	0	0	0	0	0.0081		0.0106	0.012	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	0	0	0.0001		0.0001	0.003	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0055		0.0001	0.008	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.001		0.0003	0.136	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	7.3953		18.4956	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0083		0.006	0.044	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5428		3.0982	10.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5667	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_clavatus_NRRL_1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0037	0.073	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_clavatus_NRRL_1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1975		7.573	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.0819		10.9525	4.1	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0037	0.08	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4656		2.3092	4.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.615		1.3745	1.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	2.9925		14.6184	10.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0031	0.068	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2825	0.2835	1.1286	1.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Blastomyces_dermatitidis_ER-3	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0044		0.0083	0.109	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Blastomyces_dermatitidis_ER-3	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.4239		9.601	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	3.6203		20.7188	2.5	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0031		0.0059	0.073	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5628		2.6546	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6822		1.8597	1.8	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	7.16		20.3774	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0047	0.083	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.2283	2.2345	11.8993	4.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002	0.0	0.0	0.005	peak_rss	0.55	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Cokeromyces_recurvatus	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1	0.0			
+v1.9.0-rc1_conda_rust	Cokeromyces_recurvatus_NRRL_2243	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0035	0.07	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4422	0.4543	1.7446	6.1	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8311	0.8338	1.7644	1.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Colletotrichum_graminicola	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	6.8528		18.989	3.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Colletotrichum_graminicola_M1.001	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0038		0.007	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6425		3.4014	4.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5667	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_deneoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1447		11.5216	3.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_deneoformans_JEC21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0026	0.065	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.355		1.2748	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.2017		10.064	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0025	0.064	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2642		1.3161	4.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Cystobasidium_minutum_MCA_4210	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0028	0.073	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Cystobasidium_minutum_MCA_4210	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9156		5.5199	4.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Dactylellina_haptotyla_CBS_200.50	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0069		0.0093	0.061	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Dactylellina_haptotyla_CBS_200.50	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.003	rss	0.5667	0.0			
+v1.9.0-rc1_conda_rust	Drepanopeziza_brunnea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3617		0.9132	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Drepanopeziza_brunnea_MB_m1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0032		0.0063	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6267		9.4639	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.0005		0.0	0.0		0.0	0.0			
+v1.9.0-rc1_conda_rust	Eremothecium_gossypii_ATCC_10895	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0012	0.063	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Eremothecium_gossypii_ATCC_10895	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.003	rss	0.5666	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_oxysporum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	5.8231		23.7581	5.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_oxysporum_4287	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0041		0.0081	0.091	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7581		3.7395	4.8	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8558		2.1653	1.9	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	6.5281		17.6258	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0031		0.0059	0.089	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5289		2.3948	4.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.1258		2.1503	1.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Gaeumannomyces_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	5.1244		19.5241	2.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Gaeumannomyces_tritici_R3-111a-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0053	0.096	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6058	1.6174	9.5194	6.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002	0.0	0.0	0.003	peak_rss	0.55	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Kluyveromyces_lactis	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.5139		2.4949	2.4	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Kluyveromyces_lactis_NRRL_Y-1140	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0016	0.07	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2997		1.3035	4.0	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2253		0.4508	1.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Laccaria_bicolor_S238N-H82	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0039		0.0074	0.072	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Laccaria_bicolor_S238N-H82	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.9475		11.6831	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lachancea_thermotolerans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6142		5.818	1.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lachancea_thermotolerans_CBS_6340	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0012		0.0014	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2286	0.2335	1.088	2.4	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Leptographium_clavigerum_kw1407	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.004		0.0038	0.076	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Leptographium_clavigerum_kw1407	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5589		8.5365	4.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Letharia_columbiana_WasteWater2	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0064	0.073	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Letharia_columbiana_WasteWater2	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0969		5.7677	4.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lipomyces_tetrasporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	2.5422		13.9644	2.8	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lipomyces_tetrasporus_NRRL_Y-64009	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0028	0.069	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3028	0.3048	1.0419	3.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.4103		4.6948	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0013	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2475		1.0477	3.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5614		0.6383	1.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_sympodialis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.5994		4.9487	1.003	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_sympodialis_ATCC_42132	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0006		0.0011	0.053	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.1792	0.1668	0.867	2.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Mixia_osmundae_IAM_14324	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0019	0.061	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Mixia_osmundae_IAM_14324	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.5033		5.1466	6.0	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Morchella_importuna	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.4056		18.5156	6.7	rss	1.1167	0.0			
+v1.9.0-rc1_conda_rust	Morchella_importuna_M04M26	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.0063	0.07	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6031	0.6044	2.9363	3.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6689	0.6837	1.6481	1.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Morchella_sextelata	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	3.5147		35.2175	12.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Morchella_sextelata_SCLS	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0041		0.0073	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.3631	0.3668	2.793	9.0	peak_rss	0.0166	0.0	2	16	epyc
+v1.9.0-rc1_conda_rust	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Mucor_mucedo	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	4.0831		16.516	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Mucor_mucedo_NRRL_3635	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0062	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.44	0.4503	1.9422	3.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Nakaseomyces_glabratus_CBS_138	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.06	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Nakaseomyces_glabratus_CBS_138	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7253		4.4539	3.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Orbilia_oligospora	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.8322		17.7048	3.0	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Orbilia_oligospora_ATCC_24927	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0052	0.078	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4692	0.4669	1.9226	7.3	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7256	0.7334	2.0751	1.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Parastagonospora_nodorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	5.1644		16.9497	3.8	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Parastagonospora_nodorum_SN15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0048	0.065	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4233	0.4336	2.2327	4.1	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Phycomyces_blakesleeanus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	3.5153		19.1864	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Phycomyces_blakesleeanus_NRRL_1555_-	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0058		0.0072	0.079	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5481		2.954	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.7667		3.8284	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0011	0.059	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Protomyces_lactucae-debilis	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1	0.0			
+v1.9.0-rc1_conda_rust	Protomyces_lactucae-debilis_12-1054	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.059	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2808	0.2834	1.4572	3.5	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3694	0.3669	0.5586	1.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Pseudogymnoascus_destructans	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.0961	0.0			
+v1.9.0-rc1_conda_rust	Pseudogymnoascus_destructans_20631-21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0038	0.056	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5317	0.5336	2.6684	3.3	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4644	0.4669	1.1402	1.5	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Pyrenophora_teres	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.0356		5.8726	4.5	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_teres_0-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0042	0.055	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6967		2.5805	1.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2636		0.431	0.388	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_tritici-repentis	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	3.5956		19.4268	3.6	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0053	0.075	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5939		2.7782	11.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7919		2.5033	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyricularia_oryzae_70-15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0047		0.0053	0.124	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Pyricularia_oryzae_70-15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5403		8.641	4.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_delemar	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	3.765		27.364	3.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_delemar_RA_99-880	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0054		0.0066	0.084	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5667		2.5052	14.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_microsporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.445		2.8849	6.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_microsporus_ATCC_52813	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0032		0.0034	0.068	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhizopus_microsporus_ATCC_52813	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	5	0	0	1	0.0		0.0	0.0		1.1003	0.0			
+v1.9.0-rc1_conda_rust	Rhodotorula_graminis_WP1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0026	0.064	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhodotorula_graminis_WP1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9128		5.5342	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0028	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9394		5.6649	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.9483		4.8338	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.062	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3119		1.3155	3.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1678		0.3899	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.4383		12.1007	2.6	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0049	0.078	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5025		2.3236	8.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2458		0.6512	1.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sclerotinia_sclerotiorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	5.1383		18.5905	2.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sclerotinia_sclerotiorum_1980	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0025		0.0049	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5164		2.6413	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5453		1.6784	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Spizellomyces_punctatus_DAOM_BR117	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0039		0.0034	0.068	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Spizellomyces_punctatus_DAOM_BR117	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5583		3.0948	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sporobolomyces_koalae_JCM15063	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0024	0.059	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sporobolomyces_koalae_JCM15063	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Sporobolomyces_salmoneus_JCM6883	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0026	0.065	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sporobolomyces_salmoneus_JCM6883	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5139		6.2009	1.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sugiyamaella_lignohabitans_CBS_10342	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0012		0.0022	0.087	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Sugiyamaella_lignohabitans_CBS_10342	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5208		5.5708	1.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Synchytrium_microbalum_JEL517	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0037	0.063	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Synchytrium_microbalum_JEL517	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5342		3.345	2.9	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_marneffei	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	5.11		15.4629	7.8	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_marneffei_ATCC_18224	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0037	0.079	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4836		2.2444	4.4	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_stipitatus_ATCC_10500	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0047	0.081	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Talaromyces_stipitatus_ATCC_10500	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.003	rss	0.5666	0.0			
+v1.9.0-rc1_conda_rust	Tilletiaria_anomala	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	2.5975		8.0211	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tilletiaria_anomala_UBC_951	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0024	0.057	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4022	0.4168	1.528	1.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	2	0	0	0	0.7114	0.7171	0.8103	1.3	peak_rss	0.5333	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.32		8.5353	1.7	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0021	0.06	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2369		1.2665	4.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7461		1.3214	1.3	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tremella_mesenterica_Fries	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0039	0.076	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tremella_mesenterica_Fries	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_conda_rust	Tricharina_praecox	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.0892		16.7426	2.9	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Tricharina_praecox_CBS_144465	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0051	0.075	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6039	0.6214	2.3576	4.5	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8256	0.8338	1.4645	1.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Trichosporon_asahii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	4.6564		12.4512	2.2	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Trichosporon_asahii_CBS_2479	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0035	0.074	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.9314	1.9345	12.5019	4.0	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001	0.0166	0.0	0.006	peak_rss	0.5667	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	2.7169		11.2291	2.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0032	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2239	0.2169	1.0062	3.4	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_conda_rust	Uncinocarpus_reesii_1704	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0029	0.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Uncinocarpus_reesii_1704	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.8244		8.9252	4.0	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Wallemia_mellicola_CBS_633.66	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0015	0.058	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Wallemia_mellicola_CBS_633.66	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8081		4.7037	3.0	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.0011		13.4114	1.8	rss	1.1	0.0			
+v1.9.0-rc1_conda_rust	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0029	0.078	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3003		1.6398	4.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3383		0.9345	1.7	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.5567		3.6478	2.6	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0013	0.065	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2667		1.1003	3.9	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3267		0.4067	1.5	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zymoseptoria_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.5622		15.8113	7.1	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zymoseptoria_tritici_IPO323	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0054	0.076	rss	0.0	0.0			
+v1.9.0-rc1_conda_rust	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4847	0.4836	2.1357	13.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_conda_rust	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container	-	ASM_STATS	1	0	0	0	0	0.0105		0.014	0.014	rss	0.0	0.0			
+v1.9.0-rc1_container	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-rc1_container	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0005		0.0001	0.005	rss	0.0	0.0			
+v1.9.0-rc1_container	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.0011		0.0004	0.151	rss	0.0	0.0			
+v1.9.0-rc1_container	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1914		14.8864	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0065	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8331	0.8501	4.985	10.5	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.5667	0.0			
+v1.9.0-rc1_container	Aspergillus_clavatus_NRRL_1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0039	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container	Aspergillus_clavatus_NRRL_1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	0.9328		11.0926	3.9	rss	1.1028	0.0			
+v1.9.0-rc1_container	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0043	0.077	rss	0.0	0.0			
+v1.9.0-rc1_container	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4864		3.0005	19.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8258		2.1232	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1	0.0			
+v1.9.0-rc1_container	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0032	0.074	rss	0.0	0.0			
+v1.9.0-rc1_container	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.32	0.3335	2.6589	13.1	peak_rss	0.0167	0.0	2	16	epyc
+v1.9.0-rc1_container	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6817	0.6834	2.1404	1.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Blastomyces_dermatitidis_ER-3	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0043		0.0083	0.105	rss	0.0	0.0			
+v1.9.0-rc1_container	Blastomyces_dermatitidis_ER-3	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.0		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.0469		13.5977	2.5	rss	1.1167	0.0			
+v1.9.0-rc1_container	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0056	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6372		3.5952	12.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.9369		2.5588	1.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.4392		16.6843	2.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0025		0.0047	0.086	rss	0.0	0.0			
+v1.9.0-rc1_container	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6589		3.8519	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5478	0.0			
+v1.9.0-rc1_container	Cokeromyces_recurvatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9139		10.8268	2.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Cokeromyces_recurvatus_NRRL_2243	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0039	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3364	0.3336	1.8518	5.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container	Colletotrichum_graminicola	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1022	0.0			
+v1.9.0-rc1_container	Colletotrichum_graminicola_M1.001	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0033		0.0065	0.06	rss	0.0	0.0			
+v1.9.0-rc1_container	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5575	0.567	3.3372	5.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.9042	0.9167	2.5452	1.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Cryptococcus_deneoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7511		8.4222	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_deneoformans_JEC21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0029	0.062	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3478		2.0839	4.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6678		1.7823	1.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.6572		8.116	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0028	0.062	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3808		1.9959	5.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.007	rss	0.5669	0.0			
+v1.9.0-rc1_container	Cystobasidium_minutum_MCA_4210	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0033	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Cystobasidium_minutum_MCA_4210	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.4211		7.7451	8.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Dactylellina_haptotyla_CBS_200.50	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0053	0.061	rss	0.0	0.0			
+v1.9.0-rc1_container	Dactylellina_haptotyla_CBS_200.50	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.0		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container	Drepanopeziza_brunnea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0672		0.7743	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Drepanopeziza_brunnea_MB_m1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0069	0.08	rss	0.0	0.0			
+v1.9.0-rc1_container	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6017		10.1866	7.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.0		0.0	0.006	rss	0.0	0.0			
+v1.9.0-rc1_container	Eremothecium_gossypii_ATCC_10895	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0015	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Eremothecium_gossypii_ATCC_10895	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0		0.0	0.003	rss	0.5878	0.0			
+v1.9.0-rc1_container	Fusarium_oxysporum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.325		15.7781	5.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Fusarium_oxysporum_4287	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0039		0.0079	0.088	rss	0.0	0.0			
+v1.9.0-rc1_container	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.56	1.5674	10.4239	13.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001	0.0	0.0	0.003	peak_rss	0.55	0.0	1	8	epyc
+v1.9.0-rc1_container	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1911		14.8091	3.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0056	0.084	rss	0.0	0.0			
+v1.9.0-rc1_container	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5364	0.5503	3.2108	16.4	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container	Gaeumannomyces_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1058		14.6788	2.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Gaeumannomyces_tritici_R3-111a-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.0057	0.093	rss	0.0	0.0			
+v1.9.0-rc1_container	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6631		3.92	9.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5667	0.0			
+v1.9.0-rc1_container	Kluyveromyces_lactis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.4211		5.2727	5.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Kluyveromyces_lactis_NRRL_Y-1140	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0024		0.0028	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2617		1.514	4.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.22		0.4882	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Laccaria_bicolor_S238N-H82	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0041		0.0078	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container	Laccaria_bicolor_S238N-H82	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.32		14.8503	5.1	rss	0.0	0.0			
+v1.9.0-rc1_container	Lachancea_thermotolerans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3325		3.8321	1.1	rss	0.0	0.0			
+v1.9.0-rc1_container	Lachancea_thermotolerans_CBS_6340	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2292		1.2203	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2283		0.6343	1.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Leptographium_clavigerum_kw1407	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0024		0.0039	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Leptographium_clavigerum_kw1407	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.7022		11.1955	5.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Letharia_columbiana_WasteWater2	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0068	0.064	rss	0.0	0.0			
+v1.9.0-rc1_container	Letharia_columbiana_WasteWater2	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1119		6.7184	4.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Lipomyces_tetrasporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9917		12.6428	2.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Lipomyces_tetrasporus_NRRL_Y-64009	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0031	0.065	rss	0.0	0.0			
+v1.9.0-rc1_container	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4194		2.3636	7.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5592	0.0			
+v1.9.0-rc1_container	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3817		4.7372	1.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0014	0.057	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2892		1.5771	3.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3744		0.8103	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_sympodialis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3186		3.8603	1.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_sympodialis_ATCC_42132	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0013	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5442		2.2474	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.27		0.756	1.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Mixia_osmundae_IAM_14324	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0011		0.0021	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Mixia_osmundae_IAM_14324	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0		0.0	0.003	rss	0.5736	0.0			
+v1.9.0-rc1_container	Morchella_importuna	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.0903		14.1027	6.7	rss	1.1	0.0			
+v1.9.0-rc1_container	Morchella_importuna_M04M26	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0038		0.0075	0.07	rss	0.0	0.0			
+v1.9.0-rc1_container	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7075	0.7334	4.1035	9.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6472		2.064	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Morchella_sextelata	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	2.3308		30.9232	14.6	rss	1.1236	0.0			
+v1.9.0-rc1_container	Morchella_sextelata_SCLS	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.007	0.071	rss	0.0	0.0			
+v1.9.0-rc1_container	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7339		4.3145	10.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.4281		4.6626	2.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Mucor_mucedo	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.005		13.0549	2.1	rss	0.0	0.0			
+v1.9.0-rc1_container	Mucor_mucedo_NRRL_3635	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0032		0.0061	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5953		3.3532	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container	Nakaseomyces_glabratus_CBS_138	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.002	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Nakaseomyces_glabratus_CBS_138	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.2628		8.1752	5.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Orbilia_oligospora	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9172		12.0532	3.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Orbilia_oligospora_ATCC_24927	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0054	0.073	rss	0.0	0.0			
+v1.9.0-rc1_container	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8369		3.6524	5.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5692	0.0			
+v1.9.0-rc1_container	Parastagonospora_nodorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.3644		16.0554	3.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Parastagonospora_nodorum_SN15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0025		0.0052	0.064	rss	0.0	0.0			
+v1.9.0-rc1_container	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6536		3.7674	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5667	0.0			
+v1.9.0-rc1_container	Phycomyces_blakesleeanus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.6389		19.8617	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Phycomyces_blakesleeanus_NRRL_1555_-	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0041		0.0079	0.075	rss	0.0	0.0			
+v1.9.0-rc1_container	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6017		3.6323	12.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.007	rss	0.55	0.0			
+v1.9.0-rc1_container	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0013	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7683		5.3806	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Protomyces_lactucae-debilis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3217		3.731	1.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Protomyces_lactucae-debilis_12-1054	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0019	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.2742	1.2838	6.7059	3.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001	0.0	0.0	0.003	peak_rss	0.55	0.0	1	8	epyc
+v1.9.0-rc1_container	Pseudogymnoascus_destructans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9486		10.5799	2.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Pseudogymnoascus_destructans_20631-21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0039	0.053	rss	0.0	0.0			
+v1.9.0-rc1_container	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5919	0.6203	3.2373	2.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container	Pyrenophora_teres	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.385		5.0604	4.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_teres_0-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0043	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6125		3.2248	1.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1872		0.574	0.643	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_tritici-repentis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.3069		14.6691	3.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_tritici-repentis_Pt-1C-BFP	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0054	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7489		4.2889	9.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.5692	0.0			
+v1.9.0-rc1_container	Pyricularia_oryzae_70-15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.0054	0.119	rss	0.0	0.0			
+v1.9.0-rc1_container	Pyricularia_oryzae_70-15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.8128		11.2501	6.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_delemar	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.9244		23.1665	3.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_delemar_RA_99-880	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0061	0.083	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7014		4.1052	7.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.2556		4.4798	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_microsporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2694		2.4668	6.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_microsporus_ATCC_52813	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0036	0.064	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhizopus_microsporus_ATCC_52813	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	5	0	0	1	0.0		0.0	0.0		0.8292	0.0			
+v1.9.0-rc1_container	Rhodotorula_graminis_WP1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0028	0.061	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhodotorula_graminis_WP1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.04		6.499	8.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0029	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8725		5.6808	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.375		4.1816	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0019	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.1381		6.2616	3.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3647		0.6492	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	0.8317		10.731	2.5	rss	1.1167	0.0			
+v1.9.0-rc1_container	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0056	0.074	rss	0.0	0.0			
+v1.9.0-rc1_container	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6097		3.5175	9.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3892		0.9974	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Sclerotinia_sclerotiorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1669		12.7617	2.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Sclerotinia_sclerotiorum_1980	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0052	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5667		3.4527	10.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.003	rss	0.5522	0.0			
+v1.9.0-rc1_container	Spizellomyces_punctatus_DAOM_BR117	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0033	0.062	rss	0.0	0.0			
+v1.9.0-rc1_container	Spizellomyces_punctatus_DAOM_BR117	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.4658		5.7018	13.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Sporobolomyces_koalae_JCM15063	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0013		0.0026	0.061	rss	0.0	0.0			
+v1.9.0-rc1_container	Sporobolomyces_koalae_JCM15063	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0481		6.6845	3.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Sporobolomyces_salmoneus_JCM6883	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0028	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Sporobolomyces_salmoneus_JCM6883	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0001		0.0	0.003	rss	0.5669	0.0			
+v1.9.0-rc1_container	Sugiyamaella_lignohabitans_CBS_10342	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0012		0.0023	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container	Sugiyamaella_lignohabitans_CBS_10342	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.5056		6.0373	19.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Synchytrium_microbalum_JEL517	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0036	0.058	rss	0.0	0.0			
+v1.9.0-rc1_container	Synchytrium_microbalum_JEL517	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8692		5.7339	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_marneffei	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0647		13.0003	7.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_marneffei_ATCC_18224	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0044	0.086	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5203		3.1607	9.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	1.0553		2.9136	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_stipitatus_ATCC_10500	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0024		0.0048	0.083	rss	0.0	0.0			
+v1.9.0-rc1_container	Talaromyces_stipitatus_ATCC_10500	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0		0.0	0.003	rss	0.5878	0.0			
+v1.9.0-rc1_container	Tilletiaria_anomala	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.5353		7.215	2.2	rss	0.55	0.0			
+v1.9.0-rc1_container	Tilletiaria_anomala_UBC_951	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0027	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3825		2.0112	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.535		1.2894	1.3	rss	0.0	0.0			
+v1.9.0-rc1_container	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.4506		5.8072	1.7	rss	0.55	0.0			
+v1.9.0-rc1_container	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0026	0.056	rss	0.0	0.0			
+v1.9.0-rc1_container	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3697		2.14	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6611		1.6151	1.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Tremella_mesenterica_Fries	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0041	0.084	rss	0.0	0.0			
+v1.9.0-rc1_container	Tremella_mesenterica_Fries	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	1.3281		15.5143	11.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Tricharina_praecox	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.2581		13.9908	2.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Tricharina_praecox_CBS_144465	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0051	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5908	0.6001	3.5243	8.1	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container	Trichosporon_asahii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7656		8.8843	2.1	rss	0.0	0.0			
+v1.9.0-rc1_container	Trichosporon_asahii_CBS_2479	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0036	0.065	rss	0.0	0.0			
+v1.9.0-rc1_container	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3692	0.3835	2.0662	6.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.5667	0.0			
+v1.9.0-rc1_container	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7011		8.759	2.1	rss	0.0	0.0			
+v1.9.0-rc1_container	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0032	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5631	1.5673	10.0926	3.3	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001	0.0	0.0	0.003	peak_rss	0.5667	0.0	1	8	epyc
+v1.9.0-rc1_container	Uncinocarpus_reesii_1704	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0035	0.092	rss	0.0	0.0			
+v1.9.0-rc1_container	Uncinocarpus_reesii_1704	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.3044		8.1867	6.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Wallemia_mellicola_CBS_633.66	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0016	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container	Wallemia_mellicola_CBS_633.66	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8453		5.5095	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	0.7833		10.0556	1.7	rss	1.1	0.0			
+v1.9.0-rc1_container	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0029	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3364		1.9648	4.4	rss	0.0	0.0			
+v1.9.0-rc1_container	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5089		1.4478	2.0	rss	0.0	0.0			
+v1.9.0-rc1_container	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2711		3.5884	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.058	rss	0.0	0.0			
+v1.9.0-rc1_container	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2789		1.5682	3.5	rss	0.0	0.0			
+v1.9.0-rc1_container	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2758		0.6576	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container	Zymoseptoria_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0936		12.8827	6.9	rss	0.0	0.0			
+v1.9.0-rc1_container	Zymoseptoria_tritici_IPO323	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0052	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.8483	1.8509	11.3451	6.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0003	0.0165	0.0	0.007	peak_rss	0.55	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	-	ASM_STATS	1	0	0	0	0	0.0081		0.0109	0.014	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	-	FETCH_RNASEQ:COLLECT_SRA_QUERY	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	-	SETUP_DBS:SETUP_AUGUSTUS_CONFIG	1	0	0	0	0	0.0004		0.0001	0.005	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	-	SETUP_DBS:SETUP_MARIADB_DATADIR	1	0	0	0	0	0.0009		0.0004	0.152	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Allomyces_macrogynus	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.0972	0.0			
+v1.9.0-rc1_container_rust	Allomyces_macrogynus_ATCC_38327	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0038		0.0067	0.067	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7653	0.7697	4.4616	4.4	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Allomyces_macrogynus_ATCC_38327	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5075	0.5003	1.9447	1.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Aspergillus_clavatus_NRRL_1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0039	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Aspergillus_clavatus_NRRL_1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.3842		9.0234	4.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Aspergillus_fumigatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	0.9789		12.521	3.9	rss	1.1	0.0			
+v1.9.0-rc1_container_rust	Aspergillus_fumigatus_Af293	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0041	0.077	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4381		2.4036	16.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Aspergillus_fumigatus_Af293	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8056		2.1122	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Batrachochytrium_dendrobatidis	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1	0.0			
+v1.9.0-rc1_container_rust	Batrachochytrium_dendrobatidis_JAM81	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0032	0.074	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2925	0.3001	1.5146	4.3	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Batrachochytrium_dendrobatidis_JAM81	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.625	0.6337	2.1413	1.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Blastomyces_dermatitidis_ER-3	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0043		0.0083	0.106	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Blastomyces_dermatitidis_ER-3	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.4153		8.687	18.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Botrytis_cinerea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1731		14.2245	2.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Botrytis_cinerea_B05.10	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0058	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5283		2.8139	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Botrytis_cinerea_B05.10	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.007	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Chaetomium_globosum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.2092		14.6382	2.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Chaetomium_globosum_CBS_148.51	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0052	0.087	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4731		2.5758	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Chaetomium_globosum_CBS_148.51	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Cokeromyces_recurvatus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9258		11.7405	2.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cokeromyces_recurvatus_NRRL_2243	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0037	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2528	0.2669	1.3933	3.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Cokeromyces_recurvatus_NRRL_2243	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Colletotrichum_graminicola	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.2947		16.2216	3.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Colletotrichum_graminicola_M1.001	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0033		0.0065	0.06	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4792	0.4836	2.7413	4.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Colletotrichum_graminicola_M1.001	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_deneoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7569		8.8949	3.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_deneoformans_JEC21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0028	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2797		1.513	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_deneoformans_JEC21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.7572		2.0755	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_neoformans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7264		8.3912	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_neoformans_H99	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0027	0.062	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.23		1.2176	4.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cryptococcus_neoformans_H99	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6811		1.8533	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cystobasidium_minutum_MCA_4210	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.003	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Cystobasidium_minutum_MCA_4210	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7806		5.2883	4.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Dactylellina_haptotyla_CBS_200.50	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0053	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Dactylellina_haptotyla_CBS_200.50	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	2	0	0	0	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Drepanopeziza_brunnea	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.0603		0.6721	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Drepanopeziza_brunnea_MB_m1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0069	0.078	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.3672		8.5533	3.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Drepanopeziza_brunnea_MB_m1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Eremothecium_gossypii_ATCC_10895	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0014	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Eremothecium_gossypii_ATCC_10895	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6953		4.1425	4.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Fusarium_oxysporum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.3061		15.0124	5.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Fusarium_oxysporum_4287	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0039		0.0078	0.082	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4239	0.4336	2.5505	4.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Fusarium_oxysporum_4287	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Fusarium_verticillioides	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.2325		14.7493	3.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Fusarium_verticillioides_7600	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0056	0.085	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3272	0.3336	1.802	4.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Fusarium_verticillioides_7600	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.5667	0.0			
+v1.9.0-rc1_container_rust	Gaeumannomyces_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1131		13.2543	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Gaeumannomyces_tritici_R3-111a-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.003		0.0057	0.093	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4742	0.4836	2.762	6.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Gaeumannomyces_tritici_R3-111a-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Kluyveromyces_lactis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2611		3.5882	5.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Kluyveromyces_lactis_NRRL_Y-1140	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.1347		0.7588	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Kluyveromyces_lactis_NRRL_Y-1140	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2406		0.5088	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Laccaria_bicolor_S238N-H82	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.004		0.0076	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Laccaria_bicolor_S238N-H82	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.9881		13.0933	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lachancea_thermotolerans	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.33		3.4142	1.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lachancea_thermotolerans_CBS_6340	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0017	0.058	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2431		1.2325	3.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lachancea_thermotolerans_CBS_6340	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1942		0.5947	1.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Leptographium_clavigerum_kw1407	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0043	0.071	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Leptographium_clavigerum_kw1407	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.5872		9.1361	3.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Letharia_columbiana_WasteWater2	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0034		0.0066	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Letharia_columbiana_WasteWater2	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.0772		6.5474	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lipomyces_tetrasporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0264		12.5804	2.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lipomyces_tetrasporus_NRRL_Y-64009	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.003	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2422	0.2502	1.3974	5.1	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Lipomyces_tetrasporus_NRRL_Y-64009	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Malassezia_globosa	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3542		4.301	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_globosa_CBS_7966	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0015	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.1819		1.0271	2.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_globosa_CBS_7966	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3469		0.8004	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_sympodialis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3247		3.6901	1.02	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_sympodialis_ATCC_42132	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0007		0.0013	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.6356		4.0027	2.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Malassezia_sympodialis_ATCC_42132	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4672		0.7719	1.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Mixia_osmundae_IAM_14324	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0011		0.0021	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Mixia_osmundae_IAM_14324	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8125		5.0383	3.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Morchella_importuna	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.2214		15.5068	6.7	rss	1.1	0.0			
+v1.9.0-rc1_container_rust	Morchella_importuna_M04M26	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.007	0.07	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5639	0.5671	3.1612	4.5	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Morchella_importuna_M04M26	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5822	0.5837	2.1245	2.0	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Morchella_sextelata	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	2.6408		33.7947	14.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Morchella_sextelata_SCLS	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0036		0.0071	0.071	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4819	0.4836	2.4454	4.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Morchella_sextelata_SCLS	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.5517	0.0			
+v1.9.0-rc1_container_rust	Mucor_mucedo	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0264		12.0888	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Mucor_mucedo_NRRL_3635	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0031		0.0061	0.075	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3906	0.4003	2.0211	4.0	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Mucor_mucedo_NRRL_3635	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Nakaseomyces_glabratus_CBS_138	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.002	0.058	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Nakaseomyces_glabratus_CBS_138	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8486		4.7717	3.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Orbilia_oligospora	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.0083		13.2071	3.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Orbilia_oligospora_ATCC_24927	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0056	0.074	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4514		2.4619	4.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Orbilia_oligospora_ATCC_24927	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.007	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Parastagonospora_nodorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.2914		16.0688	3.8	rss	1.1167	0.0			
+v1.9.0-rc1_container_rust	Parastagonospora_nodorum_SN15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0052	0.065	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5075		2.7222	3.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Parastagonospora_nodorum_SN15	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8436		2.719	4.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Phycomyces_blakesleeanus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.5386		20.162	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Phycomyces_blakesleeanus_NRRL_1555_-	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0041		0.0073	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4611		2.3895	4.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Phycomyces_blakesleeanus_NRRL_1555_-	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0002		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Pneumocystis_murina_B123	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0008		0.0014	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pneumocystis_murina_B123	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.4272		5.1386	4.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Protomyces_lactucae-debilis	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3475		3.9156	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Protomyces_lactucae-debilis_12-1054	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.002	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2442		1.2262	3.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Protomyces_lactucae-debilis_12-1054	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2944		0.729	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pseudogymnoascus_destructans	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1	0.0			
+v1.9.0-rc1_container_rust	Pseudogymnoascus_destructans_20631-21	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0021		0.0042	0.053	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4631	0.4671	2.6371	2.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Pseudogymnoascus_destructans_20631-21	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6019	0.6003	1.7619	1.7	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Pyrenophora_teres	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.3008		3.7466	4.3	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_teres_0-1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0022		0.0043	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4689		2.2333	1.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_teres_0-1	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.2075		0.6509	0.859	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_tritici-repentis	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.2597		15.487	3.5	rss	1.1	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0028		0.0056	0.086	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.315	0.3169	1.879	4.8	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.5819		2.2463	1.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyricularia_oryzae_70-15	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0029		0.0055	0.119	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Pyricularia_oryzae_70-15	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.6342		10.4881	4.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_delemar	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.8539		23.7446	3.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_delemar_RA_99-880	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0035		0.0062	0.078	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4647		2.3798	4.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_delemar_RA_99-880	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	1	0	0	0	0.0001		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_microsporus	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2503		2.2793	6.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_microsporus_ATCC_52813	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0019		0.0035	0.064	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhizopus_microsporus_ATCC_52813	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	5	0	0	1	0.0		0.0	0.0		0.75	0.0			
+v1.9.0-rc1_container_rust	Rhodotorula_graminis_WP1	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0028	0.062	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhodotorula_graminis_WP1	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9086		5.597	3.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhodotorula_toruloides_NP11	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0028	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Rhodotorula_toruloides_NP11	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.8506		5.7982	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Saccharomyces_cerevisiae	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.3747		4.1763	1.8	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Saccharomyces_cerevisiae_S288C	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.001		0.0019	0.059	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2794		1.466	3.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Saccharomyces_cerevisiae_S288C	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1772		0.4863	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Schizophyllum_commune	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7564		9.6909	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Schizophyllum_commune_H4-8	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0051	0.075	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.5272		2.9783	15.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Schizophyllum_commune_H4-8	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1658		0.5182	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sclerotinia_sclerotiorum	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	1.1469		14.2932	2.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sclerotinia_sclerotiorum_1980	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0052	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3686	0.3669	2.135	4.2	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Sclerotinia_sclerotiorum_1980	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			
+v1.9.0-rc1_container_rust	Spizellomyces_punctatus_DAOM_BR117	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0033	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Spizellomyces_punctatus_DAOM_BR117	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.3558		4.1391	12.9	rss	0.0166	0.0			
+v1.9.0-rc1_container_rust	Sporobolomyces_koalae_JCM15063	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0028	0.061	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sporobolomyces_koalae_JCM15063	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4814		3.1642	2.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sporobolomyces_salmoneus_JCM6883	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0015		0.0028	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sporobolomyces_salmoneus_JCM6883	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.0		0.0	0.003	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Sugiyamaella_lignohabitans_CBS_10342	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0012		0.0023	0.069	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Sugiyamaella_lignohabitans_CBS_10342	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.9711		6.5268	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Synchytrium_microbalum_JEL517	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0036	0.061	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Synchytrium_microbalum_JEL517	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.4264		5.0791	5.7	rss	0.0166	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_marneffei	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	1.3		16.3553	7.7	rss	1.1167	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_marneffei_ATCC_18224	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0039	0.084	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3814		2.23	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_marneffei_ATCC_18224	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.8297		2.5058	1.7	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_stipitatus_ATCC_10500	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0024		0.0047	0.081	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Talaromyces_stipitatus_ATCC_10500	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	1	0	0	0	0.0		0.0	0.003	rss	0.5461	0.0			
+v1.9.0-rc1_container_rust	Tilletiaria_anomala	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.4594		5.8235	2.3	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Tilletiaria_anomala_UBC_951	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0027	0.054	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2486		1.2552	3.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tilletiaria_anomala_UBC_951	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.465		1.1569	1.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tilletiopsis_washingtonensis	TRAIN_PREDICT:RNASEQ_PREPARE	1	1	0	0	0	0.4906		6.2242	1.7	rss	0.55	0.0			
+v1.9.0-rc1_container_rust	Tilletiopsis_washingtonensis_MCA_4186	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0014		0.0026	0.056	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3211		1.6736	4.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tilletiopsis_washingtonensis_MCA_4186	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6292		1.4892	1.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tremella_mesenterica_Fries	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.002		0.0038	0.083	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tremella_mesenterica_Fries	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	2.0164		13.5159	4.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tricharina_praecox	TRAIN_PREDICT:RNASEQ_PREPARE	0	2	0	0	1	0.0		0.0	0.0		1.1058	0.0			
+v1.9.0-rc1_container_rust	Tricharina_praecox_CBS_144465	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0026		0.0051	0.068	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.4953	0.5003	2.572	4.6	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Tricharina_praecox_CBS_144465	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.6219	0.6337	2.0729	1.9	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Trichosporon_asahii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.8017		9.7106	2.1	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Trichosporon_asahii_CBS_2479	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0018		0.0036	0.064	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3719		1.8173	4.3	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Trichosporon_asahii_CBS_2479	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4811		1.4631	1.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Umbelopsis_ramanniana	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.7011		8.2016	2.2	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Umbelopsis_ramanniana_AG	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0034	0.055	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3069		1.5393	4.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Umbelopsis_ramanniana_AG	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.3553		1.1031	1.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Uncinocarpus_reesii_1704	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0016		0.0031	0.092	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Uncinocarpus_reesii_1704	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	1.4519		8.8351	4.0	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Wallemia_mellicola_CBS_633.66	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.057	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Wallemia_mellicola_CBS_633.66	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.7222		4.6937	1.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Yarrowia_lipolytica	TRAIN_PREDICT:RNASEQ_PREPARE	1	2	0	0	0	0.855		10.7499	1.7	rss	1.1	0.0			
+v1.9.0-rc1_container_rust	Yarrowia_lipolytica_CLIB122	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0017		0.0034	0.074	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3278		1.6631	4.5	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Yarrowia_lipolytica_CLIB122	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.4389		1.3895	1.9	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zygosaccharomyces_rouxii	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.2567		2.9445	2.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zygosaccharomyces_rouxii_CBS_732	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0009		0.0016	0.063	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.2219		1.0653	3.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zygosaccharomyces_rouxii_CBS_732	TRAIN_PREDICT:FUNANNOTATE_TRAIN	1	0	0	0	0	0.1772		0.4661	1.6	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zymoseptoria_tritici	TRAIN_PREDICT:RNASEQ_PREPARE	1	0	0	0	0	0.9944		11.8697	7.4	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zymoseptoria_tritici_IPO323	MASK_GENOME:MASKREPEAT_TANTAN_RUN	1	0	0	0	0	0.0027		0.0053	0.072	rss	0.0	0.0			
+v1.9.0-rc1_container_rust	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_PREDICT	1	0	0	0	0	0.3142	0.3169	1.8586	4.3	peak_rss	0.0	0.0	1	8	epyc
+v1.9.0-rc1_container_rust	Zymoseptoria_tritici_IPO323	TRAIN_PREDICT:FUNANNOTATE_TRAIN	0	1	0	0	1	0.0		0.0	0.0		0.55	0.0			

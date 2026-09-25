@@ -1,0 +1,7 @@
+cellA	cellB	stage	n	medA_wall_h	medB_wall_h	med_ratio_wall_B/A	p_wall	medA_cpu_h	medB_cpu_h	med_ratio_cpu_B/A	p_cpu	sumA_wall_h	sumB_wall_h
+v1.9.0-rc1_container	v1.9.0-rc1_container_rust	RNASEQ_PREPARE	37	0.91	0.93	1.00	0.96	10.83	11.74	1.00	0.83	32.5	32.7
+v1.9.0-rc1_container	v1.9.0-rc1_container_rust	FUNANNOTATE_TRAIN	27	0.28	0.35	0.94	0.59	0.66	0.77	1.00	0.99	10.1	9.9
+v1.9.0-rc1_container	v1.9.0-rc1_container_rust	FUNANNOTATE_PREDICT	64	0.61	0.46	0.80	2.4e-05	3.61	2.56	0.76	2.3e-06	46.0	37.6
+v1.9.0-rc1_conda	v1.9.0-rc1_conda_rust	RNASEQ_PREPARE	39	0.03	2.54	84.56	3.6e-12	0.31	14.62	40.06	3.6e-12	1.5	117.5
+v1.9.0-rc1_conda	v1.9.0-rc1_conda_rust	FUNANNOTATE_TRAIN	32	5.93	0.35	0.09	1.2e-07	20.53	0.64	0.06	7.9e-08	212.3	13.9
+v1.9.0-rc1_conda	v1.9.0-rc1_conda_rust	FUNANNOTATE_PREDICT	63	0.78	0.52	0.71	2.9e-06	4.37	2.51	0.64	6e-07	61.0	43.3
