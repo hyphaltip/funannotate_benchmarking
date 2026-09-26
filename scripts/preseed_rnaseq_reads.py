@@ -144,6 +144,9 @@ def main():
     pool = cfg.get("pool", {})
 
     reads_src_dir = fetch.get("rnaseq_reads_dir")
+    # species_tag -> read dir that overrides reads_src_dir for that species, so
+    # a production read-set change can't leak into benchmark cells mid-study.
+    reads_pins = fetch.get("rnaseq_reads_pins") or {}
     manifest_path = pool.get("rnaseq")
     if not reads_src_dir:
         lib.LOG.error("conf/benchmark.yaml fetch.rnaseq_reads_dir is not set")
@@ -165,7 +168,7 @@ def main():
 
         n_linked = n_present = n_relinked = n_missing = n_csv_written = n_csv_present = 0
         for tag in tags:
-            status = symlink_reads(tag, reads_src_dir, reads_dest, args.dry_run)
+            status = symlink_reads(tag, reads_pins.get(tag, reads_src_dir), reads_dest, args.dry_run)
             if status == "linked":
                 n_linked += 1
             elif status == "present":

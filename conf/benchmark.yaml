@@ -97,6 +97,11 @@ fetch:
   # (see conf/benchmark.yaml pool.rnaseq for the matching SRA manifest used
   # to pre-seed each cell's sra_query cache).
   rnaseq_reads_dir: /bigdata/stajichlab/shared/projects/BFD/Fungi_BFD_runs/rnaseq_reads
+  # Per-species read dirs that override rnaseq_reads_dir. Bd is pinned to the
+  # JEL423-only set (SRR27683879-81, job 29056013) that every rc.1/1.8.17 cell
+  # used, because production rnaseq_reads/ moves to a JEL423+CLFT044 pool.
+  rnaseq_reads_pins:
+    Batrachochytrium_dendrobatidis: /bigdata/stajichlab/shared/projects/BFD/Funannotate_benchmarking/runs/rnaseq_rebuild/Batrachochytrium_dendrobatidis.JEL423only_29056013
   # nf_funannotate1's params.proteins/params.sbt_template default to
   # <launchDir>/lib/swissprot_fungi.faa and <launchDir>/lib/template.sbt
   # (conf/profile_annotate.config) -- unlike lib/augustus/ (auto-seeded by
