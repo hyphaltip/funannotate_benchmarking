@@ -1,0 +1,119 @@
+cell	genome	accession	phylum	refseq_annotation_release	query_gff3	compare_status
+v1.9.0-beta10_container	Aspergillus_clavatus_NRRL_1	GCF_000002715.2	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Blastomyces_dermatitidis_ER-3	GCF_000003525.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Cystobasidium_minutum_MCA_4210	GCF_039999085.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Dactylellina_haptotyla_CBS_200.50	GCF_000441935.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Eremothecium_gossypii_ATCC_10895	GCF_000091025.4	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Laccaria_bicolor_S238N-H82	GCF_000143565.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Leptographium_clavigerum_kw1407	GCF_000143105.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Letharia_columbiana_WasteWater2	GCF_014066305.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Mixia_osmundae_IAM_14324	GCF_000708205.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Rhodotorula_graminis_WP1	GCF_001329695.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Sporobolomyces_koalae_JCM15063	GCF_050403365.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Sporobolomyces_salmoneus_JCM6883	GCF_050403485.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Sugiyamaella_lignohabitans_CBS_10342	GCF_001640025.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Synchytrium_microbalum_JEL517	GCF_006535985.1	Chytridiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Talaromyces_stipitatus_ATCC_10500	GCF_000003125.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Tremella_mesenterica_Fries	GCF_000271645.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Uncinocarpus_reesii_1704	GCF_000003515.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container	Wallemia_mellicola_CBS_633.66	GCF_000263375.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Aspergillus_clavatus_NRRL_1	GCF_000002715.2	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Blastomyces_dermatitidis_ER-3	GCF_000003525.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Cystobasidium_minutum_MCA_4210	GCF_039999085.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Dactylellina_haptotyla_CBS_200.50	GCF_000441935.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Eremothecium_gossypii_ATCC_10895	GCF_000091025.4	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Laccaria_bicolor_S238N-H82	GCF_000143565.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Leptographium_clavigerum_kw1407	GCF_000143105.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Letharia_columbiana_WasteWater2	GCF_014066305.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Mixia_osmundae_IAM_14324	GCF_000708205.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Rhodotorula_graminis_WP1	GCF_001329695.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Sporobolomyces_koalae_JCM15063	GCF_050403365.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Sporobolomyces_salmoneus_JCM6883	GCF_050403485.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Sugiyamaella_lignohabitans_CBS_10342	GCF_001640025.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Synchytrium_microbalum_JEL517	GCF_006535985.1	Chytridiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Talaromyces_stipitatus_ATCC_10500	GCF_000003125.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Tremella_mesenterica_Fries	GCF_000271645.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Uncinocarpus_reesii_1704	GCF_000003515.1	Ascomycota	legacy		no_predict_output
+v1.9.0-beta10_container_rust	Wallemia_mellicola_CBS_633.66	GCF_000263375.1	Basidiomycota	legacy		no_predict_output
+v1.9.0-beta11_conda	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Allomyces_macrogynus_ATCC_38327/predict_results/Allomyces_macrogynus_ATCC_38327.gff3	compared
+v1.9.0-beta11_conda	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Aspergillus_fumigatus_Af293/predict_results/Aspergillus_fumigatus_Af293.gff3	compared
+v1.9.0-beta11_conda	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Batrachochytrium_dendrobatidis_JAM81/predict_results/Batrachochytrium_dendrobatidis_JAM81.gff3	compared
+v1.9.0-beta11_conda	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Chaetomium_globosum_CBS_148.51/predict_results/Chaetomium_globosum_CBS_148.51.gff3	compared
+v1.9.0-beta11_conda	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Cryptococcus_neoformans_H99/predict_results/Cryptococcus_neoformans_H99.gff3	compared
+v1.9.0-beta11_conda	Malassezia_globosa_CBS_7966.stale_shallow_rnaseq_20260919					no_samples_row
+v1.9.0-beta11_conda	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Pneumocystis_murina_B123/predict_results/Pneumocystis_murina_B123.gff3	compared
+v1.9.0-beta11_conda	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.9.0-beta11_conda	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Saccharomyces_cerevisiae_S288C/predict_results/Saccharomyces_cerevisiae_S288C.gff3	compared
+v1.9.0-beta11_conda	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy	runs/v1.9.0-beta11_conda/genome_annotation/Umbelopsis_ramanniana_AG/predict_results/Umbelopsis_ramanniana_AG.gff3	compared
+v1.9.0-beta11_conda_rust	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Allomyces_macrogynus_ATCC_38327/predict_results/Allomyces_macrogynus_ATCC_38327.gff3	compared
+v1.9.0-beta11_conda_rust	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Aspergillus_fumigatus_Af293/predict_results/Aspergillus_fumigatus_Af293.gff3	compared
+v1.9.0-beta11_conda_rust	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Batrachochytrium_dendrobatidis_JAM81/predict_results/Batrachochytrium_dendrobatidis_JAM81.gff3	compared
+v1.9.0-beta11_conda_rust	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Chaetomium_globosum_CBS_148.51/predict_results/Chaetomium_globosum_CBS_148.51.gff3	compared
+v1.9.0-beta11_conda_rust	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Cryptococcus_neoformans_H99/predict_results/Cryptococcus_neoformans_H99.gff3	compared
+v1.9.0-beta11_conda_rust	Malassezia_globosa_CBS_7966.stale_shallow_rnaseq_20260919					no_samples_row
+v1.9.0-beta11_conda_rust	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Pneumocystis_murina_B123/predict_results/Pneumocystis_murina_B123.gff3	compared
+v1.9.0-beta11_conda_rust	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.9.0-beta11_conda_rust	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Saccharomyces_cerevisiae_S288C/predict_results/Saccharomyces_cerevisiae_S288C.gff3	compared
+v1.9.0-beta11_conda_rust	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy	runs/v1.9.0-beta11_conda_rust/genome_annotation/Umbelopsis_ramanniana_AG/predict_results/Umbelopsis_ramanniana_AG.gff3	compared
+v1.9.0-beta11_container_rust	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Allomyces_macrogynus_ATCC_38327/predict_results/Allomyces_macrogynus_ATCC_38327.gff3	compared
+v1.9.0-beta11_container_rust	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Aspergillus_fumigatus_Af293/predict_results/Aspergillus_fumigatus_Af293.gff3	compared
+v1.9.0-beta11_container_rust	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Batrachochytrium_dendrobatidis_JAM81/predict_results/Batrachochytrium_dendrobatidis_JAM81.gff3	compared
+v1.9.0-beta11_container_rust	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Chaetomium_globosum_CBS_148.51/predict_results/Chaetomium_globosum_CBS_148.51.gff3	compared
+v1.9.0-beta11_container_rust	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Cryptococcus_neoformans_H99/predict_results/Cryptococcus_neoformans_H99.gff3	compared
+v1.9.0-beta11_container_rust	Malassezia_globosa_CBS_7966.stale_shallow_rnaseq_20260919					no_samples_row
+v1.9.0-beta11_container_rust	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Pneumocystis_murina_B123/predict_results/Pneumocystis_murina_B123.gff3	compared
+v1.9.0-beta11_container_rust	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.9.0-beta11_container_rust	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Saccharomyces_cerevisiae_S288C/predict_results/Saccharomyces_cerevisiae_S288C.gff3	compared
+v1.9.0-beta11_container_rust	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy	runs/v1.9.0-beta11_container_rust/genome_annotation/Umbelopsis_ramanniana_AG/predict_results/Umbelopsis_ramanniana_AG.gff3	compared
+v1.9.0-beta12_container	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Allomyces_macrogynus_ATCC_38327/predict_results/Allomyces_macrogynus_ATCC_38327.gff3	compared
+v1.9.0-beta12_container	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Aspergillus_fumigatus_Af293/predict_results/Aspergillus_fumigatus_Af293.gff3	compared
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Batrachochytrium_dendrobatidis_JAM81/predict_results/Batrachochytrium_dendrobatidis_JAM81.gff3	compared
+v1.9.0-beta12_container	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Chaetomium_globosum_CBS_148.51/predict_results/Chaetomium_globosum_CBS_148.51.gff3	compared
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51.evmtest_20260919_2339					no_samples_row
+v1.9.0-beta12_container	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Cryptococcus_neoformans_H99/predict_results/Cryptococcus_neoformans_H99.gff3	compared
+v1.9.0-beta12_container	Fusarium_verticillioides_7600	GCF_000149555.1	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Fusarium_verticillioides_7600/predict_results/Fusarium_verticillioides_7600.gff3	compared
+v1.9.0-beta12_container	Malassezia_globosa_CBS_7966	GCF_000181695.2	Basidiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Malassezia_globosa_CBS_7966/predict_results/Malassezia_globosa_CBS_7966.gff3	compared
+v1.9.0-beta12_container	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Pneumocystis_murina_B123/predict_results/Pneumocystis_murina_B123.gff3	compared
+v1.9.0-beta12_container	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.9.0-beta12_container	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Saccharomyces_cerevisiae_S288C/predict_results/Saccharomyces_cerevisiae_S288C.gff3	compared
+v1.9.0-beta12_container	Schizophyllum_commune_H4-8	GCF_000143185.2	Basidiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Schizophyllum_commune_H4-8/predict_results/Schizophyllum_commune_H4-8.gff3	compared
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis_MCA_4186	GCF_003144115.1	Basidiomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Tilletiopsis_washingtonensis_MCA_4186/predict_results/Tilletiopsis_washingtonensis_MCA_4186.gff3	compared
+v1.9.0-beta12_container	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Umbelopsis_ramanniana_AG/predict_results/Umbelopsis_ramanniana_AG.gff3	compared
+v1.9.0-beta12_container	Yarrowia_lipolytica_CLIB122	GCF_000002525.2	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Yarrowia_lipolytica_CLIB122/predict_results/Yarrowia_lipolytica_CLIB122.gff3	compared
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii_CBS_732	GCF_000026365.1	Ascomycota	legacy	runs/v1.9.0-beta12_container/genome_annotation/Zygosaccharomyces_rouxii_CBS_732/predict_results/Zygosaccharomyces_rouxii_CBS_732.gff3	compared
+v1.9.0-beta12_container_rust	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Allomyces_macrogynus_ATCC_38327/predict_results/Allomyces_macrogynus_ATCC_38327.gff3	compared
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Aspergillus_fumigatus_Af293/predict_results/Aspergillus_fumigatus_Af293.gff3	compared
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Batrachochytrium_dendrobatidis_JAM81/predict_results/Batrachochytrium_dendrobatidis_JAM81.gff3	compared
+v1.9.0-beta12_container_rust	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Chaetomium_globosum_CBS_148.51/predict_results/Chaetomium_globosum_CBS_148.51.gff3	compared
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51.evmtest_seeded_20260919_2338					no_samples_row
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans_H99	GCF_000149245.1	Basidiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Cryptococcus_neoformans_H99/predict_results/Cryptococcus_neoformans_H99.gff3	compared
+v1.9.0-beta12_container_rust	Fusarium_verticillioides_7600	GCF_000149555.1	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Fusarium_verticillioides_7600/predict_results/Fusarium_verticillioides_7600.gff3	compared
+v1.9.0-beta12_container_rust	Malassezia_globosa_CBS_7966	GCF_000181695.2	Basidiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Malassezia_globosa_CBS_7966/predict_results/Malassezia_globosa_CBS_7966.gff3	compared
+v1.9.0-beta12_container_rust	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Pneumocystis_murina_B123/predict_results/Pneumocystis_murina_B123.gff3	compared
+v1.9.0-beta12_container_rust	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Saccharomyces_cerevisiae_S288C/predict_results/Saccharomyces_cerevisiae_S288C.gff3	compared
+v1.9.0-beta12_container_rust	Schizophyllum_commune_H4-8	GCF_000143185.2	Basidiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Schizophyllum_commune_H4-8/predict_results/Schizophyllum_commune_H4-8.gff3	compared
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis_MCA_4186	GCF_003144115.1	Basidiomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Tilletiopsis_washingtonensis_MCA_4186/predict_results/Tilletiopsis_washingtonensis_MCA_4186.gff3	compared
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Umbelopsis_ramanniana_AG/predict_results/Umbelopsis_ramanniana_AG.gff3	compared
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica_CLIB122	GCF_000002525.2	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Yarrowia_lipolytica_CLIB122/predict_results/Yarrowia_lipolytica_CLIB122.gff3	compared
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii_CBS_732	GCF_000026365.1	Ascomycota	legacy	runs/v1.9.0-beta12_container_rust/genome_annotation/Zygosaccharomyces_rouxii_CBS_732/predict_results/Zygosaccharomyces_rouxii_CBS_732.gff3	compared
+v1.9.0-beta13_blat_container_rust	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.9.0-beta13_blat_container_rust/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared
+v1.9.0-beta13_gmap_conda_rust	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.9.0-beta13_gmap_conda_rust/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared
+v1.9.0-beta13_gmap_container_rust	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy		no_predict_output
+v1.9.0-beta13_gmap_pasaT1_container_rust	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.9.0-beta13_gmap_pasaT1_container_rust/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared
+v1.8.17_container	Allomyces_macrogynus_ATCC_38327	GCA_000151295.1	Blastocladiomycota	legacy		no_predict_output
+v1.8.17_container	Aspergillus_fumigatus_Af293	GCF_000002655.1	Ascomycota	legacy		no_predict_output
+v1.8.17_container	Batrachochytrium_dendrobatidis_JAM81	GCF_000203795.2	Chytridiomycota	legacy		no_predict_output
+v1.8.17_container	Chaetomium_globosum_CBS_148.51	GCF_000143365.1	Ascomycota	legacy		no_predict_output
+v1.8.17_container	Malassezia_globosa_CBS_7966.stale_shallow_rnaseq_20260919					no_samples_row
+v1.8.17_container	Pneumocystis_murina_B123	GCF_000349005.2	Ascomycota	legacy		no_predict_output
+v1.8.17_container	Rhodotorula_toruloides_NP11.stale_rnaseq_20260920					no_samples_row
+v1.8.17_container	Saccharomyces_cerevisiae_S288C	GCF_000146045.2	Ascomycota	legacy		no_predict_output
+v1.8.17_container	Umbelopsis_ramanniana_AG	GCF_025399195.1	Mucoromycota	legacy		no_predict_output
+v1.8.17_pasaiso_conda	Botrytis_cinerea_B05.10	GCF_000143535.2	Ascomycota	legacy	runs/v1.8.17_pasaiso_conda/genome_annotation/Botrytis_cinerea_B05.10/predict_results/Botrytis_cinerea_B05.10.gff3	compared

@@ -2,7 +2,7 @@
 topic: rc1-assessment-2026-09-24
 description: Accuracy (gffcompare vs RefSeq, BUSCO) and runtime of funannotate 1.9.0-rc.1 conda and container cells vs 1.8.17, written overnight 2026-09-24 while the container cells re-run on the rebuilt rc.1 SIFs.
 created: 2026-09-24
-status: interim -- container numbers are from the PREVIOUS rc.1 image; new-image re-run in progress
+status: superseded by docs/rc3-assessment-2026-09-27.md (final numbers for all cells)
 ---
 
 # funannotate 1.9.0-rc.1 assessment (interim, 2026-09-24)

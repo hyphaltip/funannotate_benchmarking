@@ -1,0 +1,20 @@
+# Evidence for docs/rc3-assessment-2026-09-27.md section 3. Copied from Nextflow work dirs before deletion (cleanup Tier B).
+
+## 1. Pyrenophora_teres_0-1 FUNANNOTATE_TRAIN, run 29115219, workdir runs/v1.9.0-rc3_container_rust/work/annotate/dc/567d3430f6b99b11355b1f1a14a1a5
+[ERROR] funannotate train failed for Pyrenophora_teres_0-1 (exit 3)
+[Sep 26 07:24 PM]: RNA-seq concordance gate FAILED: 5,461 of 200,000 sampled reads (2.7%) map to the genome, below --min_rnaseq_map_rate (10%). These reads are most likely not from this organism: RNA-seq from infected host tissue, a mislabeled or different species, or a stale read file. Trinity/PASA would build a training set from off-target transcripts, so training stops here (exit 3). Replace the reads, or run predict without RNA-seq evidence. Set --min_rnaseq_map_rate 0 to override.
+[Sep 26 07:24 PM]: TRAINING-DECISION rnaseq_gate: RNA-seq reads mapping to the genome (%) = 2.73 (threshold >=10%) -> FAIL: stop train (exit 3); 5,461 of 200,000 sampled reads mapped (minimap2 splice:sr, MAPQ>=1); left.norm.fq.gz
+
+## 2. BUSCO_COMPLETENESS Spizellomyces_punctatus_DAOM_BR117, run 29115219, workdir runs/v1.9.0-rc3_container_rust/work/annotate/df/d23de7405c7e0ca86581bf9097488d
+2026-09-26 18:31:51 ERROR:	/srv/projects/db/BUSCO/v10//fungi_odb10 does not exist
+2026-09-26 18:31:51 ERROR:	BUSCO analysis failed!
+2026-09-26 18:31:51 ERROR:	Check the logs, read the user guide (https://busco.ezlab.org/busco_userguide.html), and check the BUSCO issue board on https://gitlab.com/ezlab/busco/issues
+
+## 3. Relaunch 29117094 (--busco_lineages /srv/projects/db/BUSCO/v10/lineages): P. teres TRAIN with hand-written .pasa_train_failed marker
+workdir runs/v1.9.0-rc3_container_rust/work/annotate/0a/ca5223e3716648849d57425dcacecd
+runs/v1.9.0-rc3_container_rust/work/annotate/0a/ca5223e3716648849d57425dcacecd/.command.log:[INFO] Pyrenophora_teres_0-1 previously determined not trainable from transcript evidence (pasa_tier=stringent); skipping re-attempt
+runs/v1.9.0-rc3_container_rust/work/annotate/0a/ca5223e3716648849d57425dcacecd/.command.out:[INFO] Pyrenophora_teres_0-1 previously determined not trainable from transcript evidence (pasa_tier=stringent); skipping re-attempt
+
+## 4. Final line of each launch log
+29115219: [FAILED] completed=138 failed=4 cached=0
+29117094: [SUCCESS] completed=83 failed=0 cached=2

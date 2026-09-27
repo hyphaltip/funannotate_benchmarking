@@ -1,0 +1,458 @@
+cell	genome	status	n_tasks	n_failed	n_aborted	n_superseded	n_unresolved	task_time_hours_sum	wall_clock_hours	cpu_hours_sum	peak_rss_gb_max	rss_field	overhead_task_time_hours_sum	overhead_cpu_hours_sum	attempts	cpus	queues	accession	phylum	genome_size_mb	cpu_hours_per_mb	task_time_hours_per_mb
+v1.8.17_container	-	success	2	0	0	3	0	0.001		0.0003	0.149	rss	0.001	0.0003								
+v1.8.17_container	Allomyces_macrogynus	success	2	0	0	0	0	0.0787		0.6002	20.8	rss	0.0	0.0								
+v1.8.17_container	Allomyces_macrogynus_+9_more	success	1	0	0	1	0	0.0001		0.0	0.003	rss	0.0001	0.0								
+v1.8.17_container	Allomyces_macrogynus_ATCC_38327	failed	1	4	0	0	1	0.0079		0.0269	0.297	rss	0.0	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.00047	0.00014
+v1.8.17_container	Aspergillus_clavatus_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.8.17_container	Aspergillus_clavatus_NRRL_1	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000002715.2	Ascomycota	27.9	0.0	0.0
+v1.8.17_container	Aspergillus_fumigatus	success	2	0	0	0	0	0.3084		5.7132	37.5	rss	0.0	0.0								
+v1.8.17_container	Aspergillus_fumigatus_Af293	failed	1	3	0	0	1	0.8011		4.9645	2.0	rss	0.0333	0.0				GCF_000002655.1	Ascomycota	29.4	0.16886	0.02725
+v1.8.17_container	Batrachochytrium_dendrobatidis_JAM81	failed	0	6	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.0	0.0
+v1.8.17_container	Blastomyces_dermatitidis_ER-3	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000003525.1	Ascomycota	66.6	0.0	0.0
+v1.8.17_container	Botrytis_cinerea	success	2	0	0	0	0	0.7111		12.612	37.5	rss	0.0	0.0								
+v1.8.17_container	Botrytis_cinerea_B05.10	success	1	0	0	0	0	2.8539		18.3191	3.9	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.43003	0.06699
+v1.8.17_container	Chaetomium_globosum_CBS_148.51	failed	0	5	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000143365.1	Ascomycota	34.3	0.0	0.0
+v1.8.17_container	Cokeromyces_recurvatus	success	2	0	0	0	0	0.5881		9.1757	37.5	rss	0.0	0.0								
+v1.8.17_container	Cokeromyces_recurvatus_NRRL_2243	success	1	0	0	0	0	2.4861		16.1871	3.3	rss	0.0	0.0				GCF_025118155.1	Mucoromycota	28.1	0.57605	0.08847
+v1.8.17_container	Colletotrichum_graminicola_M1.001	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000149035.1	Ascomycota	51.6	0.0	0.0
+v1.8.17_container	Cryptococcus_deneoformans	success	2	0	0	0	0	0.3864		5.2519	37.5	rss	0.0	0.0								
+v1.8.17_container	Cryptococcus_deneoformans_JEC21	failed	1	1	0	0	1	1.6731		10.6992	7.6	rss	0.0	0.0				GCF_000091045.1	Basidiomycota	19.1	0.56017	0.08759
+v1.8.17_container	Cryptococcus_neoformans	failed	1	8	0	0	1	0.0005		0.0006	0.025	rss	0.2833	0.0								
+v1.8.17_container	Cryptococcus_neoformans_H99	failed	0	1	0	0	1	0.0		0.0	0.0		2.2667	0.0				GCF_000149245.1	Basidiomycota	18.9	0.0	0.0
+v1.8.17_container	Cystobasidium_minutum_MCA_4210	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_039999085.1	Basidiomycota	20.8	0.0	0.0
+v1.8.17_container	Dactylellina_haptotyla_CBS_200.50	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000441935.1	Ascomycota	39.5	0.0	0.0
+v1.8.17_container	Drepanopeziza_brunnea	success	2	0	0	0	0	0.0869		0.8554	37.4	rss	0.0	0.0								
+v1.8.17_container	Drepanopeziza_brunnea_MB_m1	success	1	0	0	0	0	1.6203		10.5934	1.022	rss	0.0	0.0				GCF_000298775.1	Ascomycota	51.9	0.20411	0.03122
+v1.8.17_container	Eremothecium_gossypii_ATCC_10895	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000091025.4	Ascomycota	9.1	0.0	0.0
+v1.8.17_container	Fusarium_oxysporum	success	2	0	0	0	0	0.5062		8.1677	37.5	rss	0.0	0.0								
+v1.8.17_container	Fusarium_oxysporum_4287	success	1	0	0	0	0	3.1808		20.1251	3.2	rss	0.0	0.0				GCF_000149955.1	Ascomycota	61.4	0.32777	0.05181
+v1.8.17_container	Fusarium_verticillioides	success	2	0	0	0	0	0.2742		4.2196	37.3	rss	0.0	0.0								
+v1.8.17_container	Fusarium_verticillioides_7600	success	1	0	0	0	0	2.9733		19.5348	2.5	rss	0.0	0.0				GCF_000149555.1	Ascomycota	41.8	0.46734	0.07113
+v1.8.17_container	Gaeumannomyces_tritici	success	2	0	0	0	0	0.1495		1.3459	37.5	rss	0.0	0.0								
+v1.8.17_container	Gaeumannomyces_tritici_R3-111a-1	success	1	0	0	0	0	2.2392		13.2738	2.4	rss	0.0	0.0				GCF_000145635.1	Ascomycota	43.6	0.30444	0.05136
+v1.8.17_container	Kluyveromyces_lactis	success	2	0	0	0	0	1.6115		25.7025	37.3	rss	0.0	0.0								
+v1.8.17_container	Kluyveromyces_lactis_NRRL_Y-1140	failed	1	1	0	0	1	0.6253		4.305	7.0	rss	0.0	0.0				GCF_000002515.2	Ascomycota	10.7	0.40234	0.05844
+v1.8.17_container	Laccaria_bicolor_S238N-H82	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000143565.1	Basidiomycota	64.9	0.0	0.0
+v1.8.17_container	Lachancea_thermotolerans_CBS_6340	failed	0	3	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_000142805.1	Ascomycota	10.4	0.0	0.0
+v1.8.17_container	Leptographium_clavigerum_kw1407	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000143105.1	Ascomycota	29.8	0.0	0.0
+v1.8.17_container	Letharia_columbiana_WasteWater2	failed	0	2	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_014066305.1	Ascomycota	52.3	0.0	0.0
+v1.8.17_container	Lipomyces_tetrasporus	success	2	0	0	0	0	0.8722		14.6212	37.3	rss	0.0	0.0								
+v1.8.17_container	Lipomyces_tetrasporus_NRRL_Y-64009	success	1	0	0	0	0	3.2983		23.6721	5.9	rss	0.0	0.0				GCF_029532465.1	Ascomycota	20.8	1.13808	0.15857
+v1.8.17_container	Malassezia_globosa	success	2	0	0	0	0	0.6111		2.7992	37.5	rss	0.0	0.0								
+v1.8.17_container	Malassezia_globosa_CBS_7966	failed	1	3	0	0	1	1.395		9.306	2.7	rss	0.0333	0.0				GCF_000181695.2	Basidiomycota	9.0	1.03401	0.155
+v1.8.17_container	Malassezia_sympodialis_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.8.17_container	Malassezia_sympodialis_ATCC_42132	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000349305.1	Basidiomycota	7.7	0.0	0.0
+v1.8.17_container	Mixia_osmundae_IAM_14324	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000708205.1	Basidiomycota	13.6	0.0	0.0
+v1.8.17_container	Morchella_importuna	success	2	0	0	0	0	0.2491		4.1192	37.5	rss	0.0	0.0								
+v1.8.17_container	Morchella_importuna_M04M26	success	1	0	0	0	0	2.6725		16.3851	4.5	rss	0.0	0.0				GCF_003444635.1	Ascomycota	50.9	0.32191	0.0525
+v1.8.17_container	Morchella_sextelata	success	2	0	0	0	0	0.6473		9.6395	37.5	rss	0.0	0.0								
+v1.8.17_container	Morchella_sextelata_SCLS	success	1	0	0	0	0	4.1028		27.6322	16.7	rss	0.0	0.0				GCF_020137385.1	Ascomycota	53.6	0.51553	0.07654
+v1.8.17_container	Mucor_mucedo	success	2	0	0	0	0	0.5553		8.433	37.3	rss	0.0	0.0								
+v1.8.17_container	Mucor_mucedo_NRRL_3635	success	1	0	0	0	0	3.1383		19.5612	3.8	rss	0.0	0.0				GCF_025094135.1	Mucoromycota	46.1	0.42432	0.06808
+v1.8.17_container	Nakaseomyces_glabratus	success	2	0	0	0	0	0.7041		11.7649	37.5	rss	0.0	0.0								
+v1.8.17_container	Nakaseomyces_glabratus_CBS_138	failed	1	1	0	0	1	1.1131		6.5136	3.4	rss	0.0	0.0				GCF_000002545.3	Ascomycota	12.3	0.52956	0.09049
+v1.8.17_container	Orbilia_oligospora	success	2	0	0	0	0	0.7624		10.9802	37.3	rss	0.0	0.0								
+v1.8.17_container	Orbilia_oligospora_ATCC_24927	success	1	0	0	0	0	2.8428		19.8341	11.0	rss	0.0	0.0				GCF_000225545.1	Ascomycota	40.1	0.49461	0.07089
+v1.8.17_container	Parastagonospora_nodorum_SN15	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000146915.1	Ascomycota	37.2	0.0	0.0
+v1.8.17_container	Phycomyces_blakesleeanus_NRRL_1555_-	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_001638985.1	Mucoromycota	53.9	0.0	0.0
+v1.8.17_container	Pneumocystis_murina_B123	failed	0	6	0	0	1	0.0		0.0	0.0		0.05	0.0				GCF_000349005.2	Ascomycota	7.5	0.0	0.0
+v1.8.17_container	Protomyces_lactucae-debilis	success	2	0	0	0	0	0.43		5.8247	37.4	rss	0.0	0.0								
+v1.8.17_container	Protomyces_lactucae-debilis_12-1054	success	1	0	0	0	0	1.0181		6.6988	7.1	rss	0.0	0.0				GCF_002105105.1	Ascomycota	12.9	0.51929	0.07892
+v1.8.17_container	Pseudogymnoascus_destructans_20631-21	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000184105.1	Ascomycota	30.7	0.0	0.0
+v1.8.17_container	Pyrenophora_teres_+9_more	success	1	0	0	0	0	0.0		0.0	0.002	rss	0.0	0.0								
+v1.8.17_container	Pyrenophora_teres_0-1	failed	0	3	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_000166005.1	Ascomycota	33.6	0.0	0.0
+v1.8.17_container	Pyrenophora_tritici-repentis_Pt-1C-BFP	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000149985.1	Ascomycota	37.8	0.0	0.0
+v1.8.17_container	Pyricularia_oryzae	success	2	0	0	0	0	0.3586		6.6622	37.5	rss	0.0	0.0								
+v1.8.17_container	Pyricularia_oryzae_+9_more	success	1	0	0	1	0	0.0		0.0	0.002	rss	0.0001	0.0								
+v1.8.17_container	Pyricularia_oryzae_70-15	success	1	0	0	0	0	3.1139		21.1682	4.1	rss	0.0	0.0				GCF_000002495.2	Ascomycota	41.0	0.5163	0.07595
+v1.8.17_container	Rhizopus_delemar	success	2	0	0	0	0	0.0692		0.6437	37.1	rss	0.0	0.0								
+v1.8.17_container	Rhizopus_delemar_RA_99-880	failed	1	1	0	0	1	1.7272		11.2546	0.842	rss	0.0	0.0				GCF_000149305.1	Mucoromycota	46.1	0.24413	0.03747
+v1.8.17_container	Rhizopus_microsporus	success	2	0	0	0	0	0.1561		1.6543	37.5	rss	0.0	0.0								
+v1.8.17_container	Rhizopus_microsporus_ATCC_52813	failed	1	1	0	0	1	1.7797		10.9649	1.3	rss	0.0	0.0				GCF_002708625.1	Mucoromycota	26.0	0.42173	0.06845
+v1.8.17_container	Rhodotorula_graminis_WP1	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_001329695.1	Basidiomycota	21.0	0.0	0.0
+v1.8.17_container	Rhodotorula_toruloides	success	2	0	0	0	0	0.1935		0.4551	32.5	rss	0.0	0.0								
+v1.8.17_container	Rhodotorula_toruloides_NP11	failed	1	2	0	1	1	0.0		0.0	0.003	rss	1.4599	8.9285				GCF_000320785.1	Basidiomycota	20.2	0.0	0.0
+v1.8.17_container	Saccharomyces_cerevisiae	success	2	0	0	0	0	0.3019		4.6499	37.6	rss	0.0	0.0								
+v1.8.17_container	Saccharomyces_cerevisiae_S288C	failed	1	3	0	0	1	0.9008		5.7509	2.4	rss	0.0499	0.0				GCF_000146045.2	Ascomycota	12.1	0.47528	0.07445
+v1.8.17_container	Schizophyllum_commune_H4-8	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000143185.2	Basidiomycota	38.7	0.0	0.0
+v1.8.17_container	Sclerotinia_sclerotiorum	success	2	0	0	0	0	0.9122		14.621	37.5	rss	0.0	0.0								
+v1.8.17_container	Sclerotinia_sclerotiorum_1980	success	1	0	0	0	0	2.0314		12.4585	3.5	rss	0.0	0.0				GCF_000146945.2	Ascomycota	38.3	0.32529	0.05304
+v1.8.17_container	Spizellomyces_punctatus	success	2	0	0	0	0	0.2361		0.99	37.5	rss	0.0	0.0								
+v1.8.17_container	Spizellomyces_punctatus_DAOM_BR117	failed	1	1	0	0	1	1.6864		11.4725	6.8	rss	0.0	0.0				GCF_000182565.1	Chytridiomycota	24.1	0.47604	0.06997
+v1.8.17_container	Sporobolomyces_koalae_JCM15063	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_050403365.1	Basidiomycota	18.3	0.0	0.0
+v1.8.17_container	Sporobolomyces_salmoneus_JCM6883	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_050403485.1	Basidiomycota	20.3	0.0	0.0
+v1.8.17_container	Sugiyamaella_lignohabitans_CBS_10342	failed	0	2	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_001640025.1	Ascomycota	15.9	0.0	0.0
+v1.8.17_container	Synchytrium_microbalum_JEL517	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_006535985.1	Chytridiomycota	26.2	0.0	0.0
+v1.8.17_container	Talaromyces_marneffei	success	2	0	0	0	0	0.4838		4.7127	37.5	rss	0.0	0.0								
+v1.8.17_container	Talaromyces_marneffei_ATCC_18224	failed	1	1	0	0	1	2.0017		13.6694	5.1	rss	0.0	0.0				GCF_000001985.1	Ascomycota	28.6	0.47795	0.06999
+v1.8.17_container	Talaromyces_stipitatus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.8.17_container	Talaromyces_stipitatus_ATCC_10500	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003125.1	Ascomycota	35.7	0.0	0.0
+v1.8.17_container	Tilletiaria_anomala	success	2	0	0	0	0	0.2291		3.514	37.5	rss	0.0	0.0								
+v1.8.17_container	Tilletiaria_anomala_UBC_951	success	1	0	0	0	0	1.6214		10.3996	3.7	rss	0.0	0.0				GCF_000711695.1	Basidiomycota	18.7	0.55613	0.08671
+v1.8.17_container	Tilletiopsis_washingtonensis	success	2	0	0	0	0	0.5344		9.1468	37.3	rss	0.0	0.0								
+v1.8.17_container	Tilletiopsis_washingtonensis_+9_more	success	1	0	0	0	0	0.0001		0.0	0.002	rss	0.0	0.0								
+v1.8.17_container	Tilletiopsis_washingtonensis_MCA_4186	success	1	0	0	0	0	1.4439		9.8531	3.4	rss	0.0	0.0				GCF_003144115.1	Basidiomycota	18.8	0.5241	0.0768
+v1.8.17_container	Tremella_mesenterica_Fries	failed	0	3	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000271645.1	Basidiomycota	28.6	0.0	0.0
+v1.8.17_container	Tricharina_praecox	success	2	0	0	0	0	0.5411		8.413	37.3	rss	0.0	0.0								
+v1.8.17_container	Tricharina_praecox_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.8.17_container	Tricharina_praecox_CBS_144465	success	1	0	0	0	0	2.6667		16.8133	3.4	rss	0.0	0.0				GCF_024521635.1	Ascomycota	38.4	0.43785	0.06944
+v1.8.17_container	Trichosporon_asahii	success	2	0	0	0	0	0.2497		3.3524	37.3	rss	0.0	0.0								
+v1.8.17_container	Trichosporon_asahii_+9_more	success	1	0	0	1	0	0.0001		0.0	0.002	rss	0.0001	0.0								
+v1.8.17_container	Trichosporon_asahii_CBS_2479	success	1	0	0	0	0	1.9931		12.044	6.7	rss	0.0	0.0				GCF_000293215.1	Basidiomycota	24.5	0.49159	0.08135
+v1.8.17_container	Umbelopsis_ramanniana_AG	failed	0	5	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_025399195.1	Mucoromycota	23.1	0.0	0.0
+v1.8.17_container	Uncinocarpus_reesii_1704	failed	0	2	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003515.1	Ascomycota	22.3	0.0	0.0
+v1.8.17_container	Wallemia_mellicola_+4_more	success	1	0	0	0	0	0.0		0.0	0.002	rss	0.0	0.0								
+v1.8.17_container	Wallemia_mellicola_CBS_633.66	failed	0	3	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000263375.1	Basidiomycota	9.8	0.0	0.0
+v1.8.17_container	Yarrowia_lipolytica	success	2	0	0	0	0	0.5092		8.121	37.3	rss	0.0	0.0								
+v1.8.17_container	Yarrowia_lipolytica_CLIB122	failed	1	1	0	0	1	1.73		11.3367	1.4	rss	0.0	0.0				GCF_000002525.2	Ascomycota	20.5	0.55301	0.08439
+v1.8.17_container	Zygosaccharomyces_rouxii	success	2	0	0	0	0	0.4928		8.2376	37.5	rss	0.0	0.0								
+v1.8.17_container	Zygosaccharomyces_rouxii_CBS_732	failed	1	1	0	0	1	0.7339		4.7894	2.0	rss	0.0	0.0				GCF_000026365.1	Ascomycota	9.8	0.48871	0.07489
+v1.8.17_container	Zymoseptoria_tritici	success	2	0	0	0	0	0.2192		2.1318	37.5	rss	0.0	0.0								
+v1.8.17_container	Zymoseptoria_tritici_IPO323	success	1	0	0	0	0	1.6719		9.9263	1.7	rss	0.0	0.0				GCF_000219625.1	Ascomycota	39.7	0.25003	0.04211
+v1.8.17_pasaiso_conda	-	success	4	0	0	0	0	0.0064		0.0008	0.133	rss	0.0	0.0								
+v1.8.17_pasaiso_conda	Botrytis_cinerea_B05.10	success	2	0	0	0	0	1.6722		6.024	12.0	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.14141	0.03925
+v1.9.0-beta10_conda	-	success	3	0	0	1	0	0.0077		0.001	0.136	rss	0.0006	0.0001								
+v1.9.0-beta10_conda	Allomyces_macrogynus_+9_more	success	1	0	0	0	0	0.0004		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Allomyces_macrogynus_ATCC_38327	success	1	0	0	0	0	0.0061		0.0075	0.059	rss	0.0	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.00013	0.00011
+v1.9.0-beta10_conda	Aspergillus_clavatus_NRRL_1	success	1	0	0	0	0	0.0032		0.0029	0.071	rss	0.0	0.0				GCF_000002715.2	Ascomycota	27.9	0.0001	0.00011
+v1.9.0-beta10_conda	Aspergillus_fumigatus_Af293	success	1	0	0	0	0	0.002		0.004	0.072	rss	0.0	0.0				GCF_000002655.1	Ascomycota	29.4	0.00014	7e-05
+v1.9.0-beta10_conda	Batrachochytrium_dendrobatidis_JAM81	success	1	0	0	0	0	0.0012		0.0024	0.061	rss	0.0	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.0001	5e-05
+v1.9.0-beta10_conda	Blastomyces_dermatitidis_ER-3	success	1	0	0	0	0	0.0043		0.0084	0.1	rss	0.0	0.0				GCF_000003525.1	Ascomycota	66.6	0.00013	6e-05
+v1.9.0-beta10_conda	Botrytis_cinerea_B05.10	success	1	0	0	0	0	0.004		0.0043	0.082	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.0001	9e-05
+v1.9.0-beta10_conda	Chaetomium_globosum_CBS_148.51	success	1	0	0	0	0	0.0039		0.005	0.074	rss	0.0	0.0				GCF_000143365.1	Ascomycota	34.3	0.00014	0.00011
+v1.9.0-beta10_conda	Cokeromyces_recurvatus_NRRL_2243	success	1	0	0	0	0	0.0021		0.004	0.055	rss	0.0	0.0				GCF_025118155.1	Mucoromycota	28.1	0.00014	7e-05
+v1.9.0-beta10_conda	Colletotrichum_graminicola_M1.001	success	1	0	0	0	0	0.0024		0.0049	0.062	rss	0.0	0.0				GCF_000149035.1	Ascomycota	51.6	0.0001	5e-05
+v1.9.0-beta10_conda	Cryptococcus_deneoformans_JEC21	success	1	0	0	0	0	0.0036		0.0031	0.063	rss	0.0	0.0				GCF_000091045.1	Basidiomycota	19.1	0.00016	0.00019
+v1.9.0-beta10_conda	Cryptococcus_neoformans_H99	success	1	0	0	0	0	0.0045		0.0029	0.043	rss	0.0	0.0				GCF_000149245.1	Basidiomycota	18.9	0.00015	0.00024
+v1.9.0-beta10_conda	Cystobasidium_minutum_MCA_4210	success	1	0	0	0	0	0.0016		0.0029	0.069	rss	0.0	0.0				GCF_039999085.1	Basidiomycota	20.8	0.00014	7e-05
+v1.9.0-beta10_conda	Dactylellina_haptotyla_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Dactylellina_haptotyla_CBS_200.50	success	1	0	0	0	0	0.0027		0.0053	0.052	rss	0.0	0.0				GCF_000441935.1	Ascomycota	39.5	0.00013	7e-05
+v1.9.0-beta10_conda	Drepanopeziza_brunnea_MB_m1	success	1	0	0	0	0	0.0025		0.005	0.065	rss	0.0	0.0				GCF_000298775.1	Ascomycota	51.9	0.0001	5e-05
+v1.9.0-beta10_conda	Eremothecium_gossypii_ATCC_10895	success	1	0	0	0	0	0.0008		0.0014	0.054	rss	0.0	0.0				GCF_000091025.4	Ascomycota	9.1	0.00015	9e-05
+v1.9.0-beta10_conda	Fusarium_oxysporum_4287	success	1	0	0	0	0	0.0041		0.0084	0.085	rss	0.0	0.0				GCF_000149955.1	Ascomycota	61.4	0.00014	7e-05
+v1.9.0-beta10_conda	Fusarium_verticillioides_7600	success	1	0	0	0	0	0.0036		0.0055	0.073	rss	0.0	0.0				GCF_000149555.1	Ascomycota	41.8	0.00013	9e-05
+v1.9.0-beta10_conda	Gaeumannomyces_tritici_R3-111a-1	success	1	0	0	0	0	0.0047		0.0058	0.086	rss	0.0	0.0				GCF_000145635.1	Ascomycota	43.6	0.00013	0.00011
+v1.9.0-beta10_conda	Kluyveromyces_lactis_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Kluyveromyces_lactis_NRRL_Y-1140	success	1	0	0	0	0	0.0044		0.0012	0.041	rss	0.0	0.0				GCF_000002515.2	Ascomycota	10.7	0.00011	0.00042
+v1.9.0-beta10_conda	Laccaria_bicolor_S238N-H82	success	1	0	0	0	0	0.0043		0.0081	0.069	rss	0.0	0.0				GCF_000143565.1	Basidiomycota	64.9	0.00012	7e-05
+v1.9.0-beta10_conda	Lachancea_thermotolerans_+9_more	success	1	0	0	0	0	0.0011		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Lachancea_thermotolerans_CBS_6340	success	1	0	0	0	0	0.001		0.0016	0.058	rss	0.0	0.0				GCF_000142805.1	Ascomycota	10.4	0.00016	0.0001
+v1.9.0-beta10_conda	Leptographium_clavigerum_kw1407	success	1	0	0	0	0	0.0059		0.0028	0.045	rss	0.0	0.0				GCF_000143105.1	Ascomycota	29.8	9e-05	0.0002
+v1.9.0-beta10_conda	Letharia_columbiana_+4_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Letharia_columbiana_WasteWater2	success	1	0	0	0	0	0.005		0.0068	0.061	rss	0.0	0.0				GCF_014066305.1	Ascomycota	52.3	0.00013	0.0001
+v1.9.0-beta10_conda	Lipomyces_tetrasporus_NRRL_Y-64009	success	1	0	0	0	0	0.003		0.0031	0.042	rss	0.0	0.0				GCF_029532465.1	Ascomycota	20.8	0.00015	0.00014
+v1.9.0-beta10_conda	Malassezia_globosa	failed	0	3	0	0	1	0.0		0.0	0.0		0.2333	0.0								
+v1.9.0-beta10_conda	Malassezia_globosa_CBS_7966	success	1	0	0	0	0	0.0029		0.0015	0.047	rss	0.0	0.0				GCF_000181695.2	Basidiomycota	9.0	0.00017	0.00032
+v1.9.0-beta10_conda	Malassezia_sympodialis_ATCC_42132	success	1	0	0	0	0	0.0006		0.0012	0.054	rss	0.0	0.0				GCF_000349305.1	Basidiomycota	7.7	0.00016	8e-05
+v1.9.0-beta10_conda	Mixia_osmundae_IAM_14324	success	1	0	0	0	0	0.0011		0.0021	0.053	rss	0.0	0.0				GCF_000708205.1	Basidiomycota	13.6	0.00016	8e-05
+v1.9.0-beta10_conda	Morchella_importuna_M04M26	success	1	0	0	0	0	0.0036		0.007	0.06	rss	0.0	0.0				GCF_003444635.1	Ascomycota	50.9	0.00014	7e-05
+v1.9.0-beta10_conda	Morchella_sextelata_SCLS	success	1	0	0	0	0	0.0036		0.0073	0.065	rss	0.0	0.0				GCF_020137385.1	Ascomycota	53.6	0.00014	7e-05
+v1.9.0-beta10_conda	Mucor_mucedo_NRRL_3635	success	1	0	0	0	0	0.0031		0.0061	0.049	rss	0.0	0.0				GCF_025094135.1	Mucoromycota	46.1	0.00013	7e-05
+v1.9.0-beta10_conda	Nakaseomyces_glabratus_+9_more	success	1	0	0	0	0	0.0014		0.0	0.0		0.0	0.0								
+v1.9.0-beta10_conda	Nakaseomyces_glabratus_CBS_138	success	1	0	0	0	0	0.0009		0.0018	0.052	rss	0.0	0.0				GCF_000002545.3	Ascomycota	12.3	0.00015	7e-05
+v1.9.0-beta10_conda	Orbilia_oligospora_ATCC_24927	success	1	0	0	0	0	0.0056		0.0037	0.046	rss	0.0	0.0				GCF_000225545.1	Ascomycota	40.1	9e-05	0.00014
+v1.9.0-beta10_conda	Parastagonospora_nodorum_SN15	success	1	0	0	0	0	0.0054		0.0034	0.041	rss	0.0	0.0				GCF_000146915.1	Ascomycota	37.2	9e-05	0.00015
+v1.9.0-beta10_conda	Phycomyces_blakesleeanus_+9_more	success	1	0	0	0	0	0.0006		0.0002	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Phycomyces_blakesleeanus_NRRL_1555_-	success	1	0	0	0	0	0.0061		0.0078	0.065	rss	0.0	0.0				GCF_001638985.1	Mucoromycota	53.9	0.00014	0.00011
+v1.9.0-beta10_conda	Pneumocystis_murina_+9_more	success	1	0	0	0	0	0.0036		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Pneumocystis_murina_B123	success	1	0	0	0	0	0.0008		0.0013	0.041	rss	0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.00018	0.0001
+v1.9.0-beta10_conda	Protomyces_lactucae-debilis_12-1054	success	1	0	0	0	0	0.0011		0.0021	0.05	rss	0.0	0.0				GCF_002105105.1	Ascomycota	12.9	0.00016	8e-05
+v1.9.0-beta10_conda	Pseudogymnoascus_destructans_20631-21	success	1	0	0	0	0	0.0021		0.0038	0.048	rss	0.0	0.0				GCF_000184105.1	Ascomycota	30.7	0.00012	7e-05
+v1.9.0-beta10_conda	Pyrenophora_teres_+9_more	success	1	0	0	0	0	0.0002		0.0001	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Pyrenophora_teres_0-1	success	1	0	0	0	0	0.0024		0.0042	0.053	rss	0.0	0.0				GCF_000166005.1	Ascomycota	33.6	0.00013	7e-05
+v1.9.0-beta10_conda	Pyrenophora_tritici-repentis_Pt-1C-BFP	success	1	0	0	0	0	0.0055		0.0034	0.044	rss	0.0	0.0				GCF_000149985.1	Ascomycota	37.8	9e-05	0.00015
+v1.9.0-beta10_conda	Pyricularia_oryzae_+9_more	success	1	0	0	0	0	0.0007		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Pyricularia_oryzae_70-15	success	1	0	0	0	0	0.0059		0.0038	0.072	rss	0.0	0.0				GCF_000002495.2	Ascomycota	41.0	9e-05	0.00014
+v1.9.0-beta10_conda	Rhizopus_delemar_RA_99-880	success	1	0	0	0	0	0.0065		0.0065	0.058	rss	0.0	0.0				GCF_000149305.1	Mucoromycota	46.1	0.00014	0.00014
+v1.9.0-beta10_conda	Rhizopus_microsporus_ATCC_52813	success	1	0	0	0	0	0.0041		0.0038	0.059	rss	0.0	0.0				GCF_002708625.1	Mucoromycota	26.0	0.00015	0.00016
+v1.9.0-beta10_conda	Rhodotorula_graminis_WP1	success	1	0	0	0	0	0.0025		0.0029	0.056	rss	0.0	0.0				GCF_001329695.1	Basidiomycota	21.0	0.00014	0.00012
+v1.9.0-beta10_conda	Rhodotorula_toruloides_NP11	success	1	0	0	0	0	0.0036		0.0029	0.053	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.00014	0.00018
+v1.9.0-beta10_conda	Saccharomyces_cerevisiae_S288C	success	1	0	0	0	0	0.0009		0.0019	0.051	rss	0.0	0.0				GCF_000146045.2	Ascomycota	12.1	0.00015	7e-05
+v1.9.0-beta10_conda	Schizophyllum_commune_H4-8	success	1	0	0	0	0	0.0037		0.0039	0.067	rss	0.0	0.0				GCF_000143185.2	Basidiomycota	38.7	0.0001	0.0001
+v1.9.0-beta10_conda	Sclerotinia_sclerotiorum_1980	success	1	0	0	0	0	0.0027		0.0055	0.059	rss	0.0	0.0				GCF_000146945.2	Ascomycota	38.3	0.00014	7e-05
+v1.9.0-beta10_conda	Spizellomyces_punctatus_DAOM_BR117	success	1	0	0	0	0	0.0042		0.0036	0.042	rss	0.0	0.0				GCF_000182565.1	Chytridiomycota	24.1	0.00015	0.00017
+v1.9.0-beta10_conda	Sporobolomyces_koalae_JCM15063	success	1	0	0	0	0	0.0013		0.0026	0.051	rss	0.0	0.0				GCF_050403365.1	Basidiomycota	18.3	0.00014	7e-05
+v1.9.0-beta10_conda	Sporobolomyces_salmoneus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda	Sporobolomyces_salmoneus_JCM6883	success	1	0	0	0	0	0.0015		0.0028	0.05	rss	0.0	0.0				GCF_050403485.1	Basidiomycota	20.3	0.00014	8e-05
+v1.9.0-beta10_conda	Sugiyamaella_lignohabitans_CBS_10342	success	1	0	0	0	0	0.0009		0.0018	0.078	rss	0.0	0.0				GCF_001640025.1	Ascomycota	15.9	0.00011	5e-05
+v1.9.0-beta10_conda	Synchytrium_microbalum_JEL517	success	1	0	0	0	0	0.0013		0.0027	0.053	rss	0.0	0.0				GCF_006535985.1	Chytridiomycota	26.2	0.0001	5e-05
+v1.9.0-beta10_conda	Talaromyces_marneffei_ATCC_18224	success	1	0	0	0	0	0.005		0.0027	0.04	rss	0.0	0.0				GCF_000001985.1	Ascomycota	28.6	9e-05	0.00018
+v1.9.0-beta10_conda	Talaromyces_stipitatus_ATCC_10500	success	1	0	0	0	0	0.0024		0.0049	0.072	rss	0.0	0.0				GCF_000003125.1	Ascomycota	35.7	0.00014	7e-05
+v1.9.0-beta10_conda	Tilletiaria_anomala_UBC_951	success	1	0	0	0	0	0.0016		0.0027	0.048	rss	0.0	0.0				GCF_000711695.1	Basidiomycota	18.7	0.00015	9e-05
+v1.9.0-beta10_conda	Tilletiopsis_washingtonensis_MCA_4186	success	1	0	0	0	0	0.0029		0.0022	0.05	rss	0.0	0.0				GCF_003144115.1	Basidiomycota	18.8	0.00012	0.00015
+v1.9.0-beta10_conda	Tremella_mesenterica_+9_more	success	1	0	0	1	0	0.0002		0.0	0.003	rss	0.0002	0.0001								
+v1.9.0-beta10_conda	Tremella_mesenterica_Fries	success	1	0	0	0	0	0.0019		0.0037	0.07	rss	0.0	0.0				GCF_000271645.1	Basidiomycota	28.6	0.00013	7e-05
+v1.9.0-beta10_conda	Tricharina_praecox_CBS_144465	success	1	0	0	0	0	0.0018		0.0039	0.123	rss	0.0	0.0				GCF_024521635.1	Ascomycota	38.4	0.0001	5e-05
+v1.9.0-beta10_conda	Trichosporon_asahii_CBS_2479	success	1	0	0	0	0	0.0019		0.0037	0.057	rss	0.0	0.0				GCF_000293215.1	Basidiomycota	24.5	0.00015	8e-05
+v1.9.0-beta10_conda	Umbelopsis_ramanniana_AG	success	1	0	0	0	0	0.0016		0.0032	0.05	rss	0.0	0.0				GCF_025399195.1	Mucoromycota	23.1	0.00014	7e-05
+v1.9.0-beta10_conda	Uncinocarpus_reesii_1704	success	1	0	0	0	0	0.0012		0.0023	0.075	rss	0.0	0.0				GCF_000003515.1	Ascomycota	22.3	0.0001	5e-05
+v1.9.0-beta10_conda	Wallemia_mellicola_+4_more	success	1	0	0	0	0	0.0007		0.0	0.0		0.0	0.0								
+v1.9.0-beta10_conda	Wallemia_mellicola_CBS_633.66	success	1	0	0	0	0	0.0008		0.0015	0.049	rss	0.0	0.0				GCF_000263375.1	Basidiomycota	9.8	0.00016	8e-05
+v1.9.0-beta10_conda	Yarrowia_lipolytica_CLIB122	success	1	0	0	0	0	0.0016		0.0031	0.067	rss	0.0	0.0				GCF_000002525.2	Ascomycota	20.5	0.00015	8e-05
+v1.9.0-beta10_conda	Zygosaccharomyces_rouxii_CBS_732	success	1	0	0	0	0	0.0014		0.0017	0.061	rss	0.0	0.0				GCF_000026365.1	Ascomycota	9.8	0.00017	0.00014
+v1.9.0-beta10_conda	Zymoseptoria_tritici_IPO323	success	1	0	0	0	0	0.0042		0.0055	0.063	rss	0.0	0.0				GCF_000219625.1	Ascomycota	39.7	0.00014	0.00011
+v1.9.0-beta10_conda_rust	-	success	3	0	0	1	0	0.007		0.0007	0.134	rss	0.0006	0.0001								
+v1.9.0-beta10_conda_rust	Allomyces_macrogynus_+9_more	success	1	0	0	0	0	0.0018		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Allomyces_macrogynus_ATCC_38327	success	1	0	0	0	0	0.0063		0.0069	0.051	rss	0.0	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.00012	0.00011
+v1.9.0-beta10_conda_rust	Aspergillus_clavatus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Aspergillus_clavatus_NRRL_1	success	1	0	0	0	0	0.0031		0.0039	0.071	rss	0.0	0.0				GCF_000002715.2	Ascomycota	27.9	0.00014	0.00011
+v1.9.0-beta10_conda_rust	Aspergillus_fumigatus_Af293	success	1	0	0	0	0	0.0019		0.0039	0.079	rss	0.0	0.0				GCF_000002655.1	Ascomycota	29.4	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Batrachochytrium_dendrobatidis_+9_more	success	1	0	0	0	0	0.0002		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Batrachochytrium_dendrobatidis_JAM81	success	1	0	0	0	0	0.0019		0.0034	0.072	rss	0.0	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.00014	8e-05
+v1.9.0-beta10_conda_rust	Blastomyces_dermatitidis_ER-3	success	1	0	0	0	0	0.0099		0.015	0.11	rss	0.0	0.0				GCF_000003525.1	Ascomycota	66.6	0.00023	0.00015
+v1.9.0-beta10_conda_rust	Botrytis_cinerea_B05.10	success	1	0	0	0	0	0.0039		0.0041	0.072	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.0001	9e-05
+v1.9.0-beta10_conda_rust	Chaetomium_globosum_CBS_148.51	success	1	0	0	0	0	0.0025		0.0047	0.089	rss	0.0	0.0				GCF_000143365.1	Ascomycota	34.3	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Cokeromyces_recurvatus_NRRL_2243	success	1	0	0	0	0	0.0021		0.0036	0.063	rss	0.0	0.0				GCF_025118155.1	Mucoromycota	28.1	0.00013	8e-05
+v1.9.0-beta10_conda_rust	Colletotrichum_graminicola_M1.001	success	1	0	0	0	0	0.0032		0.0066	0.062	rss	0.0	0.0				GCF_000149035.1	Ascomycota	51.6	0.00013	6e-05
+v1.9.0-beta10_conda_rust	Cryptococcus_deneoformans_JEC21	success	1	0	0	0	0	0.0021		0.0026	0.066	rss	0.0	0.0				GCF_000091045.1	Basidiomycota	19.1	0.00014	0.00011
+v1.9.0-beta10_conda_rust	Cryptococcus_neoformans_H99	success	1	0	0	0	0	0.0032		0.0026	0.065	rss	0.0	0.0				GCF_000149245.1	Basidiomycota	18.9	0.00014	0.00017
+v1.9.0-beta10_conda_rust	Cystobasidium_minutum_MCA_4210	success	1	0	0	0	0	0.0016		0.0028	0.073	rss	0.0	0.0				GCF_039999085.1	Basidiomycota	20.8	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Dactylellina_haptotyla_CBS_200.50	success	1	0	0	0	0	0.0028		0.0052	0.058	rss	0.0	0.0				GCF_000441935.1	Ascomycota	39.5	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Drepanopeziza_brunnea_MB_m1	success	1	0	0	0	0	0.0043		0.0068	0.075	rss	0.0	0.0				GCF_000298775.1	Ascomycota	51.9	0.00013	8e-05
+v1.9.0-beta10_conda_rust	Eremothecium_gossypii_ATCC_10895	success	1	0	0	0	0	0.0007		0.0012	0.063	rss	0.0	0.0				GCF_000091025.4	Ascomycota	9.1	0.00013	8e-05
+v1.9.0-beta10_conda_rust	Fusarium_oxysporum_+4_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Fusarium_oxysporum_4287	success	1	0	0	0	0	0.004		0.0078	0.09	rss	0.0	0.0				GCF_000149955.1	Ascomycota	61.4	0.00013	6e-05
+v1.9.0-beta10_conda_rust	Fusarium_verticillioides_7600	success	1	0	0	0	0	0.0028		0.0057	0.088	rss	0.0	0.0				GCF_000149555.1	Ascomycota	41.8	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Gaeumannomyces_tritici_R3-111a-1	success	1	0	0	0	0	0.0028		0.0055	0.096	rss	0.0	0.0				GCF_000145635.1	Ascomycota	43.6	0.00013	6e-05
+v1.9.0-beta10_conda_rust	Kluyveromyces_lactis_NRRL_Y-1140	success	1	0	0	0	0	0.0042		0.001	0.052	rss	0.0	0.0				GCF_000002515.2	Ascomycota	10.7	0.0001	0.00039
+v1.9.0-beta10_conda_rust	Laccaria_bicolor_S238N-H82	success	1	0	0	0	0	0.0039		0.0074	0.071	rss	0.0	0.0				GCF_000143565.1	Basidiomycota	64.9	0.00011	6e-05
+v1.9.0-beta10_conda_rust	Lachancea_thermotolerans_+9_more	success	1	0	0	0	0	0.0011		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Lachancea_thermotolerans_CBS_6340	success	1	0	0	0	0	0.0008		0.0014	0.065	rss	0.0	0.0				GCF_000142805.1	Ascomycota	10.4	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Leptographium_clavigerum_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Leptographium_clavigerum_kw1407	success	1	0	0	0	0	0.0054		0.0025	0.05	rss	0.0	0.0				GCF_000143105.1	Ascomycota	29.8	9e-05	0.00018
+v1.9.0-beta10_conda_rust	Letharia_columbiana_+4_more	success	1	0	0	0	0	0.001		0.0	0.0		0.0	0.0								
+v1.9.0-beta10_conda_rust	Letharia_columbiana_WasteWater2	success	1	0	0	0	0	0.0052		0.0069	0.065	rss	0.0	0.0				GCF_014066305.1	Ascomycota	52.3	0.00013	0.0001
+v1.9.0-beta10_conda_rust	Lipomyces_tetrasporus_NRRL_Y-64009	success	1	0	0	0	0	0.0031		0.0027	0.06	rss	0.0	0.0				GCF_029532465.1	Ascomycota	20.8	0.00013	0.00015
+v1.9.0-beta10_conda_rust	Malassezia_globosa	failed	0	3	0	0	1	0.0		0.0	0.0		0.2	0.0								
+v1.9.0-beta10_conda_rust	Malassezia_globosa_CBS_7966	success	1	0	0	0	0	0.0044		0.0009	0.051	rss	0.0	0.0				GCF_000181695.2	Basidiomycota	9.0	0.0001	0.00049
+v1.9.0-beta10_conda_rust	Malassezia_sympodialis_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Malassezia_sympodialis_ATCC_42132	success	1	0	0	0	0	0.0021		0.0011	0.051	rss	0.0	0.0				GCF_000349305.1	Basidiomycota	7.7	0.00014	0.00028
+v1.9.0-beta10_conda_rust	Mixia_osmundae_IAM_14324	success	1	0	0	0	0	0.0025		0.0018	0.062	rss	0.0	0.0				GCF_000708205.1	Basidiomycota	13.6	0.00013	0.00018
+v1.9.0-beta10_conda_rust	Morchella_importuna_M04M26	success	1	0	0	0	0	0.0034		0.0064	0.073	rss	0.0	0.0				GCF_003444635.1	Ascomycota	50.9	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Morchella_sextelata_SCLS	success	1	0	0	0	0	0.0088		0.012	0.074	rss	0.0	0.0				GCF_020137385.1	Ascomycota	53.6	0.00022	0.00016
+v1.9.0-beta10_conda_rust	Mucor_mucedo_+9_more	success	1	0	0	0	0	0.0003		0.0001	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Mucor_mucedo_NRRL_3635	success	1	0	0	0	0	0.0032		0.0063	0.058	rss	0.0	0.0				GCF_025094135.1	Mucoromycota	46.1	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Nakaseomyces_glabratus_+9_more	success	1	0	0	1	0	0.0006		0.0002	0.003	rss	0.0023	0.0								
+v1.9.0-beta10_conda_rust	Nakaseomyces_glabratus_CBS_138	success	1	0	0	0	0	0.0012		0.0017	0.062	rss	0.0	0.0				GCF_000002545.3	Ascomycota	12.3	0.00014	0.0001
+v1.9.0-beta10_conda_rust	Orbilia_oligospora_ATCC_24927	success	1	0	0	0	0	0.0056		0.0035	0.054	rss	0.0	0.0				GCF_000225545.1	Ascomycota	40.1	9e-05	0.00014
+v1.9.0-beta10_conda_rust	Parastagonospora_nodorum_SN15	success	1	0	0	0	0	0.0024		0.0048	0.064	rss	0.0	0.0				GCF_000146915.1	Ascomycota	37.2	0.00013	6e-05
+v1.9.0-beta10_conda_rust	Phycomyces_blakesleeanus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Phycomyces_blakesleeanus_NRRL_1555_-	success	1	0	0	0	0	0.0058		0.0067	0.085	rss	0.0	0.0				GCF_001638985.1	Mucoromycota	53.9	0.00012	0.00011
+v1.9.0-beta10_conda_rust	Pneumocystis_murina_B123	success	1	0	0	0	0	0.0006		0.0011	0.058	rss	0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.00014	9e-05
+v1.9.0-beta10_conda_rust	Protomyces_lactucae-debilis_12-1054	success	1	0	0	0	0	0.0009		0.0017	0.06	rss	0.0	0.0				GCF_002105105.1	Ascomycota	12.9	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Pseudogymnoascus_destructans_20631-21	success	1	0	0	0	0	0.0014		0.0027	0.06	rss	0.0	0.0				GCF_000184105.1	Ascomycota	30.7	9e-05	5e-05
+v1.9.0-beta10_conda_rust	Pyrenophora_teres_0-1	success	1	0	0	0	0	0.0034		0.0031	0.109	rss	0.0	0.0				GCF_000166005.1	Ascomycota	33.6	9e-05	0.0001
+v1.9.0-beta10_conda_rust	Pyrenophora_tritici-repentis_Pt-1C-BFP	success	1	0	0	0	0	0.0029		0.0052	0.091	rss	0.0	0.0				GCF_000149985.1	Ascomycota	37.8	0.00014	8e-05
+v1.9.0-beta10_conda_rust	Pyricularia_oryzae_70-15	success	1	0	0	0	0	0.0034		0.0052	0.122	rss	0.0	0.0				GCF_000002495.2	Ascomycota	41.0	0.00013	8e-05
+v1.9.0-beta10_conda_rust	Rhizopus_delemar_RA_99-880	success	1	0	0	0	0	0.0058		0.0062	0.052	rss	0.0	0.0				GCF_000149305.1	Mucoromycota	46.1	0.00014	0.00013
+v1.9.0-beta10_conda_rust	Rhizopus_microsporus_ATCC_52813	success	1	0	0	0	0	0.0037		0.0036	0.067	rss	0.0	0.0				GCF_002708625.1	Mucoromycota	26.0	0.00014	0.00014
+v1.9.0-beta10_conda_rust	Rhodotorula_graminis_+9_more	success	1	0	0	0	0	0.0006		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Rhodotorula_graminis_WP1	success	1	0	0	0	0	0.0048		0.0017	0.052	rss	0.0	0.0				GCF_001329695.1	Basidiomycota	21.0	8e-05	0.00023
+v1.9.0-beta10_conda_rust	Rhodotorula_toruloides_NP11	success	1	0	0	0	0	0.0033		0.0029	0.062	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.00014	0.00017
+v1.9.0-beta10_conda_rust	Saccharomyces_cerevisiae_S288C	success	1	0	0	0	0	0.0024		0.0016	0.051	rss	0.0	0.0				GCF_000146045.2	Ascomycota	12.1	0.00014	0.0002
+v1.9.0-beta10_conda_rust	Schizophyllum_commune_H4-8	success	1	0	0	0	0	0.0025		0.005	0.077	rss	0.0	0.0				GCF_000143185.2	Basidiomycota	38.7	0.00013	6e-05
+v1.9.0-beta10_conda_rust	Sclerotinia_sclerotiorum_1980	success	1	0	0	0	0	0.0027		0.0051	0.07	rss	0.0	0.0				GCF_000146945.2	Ascomycota	38.3	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Spizellomyces_punctatus_DAOM_BR117	success	1	0	0	0	0	0.0043		0.0034	0.049	rss	0.0	0.0				GCF_000182565.1	Chytridiomycota	24.1	0.00014	0.00018
+v1.9.0-beta10_conda_rust	Sporobolomyces_koalae_JCM15063	success	1	0	0	0	0	0.0019		0.0025	0.058	rss	0.0	0.0				GCF_050403365.1	Basidiomycota	18.3	0.00014	0.00011
+v1.9.0-beta10_conda_rust	Sporobolomyces_salmoneus_JCM6883	success	1	0	0	0	0	0.0024		0.0027	0.051	rss	0.0	0.0				GCF_050403485.1	Basidiomycota	20.3	0.00013	0.00012
+v1.9.0-beta10_conda_rust	Sugiyamaella_lignohabitans_CBS_10342	success	1	0	0	0	0	0.0009		0.0016	0.073	rss	0.0	0.0				GCF_001640025.1	Ascomycota	15.9	0.0001	5e-05
+v1.9.0-beta10_conda_rust	Synchytrium_microbalum_JEL517	success	1	0	0	0	0	0.0024		0.0035	0.065	rss	0.0	0.0				GCF_006535985.1	Chytridiomycota	26.2	0.00013	9e-05
+v1.9.0-beta10_conda_rust	Talaromyces_marneffei_ATCC_18224	success	1	0	0	0	0	0.0059		0.0025	0.069	rss	0.0	0.0				GCF_000001985.1	Ascomycota	28.6	9e-05	0.0002
+v1.9.0-beta10_conda_rust	Talaromyces_stipitatus_+9_more	success	1	0	0	0	0	0.0024		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_conda_rust	Talaromyces_stipitatus_ATCC_10500	success	1	0	0	0	0	0.0026		0.0045	0.083	rss	0.0	0.0				GCF_000003125.1	Ascomycota	35.7	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Tilletiaria_anomala_UBC_951	success	1	0	0	0	0	0.0016		0.0027	0.059	rss	0.0	0.0				GCF_000711695.1	Basidiomycota	18.7	0.00014	8e-05
+v1.9.0-beta10_conda_rust	Tilletiopsis_washingtonensis_MCA_4186	success	1	0	0	0	0	0.0014		0.0025	0.062	rss	0.0	0.0				GCF_003144115.1	Basidiomycota	18.8	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Tremella_mesenterica_Fries	success	1	0	0	0	0	0.0019		0.0035	0.074	rss	0.0	0.0				GCF_000271645.1	Basidiomycota	28.6	0.00012	7e-05
+v1.9.0-beta10_conda_rust	Tricharina_praecox_CBS_144465	success	1	0	0	0	0	0.0029		0.0053	0.069	rss	0.0	0.0				GCF_024521635.1	Ascomycota	38.4	0.00014	7e-05
+v1.9.0-beta10_conda_rust	Trichosporon_asahii_CBS_2479	success	1	0	0	0	0	0.0037		0.0057	0.074	rss	0.0	0.0				GCF_000293215.1	Basidiomycota	24.5	0.00023	0.00015
+v1.9.0-beta10_conda_rust	Umbelopsis_ramanniana_AG	success	1	0	0	0	0	0.0016		0.003	0.061	rss	0.0	0.0				GCF_025399195.1	Mucoromycota	23.1	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Uncinocarpus_reesii_1704	success	1	0	0	0	0	0.0016		0.0029	0.096	rss	0.0	0.0				GCF_000003515.1	Ascomycota	22.3	0.00013	7e-05
+v1.9.0-beta10_conda_rust	Wallemia_mellicola_CBS_633.66	success	1	0	0	0	0	0.0008		0.0013	0.065	rss	0.0	0.0				GCF_000263375.1	Basidiomycota	9.8	0.00014	8e-05
+v1.9.0-beta10_conda_rust	Yarrowia_lipolytica_CLIB122	success	1	0	0	0	0	0.0017		0.0027	0.073	rss	0.0	0.0				GCF_000002525.2	Ascomycota	20.5	0.00013	8e-05
+v1.9.0-beta10_conda_rust	Zygosaccharomyces_rouxii_CBS_732	success	1	0	0	0	0	0.0008		0.0013	0.065	rss	0.0	0.0				GCF_000026365.1	Ascomycota	9.8	0.00014	8e-05
+v1.9.0-beta10_conda_rust	Zymoseptoria_tritici_IPO323	success	1	0	0	0	0	0.0044		0.0053	0.077	rss	0.0	0.0				GCF_000219625.1	Ascomycota	39.7	0.00013	0.00011
+v1.9.0-beta10_container	-	success	2	3	0	0	0	0.0013		0.0005	0.147	rss	0.0	0.0								
+v1.9.0-beta10_container	Aspergillus_clavatus_NRRL_1	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000002715.2	Ascomycota	27.9	0.0	0.0
+v1.9.0-beta10_container	Blastomyces_dermatitidis_ER-3	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003525.1	Ascomycota	66.6	0.0	0.0
+v1.9.0-beta10_container	Cryptococcus_neoformans_H99	failed	0	1	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_000149245.1	Basidiomycota	18.9	0.0	0.0
+v1.9.0-beta10_container	Cystobasidium_minutum_MCA_4210	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_039999085.1	Basidiomycota	20.8	0.0	0.0
+v1.9.0-beta10_container	Dactylellina_haptotyla_CBS_200.50	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000441935.1	Ascomycota	39.5	0.0	0.0
+v1.9.0-beta10_container	Eremothecium_gossypii_ATCC_10895	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000091025.4	Ascomycota	9.1	0.0	0.0
+v1.9.0-beta10_container	Laccaria_bicolor_S238N-H82	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000143565.1	Basidiomycota	64.9	0.0	0.0
+v1.9.0-beta10_container	Lachancea_thermotolerans_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container	Leptographium_clavigerum_kw1407	failed	0	1	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000143105.1	Ascomycota	29.8	0.0	0.0
+v1.9.0-beta10_container	Letharia_columbiana_WasteWater2	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_014066305.1	Ascomycota	52.3	0.0	0.0
+v1.9.0-beta10_container	Malassezia_globosa	failed	0	6	0	0	1	0.0		0.0	0.0		0.3167	0.0								
+v1.9.0-beta10_container	Mixia_osmundae_IAM_14324	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000708205.1	Basidiomycota	13.6	0.0	0.0
+v1.9.0-beta10_container	Morchella_sextelata_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container	Pneumocystis_murina_B123	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.0	0.0
+v1.9.0-beta10_container	Pyricularia_oryzae_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container	Rhodotorula_graminis_WP1	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_001329695.1	Basidiomycota	21.0	0.0	0.0
+v1.9.0-beta10_container	Spizellomyces_punctatus_+9_more	success	1	0	0	0	0	0.0		0.0	0.002	rss	0.0	0.0								
+v1.9.0-beta10_container	Sporobolomyces_koalae_JCM15063	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_050403365.1	Basidiomycota	18.3	0.0	0.0
+v1.9.0-beta10_container	Sporobolomyces_salmoneus_JCM6883	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_050403485.1	Basidiomycota	20.3	0.0	0.0
+v1.9.0-beta10_container	Sugiyamaella_lignohabitans_CBS_10342	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_001640025.1	Ascomycota	15.9	0.0	0.0
+v1.9.0-beta10_container	Synchytrium_microbalum_JEL517	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_006535985.1	Chytridiomycota	26.2	0.0	0.0
+v1.9.0-beta10_container	Talaromyces_stipitatus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container	Talaromyces_stipitatus_ATCC_10500	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003125.1	Ascomycota	35.7	0.0	0.0
+v1.9.0-beta10_container	Tilletiopsis_washingtonensis_+9_more	success	1	0	0	0	0	0.0001		0.0	0.002	rss	0.0	0.0								
+v1.9.0-beta10_container	Tremella_mesenterica_Fries	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000271645.1	Basidiomycota	28.6	0.0	0.0
+v1.9.0-beta10_container	Uncinocarpus_reesii_1704	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003515.1	Ascomycota	22.3	0.0	0.0
+v1.9.0-beta10_container	Wallemia_mellicola_CBS_633.66	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000263375.1	Basidiomycota	9.8	0.0	0.0
+v1.9.0-beta10_container	Zymoseptoria_tritici_+4_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	-	success	2	3	0	0	0	0.001		0.0003	0.145	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Aspergillus_clavatus_NRRL_1	failed	0	1	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_000002715.2	Ascomycota	27.9	0.0	0.0
+v1.9.0-beta10_container_rust	Blastomyces_dermatitidis_ER-3	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003525.1	Ascomycota	66.6	0.0	0.0
+v1.9.0-beta10_container_rust	Cryptococcus_neoformans_H99	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000149245.1	Basidiomycota	18.9	0.0	0.0
+v1.9.0-beta10_container_rust	Cystobasidium_minutum_MCA_4210	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_039999085.1	Basidiomycota	20.8	0.0	0.0
+v1.9.0-beta10_container_rust	Dactylellina_haptotyla_CBS_200.50	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000441935.1	Ascomycota	39.5	0.0	0.0
+v1.9.0-beta10_container_rust	Eremothecium_gossypii_ATCC_10895	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000091025.4	Ascomycota	9.1	0.0	0.0
+v1.9.0-beta10_container_rust	Laccaria_bicolor_S238N-H82	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000143565.1	Basidiomycota	64.9	0.0	0.0
+v1.9.0-beta10_container_rust	Leptographium_clavigerum_kw1407	failed	0	1	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_000143105.1	Ascomycota	29.8	0.0	0.0
+v1.9.0-beta10_container_rust	Letharia_columbiana_WasteWater2	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_014066305.1	Ascomycota	52.3	0.0	0.0
+v1.9.0-beta10_container_rust	Malassezia_globosa	failed	0	6	0	0	1	0.0		0.0	0.0		0.3167	0.0								
+v1.9.0-beta10_container_rust	Mixia_osmundae_IAM_14324	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000708205.1	Basidiomycota	13.6	0.0	0.0
+v1.9.0-beta10_container_rust	Morchella_sextelata_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Pneumocystis_murina_B123	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.0	0.0
+v1.9.0-beta10_container_rust	Rhodotorula_graminis_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Rhodotorula_graminis_WP1	failed	0	1	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_001329695.1	Basidiomycota	21.0	0.0	0.0
+v1.9.0-beta10_container_rust	Spizellomyces_punctatus_+9_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Sporobolomyces_koalae_JCM15063	failed	0	1	0	0	1	0.0		0.0	0.0		0.0167	0.0				GCF_050403365.1	Basidiomycota	18.3	0.0	0.0
+v1.9.0-beta10_container_rust	Sporobolomyces_salmoneus_JCM6883	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_050403485.1	Basidiomycota	20.3	0.0	0.0
+v1.9.0-beta10_container_rust	Sugiyamaella_lignohabitans_CBS_10342	failed	0	1	0	0	1	0.0		0.0	0.0		0.0166	0.0				GCF_001640025.1	Ascomycota	15.9	0.0	0.0
+v1.9.0-beta10_container_rust	Synchytrium_microbalum_JEL517	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_006535985.1	Chytridiomycota	26.2	0.0	0.0
+v1.9.0-beta10_container_rust	Talaromyces_stipitatus_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Talaromyces_stipitatus_ATCC_10500	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003125.1	Ascomycota	35.7	0.0	0.0
+v1.9.0-beta10_container_rust	Tilletiaria_anomala_+9_more	success	1	0	0	0	0	0.0001		0.0	0.002	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Tremella_mesenterica_Fries	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000271645.1	Basidiomycota	28.6	0.0	0.0
+v1.9.0-beta10_container_rust	Trichosporon_asahii_+9_more	success	1	0	0	0	0	0.0001		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Uncinocarpus_reesii_1704	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000003515.1	Ascomycota	22.3	0.0	0.0
+v1.9.0-beta10_container_rust	Wallemia_mellicola_+4_more	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta10_container_rust	Wallemia_mellicola_CBS_633.66	failed	0	1	0	0	1	0.0		0.0	0.0		0.0	0.0				GCF_000263375.1	Basidiomycota	9.8	0.0	0.0
+v1.9.0-beta11_conda	-	success	4	0	0	0	0	0.007		0.0019	0.134	rss	0.0	0.0								
+v1.9.0-beta11_conda	Allomyces_macrogynus	success	1	0	0	0	0	0.0151		0.1926	2.1	rss	0.0	0.0								
+v1.9.0-beta11_conda	Allomyces_macrogynus_ATCC_38327	success	3	22	0	0	0	1.2452		5.5269	8.1	rss	13.5006	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.09679	0.02181
+v1.9.0-beta11_conda	Aspergillus_fumigatus	success	1	0	0	0	0	0.0175		0.2283	2.4	rss	0.0	0.0								
+v1.9.0-beta11_conda	Aspergillus_fumigatus_Af293	success	3	21	0	0	0	0.9814		3.5305	13.6	rss	8.3003	0.0				GCF_000002655.1	Ascomycota	29.4	0.12008	0.03338
+v1.9.0-beta11_conda	Batrachochytrium_dendrobatidis	success	1	0	0	0	0	0.0983		1.4075	6.7	rss	0.0	0.0								
+v1.9.0-beta11_conda	Batrachochytrium_dendrobatidis_JAM81	success	3	18	0	0	0	0.7048		3.6528	6.3	rss	13.2005	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.15348	0.02961
+v1.9.0-beta11_conda	Chaetomium_globosum	success	1	0	0	0	0	0.0189		0.2497	2.8	rss	0.0	0.0								
+v1.9.0-beta11_conda	Chaetomium_globosum_CBS_148.51	success	3	17	0	0	0	0.9751		4.1636	16.7	rss	11.2506	0.0				GCF_000143365.1	Ascomycota	34.3	0.12139	0.02843
+v1.9.0-beta11_conda	Cryptococcus_neoformans	success	1	0	0	0	0	0.0144		0.1971	2.2	rss	0.0	0.0								
+v1.9.0-beta11_conda	Cryptococcus_neoformans_H99	success	3	20	0	0	0	0.6522		2.3482	6.8	rss	13.6504	0.0				GCF_000149245.1	Basidiomycota	18.9	0.12424	0.03451
+v1.9.0-beta11_conda	Malassezia_globosa	success	1	0	0	0	0	0.0044		0.0157	0.207	rss	0.0	0.0								
+v1.9.0-beta11_conda	Malassezia_globosa_CBS_7966	success	3	20	0	0	0	0.7973		2.5258	2.4	rss	6.317	0.0				GCF_000181695.2	Basidiomycota	9.0	0.28064	0.08858
+v1.9.0-beta11_conda	Pneumocystis_murina_B123	success	2	3	0	0	0	0.913		4.5653	2.0	rss	0.0333	0.0				GCF_000349005.2	Ascomycota	7.5	0.60871	0.12174
+v1.9.0-beta11_conda	Rhodotorula_toruloides_NP11	success	2	3	0	0	0	1.0281		5.5346	4.4	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.27399	0.0509
+v1.9.0-beta11_conda	Saccharomyces_cerevisiae	success	1	0	0	0	0	0.0134		0.1428	1.7	rss	0.0	0.0								
+v1.9.0-beta11_conda	Saccharomyces_cerevisiae_S288C	success	3	20	0	0	0	0.6139		2.2218	1.8	rss	8.7002	0.0				GCF_000146045.2	Ascomycota	12.1	0.18362	0.05073
+v1.9.0-beta11_conda	Umbelopsis_ramanniana	success	1	0	0	0	0	0.0149		0.1921	2.0	rss	0.0	0.0								
+v1.9.0-beta11_conda	Umbelopsis_ramanniana_AG	success	3	18	0	0	0	0.8686		2.3941	3.6	rss	17.484	0.0				GCF_025399195.1	Mucoromycota	23.1	0.10364	0.0376
+v1.9.0-beta11_conda_rust	-	success	4	0	0	1	0	0.008		0.0019	0.134	rss	0.0001	0.0								
+v1.9.0-beta11_conda_rust	Allomyces_macrogynus	success	1	0	0	0	0	0.0003		0.0003	0.004	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Allomyces_macrogynus_ATCC_38327	success	3	27	0	0	0	8.7085		37.28	4.4	rss	18.7164	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.65289	0.15251
+v1.9.0-beta11_conda_rust	Aspergillus_fumigatus	success	1	0	0	0	0	0.0004		0.0003	0.004	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Aspergillus_fumigatus_Af293	success	3	24	0	0	0	3.5499		17.089	17.5	rss	10.0997	0.0				GCF_000002655.1	Ascomycota	29.4	0.58126	0.12074
+v1.9.0-beta11_conda_rust	Batrachochytrium_dendrobatidis	success	1	0	0	0	0	0.0026		0.0004	0.059	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Batrachochytrium_dendrobatidis_JAM81	success	3	30	0	0	0	6.1917		22.7716	10.3	rss	13.1697	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.95679	0.26016
+v1.9.0-beta11_conda_rust	Chaetomium_globosum	success	1	0	0	0	0	0.0004		0.0003	0.004	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Chaetomium_globosum_CBS_148.51	success	3	24	0	0	0	5.5735		24.4562	4.1	rss	17.4845	0.0				GCF_000143365.1	Ascomycota	34.3	0.71301	0.16249
+v1.9.0-beta11_conda_rust	Cryptococcus_neoformans	success	1	0	0	0	0	0.0004		0.0003	0.003	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Cryptococcus_neoformans_H99	success	3	26	0	0	0	2.9209		13.0937	4.7	rss	8.9978	0.0				GCF_000149245.1	Basidiomycota	18.9	0.69279	0.15454
+v1.9.0-beta11_conda_rust	Malassezia_globosa	success	1	0	0	0	0	0.0017		0.0003	0.057	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Malassezia_globosa_CBS_7966	success	3	28	0	0	0	0.6278		3.317	3.5	rss	4.7171	0.0				GCF_000181695.2	Basidiomycota	9.0	0.36856	0.06976
+v1.9.0-beta11_conda_rust	Pneumocystis_murina_B123	success	2	3	0	0	0	0.8486		4.139	1.1	rss	0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.55186	0.11314
+v1.9.0-beta11_conda_rust	Rhodotorula_toruloides_NP11	success	2	3	0	0	0	0.8934		5.1736	4.3	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.25612	0.04423
+v1.9.0-beta11_conda_rust	Saccharomyces_cerevisiae	success	1	0	0	0	0	0.0017		0.0003	0.053	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Saccharomyces_cerevisiae_S288C	success	3	30	0	0	0	2.1002		7.0645	3.0	rss	7.367	0.0				GCF_000146045.2	Ascomycota	12.1	0.58384	0.17357
+v1.9.0-beta11_conda_rust	Umbelopsis_ramanniana	success	1	0	0	0	0	0.0004		0.0003	0.003	rss	0.0	0.0								
+v1.9.0-beta11_conda_rust	Umbelopsis_ramanniana_AG	success	3	29	0	0	0	5.9772		20.9466	1.5	rss	8.15	0.0				GCF_025399195.1	Mucoromycota	23.1	0.90678	0.25875
+v1.9.0-beta11_container_rust	-	success	4	0	0	0	0	0.0031		0.0022	0.023	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Allomyces_macrogynus	success	1	0	0	0	0	1.1808		15.1607	2.2	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Allomyces_macrogynus_ATCC_38327	success	3	5	0	0	0	1.4459		6.4448	4.4	rss	0.0824	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.11287	0.02532
+v1.9.0-beta11_container_rust	Aspergillus_fumigatus	success	1	0	0	0	0	0.9653		11.7088	3.8	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Aspergillus_fumigatus_Af293	success	3	4	0	0	0	0.9884		3.6632	3.9	rss	0.0333	0.0				GCF_000002655.1	Ascomycota	29.4	0.1246	0.03362
+v1.9.0-beta11_container_rust	Batrachochytrium_dendrobatidis	success	1	0	0	0	0	1.0878		13.4982	11.0	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Batrachochytrium_dendrobatidis_JAM81	success	3	6	0	0	0	1.1382		3.7411	3.8	rss	0.0333	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.15719	0.04782
+v1.9.0-beta11_container_rust	Chaetomium_globosum	success	1	0	0	0	0	1.2103		15.7276	2.7	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Chaetomium_globosum_CBS_148.51	success	3	4	0	0	0	1.3167		5.2725	3.8	rss	0.0667	0.0				GCF_000143365.1	Ascomycota	34.3	0.15372	0.03839
+v1.9.0-beta11_container_rust	Cryptococcus_neoformans	success	1	0	0	0	0	0.735		9.4036	2.1	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Cryptococcus_neoformans_H99	success	3	4	0	0	0	0.96		2.8565	4.4	rss	0.0332	0.0				GCF_000149245.1	Basidiomycota	18.9	0.15114	0.0508
+v1.9.0-beta11_container_rust	Malassezia_globosa	success	1	0	0	0	0	0.095		1.1617	0.632	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Malassezia_globosa_CBS_7966	success	3	1	0	2	0	0.6077		3.887	2.9	rss	0.0167	0.0				GCF_000181695.2	Basidiomycota	9.0	0.43189	0.06752
+v1.9.0-beta11_container_rust	Pneumocystis_murina_B123	success	2	3	0	0	0	0.6536		4.4822	2.9	rss	0.0499	0.0				GCF_000349005.2	Ascomycota	7.5	0.59763	0.08715
+v1.9.0-beta11_container_rust	Rhodotorula_toruloides_NP11	success	2	3	0	0	0	0.8985		5.6767	3.6	rss	0.0333	0.0				GCF_000320785.1	Basidiomycota	20.2	0.28103	0.04448
+v1.9.0-beta11_container_rust	Saccharomyces_cerevisiae	success	1	0	0	0	0	0.3783		4.4689	1.7	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Saccharomyces_cerevisiae_S288C	success	3	4	0	0	0	0.4139		1.6647	4.2	rss	0.0333	0.0				GCF_000146045.2	Ascomycota	12.1	0.13758	0.0342
+v1.9.0-beta11_container_rust	Umbelopsis_ramanniana	success	1	0	0	0	0	0.7772		9.3601	2.1	rss	0.0	0.0								
+v1.9.0-beta11_container_rust	Umbelopsis_ramanniana_AG	success	3	5	0	0	0	0.6396		2.3892	2.9	rss	0.0336	0.0				GCF_025399195.1	Mucoromycota	23.1	0.10343	0.02769
+v1.9.0-beta12_container	-	success	4	0	0	2	0	0.0016		0.0007	0.145	rss	0.0	0.0								
+v1.9.0-beta12_container	Allomyces_macrogynus	success	1	0	0	0	0	1.0314		12.0538	2.1	rss	0.0	0.0								
+v1.9.0-beta12_container	Allomyces_macrogynus_ATCC_38327	success	3	0	0	0	0	1.9178		8.6278	9.9	rss	0.0	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.1511	0.03359
+v1.9.0-beta12_container	Aspergillus_fumigatus	success	1	0	0	0	0	0.7925		9.0519	3.1	rss	0.0	0.0								
+v1.9.0-beta12_container	Aspergillus_fumigatus_Af293	success	3	0	0	0	0	1.215		4.8545	19.9	rss	0.0	0.0				GCF_000002655.1	Ascomycota	29.4	0.16512	0.04133
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis	success	1	0	0	0	0	1.1469		13.8127	11.0	rss	0.0	0.0								
+v1.9.0-beta12_container	Batrachochytrium_dendrobatidis_JAM81	success	3	0	0	0	0	1.3194		5.7138	4.8	rss	0.0	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.24008	0.05544
+v1.9.0-beta12_container	Botrytis_cinerea	success	1	0	0	0	0	0.9811		12.4788	2.4	rss	0.0	0.0								
+v1.9.0-beta12_container	Botrytis_cinerea_B05.10	success	3	0	0	0	0	1.4876		6.4598	10.8	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.15164	0.03492
+v1.9.0-beta12_container	Chaetomium_globosum	success	1	0	0	0	0	0.0		0.0	0.0		0.0	0.0								
+v1.9.0-beta12_container	Chaetomium_globosum_CBS_148.51	success	3	0	0	1	0	4.0556		21.3701	16.2	rss	0.8194	5.074				GCF_000143365.1	Ascomycota	34.3	0.62304	0.11824
+v1.9.0-beta12_container	Cryptococcus_neoformans	success	1	0	0	0	0	0.6244		7.8549	2.1	rss	0.0	0.0								
+v1.9.0-beta12_container	Cryptococcus_neoformans_H99	success	3	0	0	0	0	1.4219		4.4642	7.2	rss	0.0	0.0				GCF_000149245.1	Basidiomycota	18.9	0.2362	0.07523
+v1.9.0-beta12_container	Fusarium_verticillioides	success	1	0	0	0	0	1.1214		13.8604	3.5	rss	0.0	0.0								
+v1.9.0-beta12_container	Fusarium_verticillioides_7600	success	3	0	0	0	0	1.9825		8.0178	8.8	rss	0.0	0.0				GCF_000149555.1	Ascomycota	41.8	0.19181	0.04743
+v1.9.0-beta12_container	Malassezia_globosa	success	1	0	0	0	0	0.2897		3.4958	1.5	rss	0.0	0.0								
+v1.9.0-beta12_container	Malassezia_globosa_CBS_7966	success	3	0	0	0	0	0.6468		2.1681	2.6	rss	0.0	0.0				GCF_000181695.2	Basidiomycota	9.0	0.24089	0.07187
+v1.9.0-beta12_container	Pneumocystis_murina_B123	success	2	0	0	0	0	0.7282		4.6588	2.9	rss	0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.62117	0.09709
+v1.9.0-beta12_container	Rhodotorula_toruloides_NP11	success	2	0	0	0	0	1.1292		6.9963	4.0	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.34635	0.0559
+v1.9.0-beta12_container	Saccharomyces_cerevisiae	success	1	0	0	0	0	0.2903		3.6537	1.7	rss	0.0	0.0								
+v1.9.0-beta12_container	Saccharomyces_cerevisiae_S288C	success	3	0	0	0	0	0.5195		2.0274	3.3	rss	0.0	0.0				GCF_000146045.2	Ascomycota	12.1	0.16755	0.04294
+v1.9.0-beta12_container	Schizophyllum_commune	success	1	0	0	0	0	0.7325		9.2808	2.6	rss	0.0	0.0								
+v1.9.0-beta12_container	Schizophyllum_commune_H4-8	success	3	0	0	0	0	1.0154		4.9742	6.5	rss	0.0	0.0				GCF_000143185.2	Basidiomycota	38.7	0.12853	0.02624
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis	success	1	0	0	0	0	0.0028		0.0174	0.176	rss	0.0	0.0								
+v1.9.0-beta12_container	Tilletiopsis_washingtonensis_MCA_4186	success	3	0	0	0	0	2.3817		11.4738	4.3	rss	0.0	0.0				GCF_003144115.1	Basidiomycota	18.8	0.61031	0.12669
+v1.9.0-beta12_container	Umbelopsis_ramanniana	success	1	0	0	0	0	0.7589		9.6182	2.0	rss	0.0	0.0								
+v1.9.0-beta12_container	Umbelopsis_ramanniana_AG	success	3	0	0	0	0	0.9038		3.595	3.7	rss	0.0	0.0				GCF_025399195.1	Mucoromycota	23.1	0.15563	0.03912
+v1.9.0-beta12_container	Yarrowia_lipolytica	success	1	0	0	0	0	0.7461		9.3495	1.7	rss	0.0	0.0								
+v1.9.0-beta12_container	Yarrowia_lipolytica_CLIB122	success	3	0	0	0	0	0.7076		2.7466	3.8	rss	0.0	0.0				GCF_000002525.2	Ascomycota	20.5	0.13398	0.03452
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii	success	1	0	0	0	0	0.2247		2.6789	2.6	rss	0.0	0.0								
+v1.9.0-beta12_container	Zygosaccharomyces_rouxii_CBS_732	success	3	0	0	0	0	0.4479		1.6533	3.5	rss	0.0	0.0				GCF_000026365.1	Ascomycota	9.8	0.1687	0.04571
+v1.9.0-beta12_container_rust	-	success	4	0	0	2	0	0.0018		0.0007	0.029	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Allomyces_macrogynus	success	1	0	0	0	0	1.0161		13.0011	2.3	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Allomyces_macrogynus_ATCC_38327	success	3	0	0	0	0	1.4941		6.8292	9.4	rss	0.0	0.0				GCA_000151295.1	Blastocladiomycota	57.1	0.1196	0.02617
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus	success	1	0	0	0	0	0.8658		10.9658	3.6	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Aspergillus_fumigatus_Af293	success	3	0	0	0	0	1.2281		4.7728	3.7	rss	0.0	0.0				GCF_000002655.1	Ascomycota	29.4	0.16234	0.04177
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis	success	1	0	0	0	0	0.9856		12.2071	11.1	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Batrachochytrium_dendrobatidis_JAM81	success	3	0	0	0	0	0.8236		3.0409	4.3	rss	0.0	0.0				GCF_000203795.2	Chytridiomycota	23.8	0.12777	0.03461
+v1.9.0-beta12_container_rust	Botrytis_cinerea	success	1	0	0	0	0	1.1864		13.8452	2.5	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Botrytis_cinerea_B05.10	success	3	0	0	0	0	1.5426		5.8246	3.9	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.13673	0.03621
+v1.9.0-beta12_container_rust	Chaetomium_globosum	success	1	0	0	0	0	0.0		0.0	0.003	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Chaetomium_globosum_CBS_148.51	success	3	0	0	2	0	3.2753		16.5316	2.9	rss	1.0564	5.6035				GCF_000143365.1	Ascomycota	34.3	0.48197	0.09549
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans	success	1	0	0	0	0	0.6931		8.3971	2.2	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Cryptococcus_neoformans_H99	success	3	0	0	0	0	0.9273		2.9119	3.9	rss	0.0	0.0				GCF_000149245.1	Basidiomycota	18.9	0.15407	0.04906
+v1.9.0-beta12_container_rust	Fusarium_verticillioides	success	1	0	0	0	0	1.0383		11.9118	3.5	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Fusarium_verticillioides_7600	success	3	0	0	0	0	1.1407		4.5198	9.6	rss	0.0	0.0				GCF_000149555.1	Ascomycota	41.8	0.10813	0.02729
+v1.9.0-beta12_container_rust	Malassezia_globosa	success	1	0	0	0	0	0.2544		3.2271	1.6	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Malassezia_globosa_CBS_7966	success	3	0	0	0	0	0.4763		1.4378	2.4	rss	0.0	0.0				GCF_000181695.2	Basidiomycota	9.0	0.15976	0.05292
+v1.9.0-beta12_container_rust	Pneumocystis_murina_B123	success	2	0	0	0	0	0.84		5.4613	2.8	rss	0.0	0.0				GCF_000349005.2	Ascomycota	7.5	0.72817	0.112
+v1.9.0-beta12_container_rust	Rhodotorula_toruloides_NP11	success	2	0	0	0	0	0.8276		5.1762	4.0	rss	0.0	0.0				GCF_000320785.1	Basidiomycota	20.2	0.25625	0.04097
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae	success	1	0	0	0	0	0.3594		4.3457	1.7	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Saccharomyces_cerevisiae_S288C	success	3	0	0	0	0	0.5415		2.0661	3.2	rss	0.0	0.0				GCF_000146045.2	Ascomycota	12.1	0.17075	0.04475
+v1.9.0-beta12_container_rust	Schizophyllum_commune	success	1	0	0	0	0	0.75		9.4485	2.6	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Schizophyllum_commune_H4-8	success	3	0	0	0	0	0.6381		2.8889	4.3	rss	0.0	0.0				GCF_000143185.2	Basidiomycota	38.7	0.07465	0.01649
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis	success	1	0	0	0	0	0.6083		7.1309	1.7	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Tilletiopsis_washingtonensis_MCA_4186	success	3	0	0	0	0	0.93		3.1222	4.2	rss	0.0	0.0				GCF_003144115.1	Basidiomycota	18.8	0.16607	0.04947
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana	success	1	0	0	0	0	0.6456		8.0404	2.2	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Umbelopsis_ramanniana_AG	success	3	0	0	0	0	0.7569		2.8712	3.0	rss	0.0	0.0				GCF_025399195.1	Mucoromycota	23.1	0.12429	0.03277
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica	success	1	0	0	0	0	0.9789		11.7114	1.7	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Yarrowia_lipolytica_CLIB122	success	3	0	0	0	0	0.5184		2.1469	3.7	rss	0.0	0.0				GCF_000002525.2	Ascomycota	20.5	0.10473	0.02529
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii	success	1	0	0	0	0	0.2106		2.6284	2.6	rss	0.0	0.0								
+v1.9.0-beta12_container_rust	Zygosaccharomyces_rouxii_CBS_732	success	3	0	0	0	0	0.3752		1.384	3.5	rss	0.0	0.0				GCF_000026365.1	Ascomycota	9.8	0.14122	0.03829
+v1.9.0-beta13_blat_container_rust	-	success	4	0	0	0	0	0.0023		0.0008	0.149	rss	0.0	0.0								
+v1.9.0-beta13_blat_container_rust	Botrytis_cinerea_B05.10	success	2	0	0	0	0	1.0692		4.1899	4.4	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.09835	0.0251
+v1.9.0-beta13_gmap_conda_rust	-	success	4	0	0	2	0	0.0077		0.0008	0.136	rss	0.001	0.0003								
+v1.9.0-beta13_gmap_conda_rust	Botrytis_cinerea_B05.10	success	3	0	0	0	0	1.1476		4.5415	4.5	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.10661	0.02694
+v1.9.0-beta13_gmap_container_rust	-	success	2	0	0	0	0	0.001		0.0003	0.146	rss	0.0	0.0								
+v1.9.0-beta13_gmap_container_rust	Botrytis_cinerea_B05.10	failed	1	3	0	0	1	0.7869		2.5033	2.1	rss	0.2833	0.0				GCF_000143535.2	Ascomycota	42.6	0.05876	0.01847
+v1.9.0-beta13_gmap_pasaT1_container_rust	-	success	4	0	0	0	0	0.0018		0.0007	0.152	rss	0.0	0.0								
+v1.9.0-beta13_gmap_pasaT1_container_rust	Botrytis_cinerea_B05.10	success	3	0	0	0	0	1.1341		4.6353	4.3	rss	0.0	0.0				GCF_000143535.2	Ascomycota	42.6	0.10881	0.02662
